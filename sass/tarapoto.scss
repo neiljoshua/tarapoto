@@ -1,6 +1,9 @@
 @import 'reset';
+@import "compass/css3";
 @import 'variables';
 @import 'form';
+@import 'animate';
+
 
 html{
 	height: 100%;
@@ -77,9 +80,24 @@ a {
 	font-size: 30px;
 
 }
+ 
+ @include keyframes(show-elemet){
+ 	0%{opacity: 0;}
+ 	100%{ opacity: 1;}
+ }
 
+.in-view{
+	opacity: 1;
+} 
+
+section {
+	opacity: 0;
+	@include animation('show-elemet 5s ease');
+}
 
 footer {
+	opacity: 0;
+	@include animation('show-elemet 3s ease');
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -92,13 +110,15 @@ footer {
 		float: left;
 		margin-right: 235px;
 		padding-bottom: 25px;
-		&:last-child{
+		&:last-child {
 			margin-right: 0;
 		}
 	}
  	a {
  		display: block;
  		color: $white;
-
+ 		&:hover {
+ 			color: $gray;
+ 		}
  	}
 }

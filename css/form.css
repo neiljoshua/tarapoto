@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$oxygen".
-        on line 11 of /Users/stephanierodrigues/Projects/teaser/sass/form.scss
+        on line 11 of /Users/neiljoshua/Projects/tarapoto/sass/form.scss
 
 6: .form-copy {
 7: 	margin: 60px auto;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$oxygen".
 16: 	border-bottom: 1px solid #fff;
 
 Backtrace:
-/Users/stephanierodrigues/Projects/teaser/sass/form.scss:11
+/Users/neiljoshua/Projects/tarapoto/sass/form.scss:11
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -63,10 +63,10 @@ Backtrace:
 /Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
 /Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
 /Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:22:in `load'
-/usr/bin/compass:22:in `<main>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$oxygen\".\A         on line 11 of /Users/stephanierodrigues/Projects/teaser/sass/form.scss\A \A 6: .form-copy {\A 7: 	margin: 60px auto;\A 8: }\A 9: \A 10: input[type=\"text\"], select {\A 11: 	font-family: $oxygen;\A 12: 	font-size: 14px;\A 13: }\A 14: \A 15: input[type=\"text\"] {\A 16: 	border-bottom: 1px solid #fff;"; }
+  content: "Error: Undefined variable: \"$oxygen\".\A         on line 11 of /Users/neiljoshua/Projects/tarapoto/sass/form.scss\A \A 6: .form-copy {\A 7: 	margin: 60px auto;\A 8: }\A 9: \A 10: input[type=\"text\"], select {\A 11: 	font-family: $oxygen;\A 12: 	font-size: 14px;\A 13: }\A 14: \A 15: input[type=\"text\"] {\A 16: 	border-bottom: 1px solid #fff;"; }
