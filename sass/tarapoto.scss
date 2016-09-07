@@ -4,6 +4,10 @@
 @import 'form';
 @import 'animate';
 
+@include keyframes(show-elemet){
+ 	0%{opacity: 0;}
+ 	100%{ opacity: 1;}
+}
 
 html{
 	height: 100%;
@@ -81,22 +85,11 @@ a {
 
 }
  
- @include keyframes(show-elemet){
- 	0%{opacity: 0;}
- 	100%{ opacity: 1;}
- }
-
-.in-view{
-	opacity: 1;
-} 
-
-section {
-	opacity: 0;
-	@include animation('show-elemet 5s ease');
+section, h1 {
+	@include animation('show-elemet 4.5s ease');
 }
 
 footer {
-	opacity: 0;
 	@include animation('show-elemet 3s ease');
 	position: fixed;
 	bottom: 0;
