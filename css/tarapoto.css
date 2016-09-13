@@ -260,20 +260,20 @@ a {
 
 /* line 88, ../sass/tarapoto.scss */
 section, h1 {
-  -webkit-animation: show-elemet 4.5s ease;
-  -moz-animation: show-elemet 4.5s ease;
-  -ms-animation: show-elemet 4.5s ease;
-  -o-animation: show-elemet 4.5s ease;
-  animation: show-elemet 4.5s ease;
+  -webkit-animation: show-elemet 3.5s ease;
+  -moz-animation: show-elemet 3.5s ease;
+  -ms-animation: show-elemet 3.5s ease;
+  -o-animation: show-elemet 3.5s ease;
+  animation: show-elemet 3.5s ease;
 }
 
 /* line 92, ../sass/tarapoto.scss */
 footer {
-  -webkit-animation: show-elemet 3s ease;
-  -moz-animation: show-elemet 3s ease;
-  -ms-animation: show-elemet 3s ease;
-  -o-animation: show-elemet 3s ease;
-  animation: show-elemet 3s ease;
+  -webkit-animation: show-elemet 2.5s ease;
+  -moz-animation: show-elemet 2.5s ease;
+  -ms-animation: show-elemet 2.5s ease;
+  -o-animation: show-elemet 2.5s ease;
+  animation: show-elemet 2.5s ease;
   position: fixed;
   bottom: 0;
   width: 100%;

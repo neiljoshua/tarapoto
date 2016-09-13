@@ -86,11 +86,11 @@ a {
 }
  
 section, h1 {
-	@include animation('show-elemet 4.5s ease');
+	@include animation('show-elemet 3.5s ease');
 }
 
 footer {
-	@include animation('show-elemet 3s ease');
+	@include animation('show-elemet 2.5s ease');
 	position: fixed;
 	bottom: 0;
 	width: 100%;
