@@ -3,8 +3,9 @@ grunt.initConfig({
   compass: {
     dist: {
       options: {
-        sassDir: 'sass',
-        cssDir: 'css'
+        sassDir: 'src/sass/',
+        specify: 'src/sass/tarapoto.scss',
+        cssDir: 'src/css'
       }
     }
   },

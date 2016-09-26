@@ -6,5 +6,5 @@
 			</ul>
 		</footer>
 	</body>
-	<script src="js/tarapoto.js"></script>
+	<script src="src/js/tarapoto.js"></script>
 </html>

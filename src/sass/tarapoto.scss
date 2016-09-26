@@ -1,5 +1,4 @@
 @import 'reset';
-@import "compass/css3";
 @import 'variables';
 @import 'form';
 @import 'animate';
@@ -23,11 +22,11 @@ body {
 	text-align: center;
 
 	&.home{
-		background: url('/images/bg.jpg') no-repeat;
+		background: url('/src/images/bg.jpg') no-repeat;
 		background-size: cover;
 	}
 	&.map{
-		background: url('/images/staticmap.jpg') no-repeat;
+		background: url('/src/images/staticmap.jpg') no-repeat;
 		background-size: cover;
 	}
 }
