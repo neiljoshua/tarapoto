@@ -1,4 +1,12 @@
-// $( document ).ready( function(){
-// 	 $('footer').hide();
-//      $('footer').delay(300).fadeIn(400);
-// } );
+$( document ).ready( function(){
+	
+	$('.mobilemenu').on('click', function(e){
+		e.preventDefault();
+  		if ( $('footer li').hasClass('active') ) {
+   			 $('footer li').removeClass('active');
+  		}else{
+ 			 $('footer li').addClass('active');
+  		}
+	});
+
+} ); //End of Document Ready.

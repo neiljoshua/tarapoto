@@ -12,7 +12,7 @@ grunt.initConfig({
 
   watch: {
   css: {
-    files: ['sass/*.scss'],
+    files: ['src/sass/*.scss'],
     tasks: ['compass']
   }
 }

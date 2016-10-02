@@ -1,7 +1,7 @@
 @import 'reset';
 @import 'variables';
 @import 'form';
-@import 'animate';
+@import "mixin";
 
 @include keyframes(show-elemet){
  	0%{opacity: 0;}
@@ -21,11 +21,11 @@ body {
 	color: $white;
 	text-align: center;
 
-	&.home{
+	&.home {
 		background: url('/src/images/bg.jpg') no-repeat;
 		background-size: cover;
 	}
-	&.map{
+	&.map {
 		background: url('/src/images/staticmap.jpg') no-repeat;
 		background-size: cover;
 	}
@@ -79,25 +79,36 @@ a {
 	height: auto;
 	display: block;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 50px;
 	font-size: 30px;
-
 }
- 
+
+.mobilemenu {
+	display:none;
+	float: right;
+	font-size: 30px;
+	height:30;
+	width: 30px;
+	padding: 10px;
+	color: $gray;
+	background-color: $white;
+}
+
+
 section, h1 {
 	@include animation('show-elemet 3.5s ease');
 }
 
 footer {
-	@include animation('show-elemet 2.5s ease');
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	ul{
+	ul {
 		width: 698px;
 		margin: 0 auto;
 	}
-	li{
+	li {
+		@include animation('show-elemet 2.5s ease');
 		display: block;
 		float: left;
 		margin-right: 235px;
@@ -113,4 +124,47 @@ footer {
  			color: $gray;
  		}
  	}
+}
+
+@include media(tablet) {
+	.active {
+			visibility: visible;
+			opacity: 1;
+		}
+	.inactive {
+			visibility: hidden;
+			height: 0;
+			opacity: 0;
+	} 
+	.mobilemenu {
+		display: block;
+		@include animation('show-elemet 2.5s ease');
+	}
+	
+	.close {
+		display: none;
+	}
+
+	footer {
+		top: 51px;
+		ul{
+			width: 100%;
+		}
+		li{
+			float: none;
+			visibility: hidden;
+			margin: 0;
+			padding-top:25px;
+			background-color: $white;
+			height: 0;
+		}
+		
+		a {
+ 			color: $black;
+ 			&:hover {
+ 				color: $gray;
+ 				opacity: 0.5;
+ 			}
+ 		}
+ 	}	
 }

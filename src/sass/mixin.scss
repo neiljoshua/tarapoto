@@ -1,4 +1,4 @@
-
+// animation
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {
         @content;
@@ -23,4 +23,14 @@
   -ms-animation: #{$str};
   -o-animation: #{$str};
   animation: #{$str};      
+}
+
+// media queries
+@mixin media($type) {
+    @if $type == tablet {
+        @media (max-width: 768px)  { @content; }
+    }
+    @else if $type == mobile {
+        @media (max-width: 600px)  { @content; }
+    }
 }
