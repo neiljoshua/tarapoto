@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'form';
 @import "mixin";
+@import "hamburger";
 
 @include keyframes(show-elemet){
  	0%{opacity: 0;}
@@ -26,7 +27,7 @@ body {
 		background-size: cover;
 	}
 	&.map {
-		background: url('/src/images/staticmap.jpg') no-repeat;
+		background: url('/src/images/mapimage.jpg') no-repeat;
 		background-size: cover;
 	}
 }
@@ -79,21 +80,9 @@ a {
 	height: auto;
 	display: block;
 	margin: 0 auto;
-	padding-top: 50px;
+	padding-top: 40px;
 	font-size: 30px;
 }
-
-.mobilemenu {
-	display:none;
-	float: right;
-	font-size: 30px;
-	height:30;
-	width: 30px;
-	padding: 10px;
-	color: $gray;
-	background-color: $white;
-}
-
 
 section, h1 {
 	@include animation('show-elemet 3.5s ease');
@@ -104,11 +93,11 @@ footer {
 	bottom: 0;
 	width: 100%;
 	ul {
+		@include animation('show-elemet 2.5s ease');
 		width: 698px;
 		margin: 0 auto;
 	}
 	li {
-		@include animation('show-elemet 2.5s ease');
 		display: block;
 		float: left;
 		margin-right: 235px;
@@ -127,18 +116,32 @@ footer {
 }
 
 @include media(tablet) {
-	.active {
-			visibility: visible;
-			opacity: 1;
+	 
+	p {
+	 	padding-right:30px;
+	 	padding-left: 30px;
+	}
+
+	fieldset {
+		*:first-child {
+			margin-right: 20px;
 		}
-	.inactive {
-			visibility: hidden;
-			height: 0;
-			opacity: 0;
-	} 
-	.mobilemenu {
+	}
+
+	input[type="text"], select {
+		width: 250px;
+	}
+
+	.center {
+		width: 90%;
+	}
+
+	.c-hamburger {
+		position: absolute;
+    	right: 0;
 		display: block;
 		@include animation('show-elemet 2.5s ease');
+		z-index: 10;
 	}
 	
 	.close {
@@ -146,17 +149,34 @@ footer {
 	}
 
 	footer {
-		top: 51px;
+		visibility: hidden;
+		background: white;
+		position: absolute;
+		max-height: 0;
+		top: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: all .5s ease-in .2s;
+
+		&.active {
+			visibility: visible;
+			max-height: 100%;
+			opacity: 1;
+			transition: all .5s ease-in .2s;
+			
+		}
 		ul{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
 			width: 100%;
+			background-color: white;
 		}
 		li{
 			float: none;
-			visibility: hidden;
 			margin: 0;
 			padding-top:25px;
 			background-color: $white;
-			height: 0;
 		}
 		
 		a {

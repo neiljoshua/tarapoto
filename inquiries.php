@@ -3,7 +3,7 @@
 ?>
 	<body>
 		<a href="/" class="close">X</a>
-		<a href="/" class="mobilemenu">=</a>
+		<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
 		<h1 class="logo">TARAPOTO RESORT</h1>
 		<section class="form-copy">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh. Ut laoreet urna est, sed elementum ex tincidunt sit amet.</p>

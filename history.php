@@ -3,7 +3,7 @@
 ?>
 <body >
 	<a href="/" class="close">X</a>
-	<a href="/" class="mobilemenu">=</a>
+	<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
 	<!-- <img class="logo" src="/images/logo.png"> -->
 	<h1 class="logo">TARAPOTO RESORT</h1>
 	<div>
