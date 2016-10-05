@@ -45,7 +45,9 @@
 }
 
 .c-hamburger--rot {
-    transition: background-color 0.3s 0.3s;
+    background-color: $blue;
+    opacity: 1;
+    transition: opacity 0.3s 0.3s;
     span {
       transition: transform 0.3s;
     }
@@ -53,6 +55,7 @@
 /* active state, i.e. menu open */
 .c-hamburger--rot.is-active {
     background-color: $blue;
+    opacity:0.9;
     span {
       transform: rotate(90deg);
     }

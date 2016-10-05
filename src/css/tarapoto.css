@@ -187,19 +187,22 @@ button:hover {
 
 /* line 47, ../sass/hamburger.scss */
 .c-hamburger--rot {
-  transition: background-color 0.3s 0.3s;
+  background-color: #000033;
+  opacity: 1;
+  transition: opacity 0.3s 0.3s;
 }
-/* line 49, ../sass/hamburger.scss */
+/* line 51, ../sass/hamburger.scss */
 .c-hamburger--rot span {
   transition: transform 0.3s;
 }
 
 /* active state, i.e. menu open */
-/* line 54, ../sass/hamburger.scss */
+/* line 56, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active {
   background-color: #000033;
+  opacity: 0.9;
 }
-/* line 56, ../sass/hamburger.scss */
+/* line 59, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span {
   transform: rotate(90deg);
 }
