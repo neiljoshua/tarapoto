@@ -80,7 +80,7 @@ a {
 	height: auto;
 	display: block;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 60px;
 	font-size: 30px;
 }
 
@@ -156,13 +156,13 @@ footer {
 		top: 0;
 		opacity: 0;
 		overflow: hidden;
-		transition: all .5s ease-in .2s;
+		transition: max-height .5s ease-in;
 
 		&.active {
 			visibility: visible;
 			max-height: 100%;
 			opacity: 1;
-			transition: all .5s ease-in .2s;
+			transition: max-height .5s ease-in;
 			
 		}
 		ul{
@@ -188,3 +188,43 @@ footer {
  		}
  	}	
 }
+
+@include media(mobile) {
+
+
+	.logo {
+		font-size: 20px;
+	}
+
+	.center.mobile {
+		position: relative;
+		top:auto;
+		left: auto;
+		transform: none;
+		h2{
+			margin: 45px;
+			font-size: 20px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	fieldset {
+		input[type="text"], select {
+		    width: 90%;
+		    margin: 0 auto;
+		    padding-bottom: 30px;
+		}
+		select{
+			&:first-child {
+    			margin-right: 0;
+    		}
+			margin-top: 20px;
+    		margin-bottom: 20px;
+		}
+	}
+
+}
+
