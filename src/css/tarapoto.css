@@ -141,8 +141,8 @@ button:hover {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -160,10 +160,10 @@ button:hover {
 .c-hamburger span {
   display: block;
   position: absolute;
-  top: 32px;
-  left: 12px;
-  right: 15px;
-  height: 5px;
+  top: 24px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
   background: white;
 }
 /* line 29, ../sass/hamburger.scss */
@@ -172,17 +172,17 @@ button:hover {
   display: block;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 2px;
   background-color: #fff;
   content: "";
 }
 /* line 38, ../sass/hamburger.scss */
 .c-hamburger span::before {
-  top: -12px;
+  top: -8px;
 }
 /* line 41, ../sass/hamburger.scss */
 .c-hamburger span::after {
-  bottom: -12px;
+  bottom: -8px;
 }
 
 /* line 47, ../sass/hamburger.scss */
@@ -380,27 +380,32 @@ footer a:hover {
 
 @media (max-width: 768px) {
   /* line 120, ../sass/tarapoto.scss */
+  .form-copy {
+    margin: 40px auto;
+  }
+
+  /* line 124, ../sass/tarapoto.scss */
   p {
     padding-right: 30px;
     padding-left: 30px;
   }
 
-  /* line 126, ../sass/tarapoto.scss */
+  /* line 130, ../sass/tarapoto.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 
-  /* line 131, ../sass/tarapoto.scss */
+  /* line 135, ../sass/tarapoto.scss */
   input[type="text"], select {
     width: 250px;
   }
 
-  /* line 135, ../sass/tarapoto.scss */
+  /* line 139, ../sass/tarapoto.scss */
   .center {
     width: 90%;
   }
 
-  /* line 139, ../sass/tarapoto.scss */
+  /* line 143, ../sass/tarapoto.scss */
   .c-hamburger {
     position: absolute;
     right: 0;
@@ -413,12 +418,12 @@ footer a:hover {
     z-index: 10;
   }
 
-  /* line 147, ../sass/tarapoto.scss */
+  /* line 151, ../sass/tarapoto.scss */
   .close {
     display: none;
   }
 
-  /* line 151, ../sass/tarapoto.scss */
+  /* line 155, ../sass/tarapoto.scss */
   footer {
     visibility: hidden;
     background: white;
@@ -427,16 +432,16 @@ footer a:hover {
     top: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height .5s ease-in;
+    transition: all .6s ease-in;
   }
-  /* line 161, ../sass/tarapoto.scss */
+  /* line 165, ../sass/tarapoto.scss */
   footer.active {
     visibility: visible;
     max-height: 100%;
     opacity: 1;
-    transition: max-height .5s ease-in;
+    transition: all .6s ease-in;
   }
-  /* line 168, ../sass/tarapoto.scss */
+  /* line 172, ../sass/tarapoto.scss */
   footer ul {
     position: absolute;
     top: 50%;
@@ -444,59 +449,60 @@ footer a:hover {
     width: 100%;
     background-color: white;
   }
-  /* line 175, ../sass/tarapoto.scss */
+  /* line 179, ../sass/tarapoto.scss */
   footer li {
     float: none;
     margin: 0;
     padding-top: 25px;
     background-color: #fff;
   }
-  /* line 182, ../sass/tarapoto.scss */
+  /* line 186, ../sass/tarapoto.scss */
   footer a {
     color: #000;
   }
-  /* line 184, ../sass/tarapoto.scss */
+  /* line 188, ../sass/tarapoto.scss */
   footer a:hover {
     color: #595959;
     opacity: 0.5;
   }
 }
 @media (max-width: 600px) {
-  /* line 195, ../sass/tarapoto.scss */
+  /* line 199, ../sass/tarapoto.scss */
   .logo {
     font-size: 20px;
   }
 
-  /* line 199, ../sass/tarapoto.scss */
+  /* line 203, ../sass/tarapoto.scss */
   .center.mobile {
     position: relative;
     top: auto;
     left: auto;
     transform: none;
   }
-  /* line 204, ../sass/tarapoto.scss */
+  /* line 208, ../sass/tarapoto.scss */
   .center.mobile h2 {
     margin: 45px;
     font-size: 20px;
   }
 
-  /* line 210, ../sass/tarapoto.scss */
+  /* line 214, ../sass/tarapoto.scss */
   p {
     font-size: 16px;
   }
 
-  /* line 215, ../sass/tarapoto.scss */
-  fieldset input[type="text"], fieldset select {
+  /* line 219, ../sass/tarapoto.scss */
+  fieldset input[type="text"] {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 30px;
   }
-  /* line 220, ../sass/tarapoto.scss */
+  /* line 224, ../sass/tarapoto.scss */
   fieldset select {
+    padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* line 221, ../sass/tarapoto.scss */
+  /* line 226, ../sass/tarapoto.scss */
   fieldset select:first-child {
     margin-right: 0;
   }

@@ -8,3 +8,7 @@ npm_log
 
 #html files
 html
+
+#Git flow
+gitflow-installer.sh
+gitflow/ 

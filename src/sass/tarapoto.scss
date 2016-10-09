@@ -116,6 +116,10 @@ footer {
 }
 
 @include media(tablet) {
+
+	.form-copy {
+		margin: 40px auto;
+	}
 	 
 	p {
 	 	padding-right:30px;
@@ -156,13 +160,13 @@ footer {
 		top: 0;
 		opacity: 0;
 		overflow: hidden;
-		transition: max-height .5s ease-in;
+		transition: all .6s ease-in;
 
 		&.active {
 			visibility: visible;
 			max-height: 100%;
 			opacity: 1;
-			transition: max-height .5s ease-in;
+			transition: all .6s ease-in;
 			
 		}
 		ul{
@@ -212,12 +216,13 @@ footer {
 	}
 
 	fieldset {
-		input[type="text"], select {
+		input[type="text"] {
 		    width: 90%;
 		    margin: 0 auto;
 		    padding-bottom: 30px;
 		}
 		select{
+			padding-bottom: 10px;
 			&:first-child {
     			margin-right: 0;
     		}
