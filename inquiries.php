@@ -303,6 +303,7 @@
 				<p>Donec pretium vel erat porttitor tincidunt. In fermentum rhoncus leo, at aliquam nulla aliquet vitae. In hac habitasse platea dictumst. Donec aliquam leo semper, venenatis nisl nec, eleifend libero.</p>
 			</div>
 		</section>
+<footer class="relative-footer">		
 <?php 
 	include('src/includes/footer.php'); 
 ?>

@@ -88,6 +88,11 @@ section, h1 {
 	@include animation('show-elemet 3.5s ease');
 }
 
+.relative-footer {
+	margin-top: 40px;
+	position: relative;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
