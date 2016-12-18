@@ -1,7 +1,6 @@
 .c-hamburger {
     display: none;
-    float: right;
-    position: relative;
+    position: fixed;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -54,8 +53,9 @@
 }
 /* active state, i.e. menu open */
 .c-hamburger--rot.is-active {
-    background-color: $white;
+    background-color: $black;
     opacity:0.9;
+    transition: opacity 0.3s 0.3s;
     span {
       transform: rotate(90deg);
     }

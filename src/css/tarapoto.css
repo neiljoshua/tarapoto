@@ -86,38 +86,66 @@ section {
 }
 
 /* line 6, ../sass/form.scss */
-.form-copy {
-  margin: 60px auto;
+form {
+  margin: 25px auto;
 }
 
 /* line 10, ../sass/form.scss */
 input[type="text"], select {
   font-family: "Oxygen";
   font-size: 14px;
+  color: #fff;
 }
 
-/* line 15, ../sass/form.scss */
+/* line 16, ../sass/form.scss */
 input[type="text"] {
   border-bottom: 1px solid #fff;
   width: 320px;
   padding: 10px 0;
+  margin: 20px auto;
 }
 
-/* line 21, ../sass/form.scss */
+/* line 23, ../sass/form.scss */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+}
+
+/* line 26, ../sass/form.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #909;
+  opacity: 1;
+}
+
+/* line 30, ../sass/form.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+
+/* line 34, ../sass/form.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+/* line 38, ../sass/form.scss */
 select {
   width: 320px;
-  background-color: #000033;
-  color: #fff;
+  background-color: #74AFAD;
+  border-color: #fff;
   padding: 10px 0;
   margin-top: 15px;
 }
 
-/* line 30, ../sass/form.scss */
+/* line 47, ../sass/form.scss */
 fieldset *:first-child {
   margin-right: 40px;
 }
 
-/* line 35, ../sass/form.scss */
+/* line 52, ../sass/form.scss */
 button {
   margin: 40px auto;
   width: 200px;
@@ -126,7 +154,7 @@ button {
   padding: 15px 0;
   text-transform: uppercase;
 }
-/* line 43, ../sass/form.scss */
+/* line 60, ../sass/form.scss */
 button:hover {
   background-color: #fff;
   color: #000033;
@@ -136,8 +164,7 @@ button:hover {
 /* line 1, ../sass/hamburger.scss */
 .c-hamburger {
   display: none;
-  float: right;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -152,11 +179,11 @@ button:hover {
   cursor: pointer;
   transition: background 0.3s;
 }
-/* line 18, ../sass/hamburger.scss */
+/* line 17, ../sass/hamburger.scss */
 .c-hamburger:focus {
   outline: none;
 }
-/* line 21, ../sass/hamburger.scss */
+/* line 20, ../sass/hamburger.scss */
 .c-hamburger span {
   display: block;
   position: absolute;
@@ -166,7 +193,7 @@ button:hover {
   height: 2px;
   background: white;
 }
-/* line 29, ../sass/hamburger.scss */
+/* line 28, ../sass/hamburger.scss */
 .c-hamburger span::before, .c-hamburger span::after {
   position: absolute;
   display: block;
@@ -176,31 +203,32 @@ button:hover {
   background-color: #fff;
   content: "";
 }
-/* line 38, ../sass/hamburger.scss */
+/* line 37, ../sass/hamburger.scss */
 .c-hamburger span::before {
   top: -8px;
 }
-/* line 41, ../sass/hamburger.scss */
+/* line 40, ../sass/hamburger.scss */
 .c-hamburger span::after {
   bottom: -8px;
 }
 
-/* line 47, ../sass/hamburger.scss */
+/* line 46, ../sass/hamburger.scss */
 .c-hamburger--rot {
   background-color: none;
   opacity: 1;
   transition: opacity 0.3s 0.3s;
 }
-/* line 51, ../sass/hamburger.scss */
+/* line 50, ../sass/hamburger.scss */
 .c-hamburger--rot span {
   transition: transform 0.3s;
 }
 
 /* active state, i.e. menu open */
-/* line 56, ../sass/hamburger.scss */
+/* line 55, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active {
-  background-color: #fff;
+  background-color: #000;
   opacity: 0.9;
+  transition: opacity 0.3s 0.3s;
 }
 /* line 59, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span {
@@ -250,68 +278,72 @@ button:hover {
 /* line 12, ../sass/tarapoto.scss */
 html {
   height: 100%;
-  width: 100%;
 }
 
-/* line 17, ../sass/tarapoto.scss */
+/* line 16, ../sass/tarapoto.scss */
 body {
+  min-height: 100%;
+  position: relative;
   width: 100%;
-  height: 100%;
   font-family: "Oxygen";
-  background-color: #000033;
+  background-color: #74AFAD;
   color: #fff;
   text-align: center;
 }
-/* line 25, ../sass/tarapoto.scss */
+/* line 26, ../sass/tarapoto.scss */
 body.home {
-  background: url("/src/images/bg.jpg") no-repeat;
+  background: url("/src/images/resort.jpg") center center no-repeat;
   background-size: cover;
 }
-/* line 29, ../sass/tarapoto.scss */
+/* line 30, ../sass/tarapoto.scss */
 body.map {
-  background: url("/src/images/mapimage.jpg") no-repeat;
+  background: url("/src/images/map.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 35, ../sass/tarapoto.scss */
+/* line 36, ../sass/tarapoto.scss */
 h1 {
   font-size: 66px;
   font-weight: 300;
+  letter-spacing: 3px;
 }
 
-/* line 40, ../sass/tarapoto.scss */
+/* line 42, ../sass/tarapoto.scss */
 h2 {
   font-size: 46px;
   font-weight: 300;
   margin-bottom: 50px;
 }
 
-/* line 46, ../sass/tarapoto.scss */
+/* line 48, ../sass/tarapoto.scss */
 p {
   max-width: 720px;
   text-align: center;
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
-/* line 54, ../sass/tarapoto.scss */
+/* line 57, ../sass/tarapoto.scss */
 a {
   text-decoration: none;
 }
 
-/* line 58, ../sass/tarapoto.scss */
+/* line 61, ../sass/tarapoto.scss */
 .center {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
 
-/* line 65, ../sass/tarapoto.scss */
+/* line 70, ../sass/tarapoto.scss */
 .close {
+  position: fixed;
   display: block;
-  float: left;
   font-size: 30px;
   font-weight: 300;
   padding: 10px;
@@ -322,17 +354,23 @@ a {
   height: 30px;
 }
 
-/* line 78, ../sass/tarapoto.scss */
+/* line 83, ../sass/tarapoto.scss */
 .logo {
   max-width: 400px;
   height: auto;
   display: block;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 50px;
   font-size: 30px;
 }
 
-/* line 87, ../sass/tarapoto.scss */
+/* line 92, ../sass/tarapoto.scss */
+section {
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+/* line 97, ../sass/tarapoto.scss */
 section, h1 {
   -webkit-animation: show-elemet 3.5s ease;
   -moz-animation: show-elemet 3.5s ease;
@@ -341,19 +379,21 @@ section, h1 {
   animation: show-elemet 3.5s ease;
 }
 
-/* line 91, ../sass/tarapoto.scss */
-.relative-footer {
-  margin-top: 40px;
-  position: relative;
+/* line 101, ../sass/tarapoto.scss */
+.legal {
+  overflow: hidden;
+  margin-bottom: 40px;
+  padding-bottom: 60px;
 }
 
-/* line 96, ../sass/tarapoto.scss */
+/* line 107, ../sass/tarapoto.scss */
 footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   width: 100%;
+  margin-top: 20px;
+  bottom: 0;
 }
-/* line 100, ../sass/tarapoto.scss */
+/* line 113, ../sass/tarapoto.scss */
 footer ul {
   -webkit-animation: show-elemet 2.5s ease;
   -moz-animation: show-elemet 2.5s ease;
@@ -363,57 +403,57 @@ footer ul {
   width: 698px;
   margin: 0 auto;
 }
-/* line 105, ../sass/tarapoto.scss */
-footer li {
+/* line 117, ../sass/tarapoto.scss */
+footer ul li {
   display: block;
   float: left;
-  margin-right: 235px;
+  margin-right: 200px;
   padding-bottom: 25px;
 }
-/* line 110, ../sass/tarapoto.scss */
-footer li:last-child {
+/* line 122, ../sass/tarapoto.scss */
+footer ul li:last-child {
   margin-right: 0;
 }
-/* line 114, ../sass/tarapoto.scss */
-footer a {
+/* line 125, ../sass/tarapoto.scss */
+footer ul li a {
   display: block;
+  letter-spacing: 2px;
   color: #fff;
 }
-/* line 117, ../sass/tarapoto.scss */
-footer a:hover {
+/* line 129, ../sass/tarapoto.scss */
+footer ul li a:hover {
   color: #595959;
 }
 
 @media (max-width: 768px) {
-  /* line 125, ../sass/tarapoto.scss */
-  .form-copy {
-    margin: 40px auto;
+  /* line 139, ../sass/tarapoto.scss */
+  body {
+    height: 100%;
   }
 
-  /* line 129, ../sass/tarapoto.scss */
+  /* line 143, ../sass/tarapoto.scss */
   p {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
-  /* line 135, ../sass/tarapoto.scss */
+  /* line 149, ../sass/tarapoto.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 
-  /* line 140, ../sass/tarapoto.scss */
+  /* line 154, ../sass/tarapoto.scss */
   input[type="text"], select {
     width: 250px;
   }
 
-  /* line 144, ../sass/tarapoto.scss */
+  /* line 158, ../sass/tarapoto.scss */
   .center {
     width: 90%;
   }
 
-  /* line 148, ../sass/tarapoto.scss */
+  /* line 162, ../sass/tarapoto.scss */
   .c-hamburger {
-    position: absolute;
     right: 0;
     display: block;
     -webkit-animation: show-elemet 2.5s ease;
@@ -424,30 +464,29 @@ footer a:hover {
     z-index: 10;
   }
 
-  /* line 156, ../sass/tarapoto.scss */
-  .close {
-    display: none;
-  }
-
-  /* line 160, ../sass/tarapoto.scss */
+  /* line 169, ../sass/tarapoto.scss */
   footer {
     visibility: hidden;
+    position: fixed;
     background: white;
-    position: absolute;
-    max-height: 0;
+    margin: 0;
+    height: 0;
     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     opacity: 0;
     overflow: hidden;
     transition: all .6s ease-in;
   }
-  /* line 170, ../sass/tarapoto.scss */
+  /* line 183, ../sass/tarapoto.scss */
   footer.active {
     visibility: visible;
-    max-height: 100%;
+    height: 100%;
     opacity: 1;
     transition: all .6s ease-in;
   }
-  /* line 177, ../sass/tarapoto.scss */
+  /* line 190, ../sass/tarapoto.scss */
   footer ul {
     position: absolute;
     top: 50%;
@@ -455,60 +494,59 @@ footer a:hover {
     width: 100%;
     background-color: white;
   }
-  /* line 184, ../sass/tarapoto.scss */
-  footer li {
+  /* line 196, ../sass/tarapoto.scss */
+  footer ul li {
     float: none;
     margin: 0;
     padding-top: 25px;
     background-color: #fff;
   }
-  /* line 191, ../sass/tarapoto.scss */
-  footer a {
+  /* line 201, ../sass/tarapoto.scss */
+  footer ul li a {
     color: #000;
   }
-  /* line 193, ../sass/tarapoto.scss */
-  footer a:hover {
+  /* line 203, ../sass/tarapoto.scss */
+  footer ul li a:hover {
     color: #595959;
     opacity: 0.5;
   }
 }
 @media (max-width: 600px) {
-  /* line 204, ../sass/tarapoto.scss */
+  /* line 217, ../sass/tarapoto.scss */
   .logo {
     font-size: 20px;
   }
 
-  /* line 208, ../sass/tarapoto.scss */
+  /* line 221, ../sass/tarapoto.scss */
   .center.mobile {
     position: relative;
     top: auto;
     left: auto;
     transform: none;
   }
-  /* line 213, ../sass/tarapoto.scss */
+  /* line 226, ../sass/tarapoto.scss */
   .center.mobile h2 {
-    margin: 45px;
+    margin-bottom: 25px;
     font-size: 20px;
   }
 
-  /* line 219, ../sass/tarapoto.scss */
+  /* line 232, ../sass/tarapoto.scss */
   p {
     font-size: 16px;
   }
 
-  /* line 224, ../sass/tarapoto.scss */
+  /* line 237, ../sass/tarapoto.scss */
   fieldset input[type="text"] {
     width: 90%;
-    margin: 0 auto;
-    padding-bottom: 30px;
+    margin: 20px auto;
   }
-  /* line 229, ../sass/tarapoto.scss */
+  /* line 241, ../sass/tarapoto.scss */
   fieldset select {
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* line 231, ../sass/tarapoto.scss */
+  /* line 243, ../sass/tarapoto.scss */
   fieldset select:first-child {
     margin-right: 0;
   }

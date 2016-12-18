@@ -9,25 +9,26 @@
  	100%{ opacity: 1;}
 }
 
-html{
+html {
 	height: 100%;
-	width: 100%;
 }
 
 body {
+	min-height: 100%;
+	position: relative;
 	width: 100%;
-	height: 100%;
 	font-family: $oxygen;
-	background-color: $blue;
+	background-color: $green;
 	color: $white;
 	text-align: center;
-
+	
+	
 	&.home {
-		background: url('/src/images/bg.jpg') no-repeat;
+		background: url('/src/images/resort.jpg') center center no-repeat;
 		background-size: cover;
 	}
 	&.map {
-		background: url('/src/images/mapimage.jpg') no-repeat;
+		background: url('/src/images/map.jpg') center center no-repeat;
 		background-size: cover;
 	}
 }
@@ -35,6 +36,7 @@ body {
 h1{
 	font-size: 66px;
 	font-weight: 300;
+	letter-spacing: 3px;
 }
 
 h2 {
@@ -49,6 +51,7 @@ p {
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
 a {
@@ -56,6 +59,8 @@ a {
 }
 
 .center {
+	margin: 0;
+	padding:0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -63,8 +68,8 @@ a {
 }
 
 .close {
+	position: fixed;
 	display:block;
-	float: left;
 	font-size: 30px;
 	font-weight: 300;
 	padding: 10px;
@@ -80,55 +85,64 @@ a {
 	height: auto;
 	display: block;
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 50px;
 	font-size: 30px;
+}
+
+section {
+	margin: 40px auto;
+	overflow: hidden;
 }
 
 section, h1 {
 	@include animation('show-elemet 3.5s ease');
 }
 
-.relative-footer {
-	margin-top: 40px;
-	position: relative;
+.legal {
+	overflow: hidden;
+	margin-bottom: 40px;
+	padding-bottom:60px;
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
+	position: absolute;
 	width: 100%;
+	margin-top: 20px;
+	bottom: 0;
+
 	ul {
 		@include animation('show-elemet 2.5s ease');
 		width: 698px;
 		margin: 0 auto;
-	}
-	li {
-		display: block;
-		float: left;
-		margin-right: 235px;
-		padding-bottom: 25px;
-		&:last-child {
-			margin-right: 0;
-		}
-	}
- 	a {
- 		display: block;
- 		color: $white;
- 		&:hover {
- 			color: $gray;
- 		}
+		li {
+			display: block;
+			float: left;
+			margin-right: 200px;
+			padding-bottom: 25px;
+			&:last-child {
+				margin-right: 0;
+			}
+		 	a {
+		 		display: block;
+		 		letter-spacing: 2px;
+		 		color: $white;
+		 		&:hover {
+		 			color: $gray;
+		 		}	
+	 		}
+	 	}	
  	}
 }
 
 @include media(tablet) {
 
-	.form-copy {
-		margin: 40px auto;
+	body {
+		height: 100%;
 	}
-	 
+
 	p {
-	 	padding-right:30px;
-	 	padding-left: 30px;
+	 	padding-right:35px;
+	 	padding-left: 35px;
 	}
 
 	fieldset {
@@ -146,30 +160,29 @@ footer {
 	}
 
 	.c-hamburger {
-		position: absolute;
     	right: 0;
 		display: block;
 		@include animation('show-elemet 2.5s ease');
 		z-index: 10;
 	}
-	
-	.close {
-		display: none;
-	}
 
 	footer {
 		visibility: hidden;
+		position: fixed;
 		background: white;
-		position: absolute;
-		max-height: 0;
+		margin: 0;
+		height: 0;
 		top: 0;
+		bottom:0;
+		right: 0;
+		left: 0;
 		opacity: 0;
 		overflow: hidden;
 		transition: all .6s ease-in;
 
 		&.active {
 			visibility: visible;
-			max-height: 100%;
+			height: 100%;
 			opacity: 1;
 			transition: all .6s ease-in;
 			
@@ -180,22 +193,22 @@ footer {
 			transform: translateY(-50%);
 			width: 100%;
 			background-color: white;
+			li{
+				float: none;
+				margin: 0;
+				padding-top:25px;
+				background-color: $white;
+				a {
+		 			color: $black;
+		 			&:hover {
+		 				color: $gray;
+		 				opacity: 0.5;
+		 			}
+	 			}
+	 		}
 		}
-		li{
-			float: none;
-			margin: 0;
-			padding-top:25px;
-			background-color: $white;
-		}
-		
-		a {
- 			color: $black;
- 			&:hover {
- 				color: $gray;
- 				opacity: 0.5;
- 			}
- 		}
  	}	
+
 }
 
 @include media(mobile) {
@@ -211,7 +224,7 @@ footer {
 		left: auto;
 		transform: none;
 		h2{
-			margin: 45px;
+			margin-bottom: 25px;
 			font-size: 20px;
 		}
 	}
@@ -223,8 +236,7 @@ footer {
 	fieldset {
 		input[type="text"] {
 		    width: 90%;
-		    margin: 0 auto;
-		    padding-bottom: 30px;
+		    margin: 20px auto;
 		}
 		select{
 			padding-bottom: 10px;

@@ -1,3 +1,4 @@
+<?php $thisPage="inquiries"; ?>
 <?php 
 	include('src/includes/head.php'); 
 ?>
@@ -5,12 +6,15 @@
 		<a href="/" class="close">X</a>
 		<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
 		<h1 class="logo">TARAPOTO RESORT</h1>
-		<section class="form-copy">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh. Ut laoreet urna est, sed elementum ex tincidunt sit amet.</p>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh. Ut laoreet urna est, sed elementum ex tincidunt sit amet.
+			</p>
 
-			<p>Donec pretium vel erat porttitor tincidunt. In fermentum rhoncus leo, at aliquam nulla aliquet vitae. In hac habitasse platea dictumst. Donec aliquam leo semper, venenatis nisl nec, eleifend libero.</p>
+			<p>Donec pretium vel erat porttitor tincidunt. In fermentum rhoncus leo, at aliquam nulla aliquet vitae. In hac habitasse platea dictumst. Donec aliquam leo semper, venenatis nisl nec, eleifend libero.
+			</p>
 
-			 <p>Nulla pulvinar leo ante, at pulvinar justo faucibus a. Curabitur non pellentesque mauris, a malesuada enim. Integer in ipsum mi. Mauris facilisis sit amet elit quis lacinia. Integer et fringilla velit. Aliquam molestie vehicula purus non viverra. Suspendisse sollicitudin tristique orci auctor auctor.</p>
+			 <p>Nulla pulvinar leo ante, at pulvinar justo faucibus a. Curabitur non pellentesque mauris, a malesuada enim. Integer in ipsum mi. Mauris facilisis sit amet elit quis lacinia. Integer et fringilla velit. Aliquam molestie vehicula purus non viverra. Suspendisse sollicitudin tristique orci auctor auctor.
+			 </p>
 
 			<p>Integer sed enim augue.</p>
 
@@ -303,7 +307,7 @@
 				<p>Donec pretium vel erat porttitor tincidunt. In fermentum rhoncus leo, at aliquam nulla aliquet vitae. In hac habitasse platea dictumst. Donec aliquam leo semper, venenatis nisl nec, eleifend libero.</p>
 			</div>
 		</section>
-<footer class="relative-footer">		
+<footer>		
 <?php 
 	include('src/includes/footer.php'); 
 ?>

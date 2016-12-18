@@ -1,3 +1,4 @@
+<?php $thisPage="location"; ?>
 <?php 
 	include('src/includes/head.php'); 
 ?>
