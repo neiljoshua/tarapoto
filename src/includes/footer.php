@@ -1,8 +1,4 @@
-			<ul>
-				<li<?php if ($thisPage=="location") echo " id=\"currentpage\""; ?>><a href="location">LOCATION</a></li>
-				<li<?php if ($thisPage=="history") echo " id=\"currentpage\""; ?>><a href="history">HISTORY</a></li>
-				<li<?php if ($thisPage=="inquiries") echo " id=\"currentpage\""; ?>><a href="inquiries">INQUIRIES</a></li>
-			</ul>
+			
 		</footer>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

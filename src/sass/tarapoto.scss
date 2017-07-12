@@ -1,10 +1,11 @@
 @import 'reset';
+@import 'fonts';
 @import 'variables';
 @import 'form';
 @import "mixin";
 @import "hamburger";
 
-@include keyframes(show-elemet){
+@include keyframes(show-elemet) {
  	0%{opacity: 0;}
  	100%{ opacity: 1;}
 }
@@ -17,7 +18,6 @@ body {
 	min-height: 100%;
 	position: relative;
 	width: 100%;
-	font-family: $oxygen;
 	background-color: $green;
 	color: $white;
 	text-align: center;
@@ -26,37 +26,62 @@ body {
 	&.home {
 		background: url('/src/images/resort.jpg') center center no-repeat;
 		background-size: cover;
+		overflow: hidden;
 	}
-	&.map {
-		background: url('/src/images/map.jpg') center center no-repeat;
+	&.location {
+		background: url('/src/images/map2.jpg') center center no-repeat;
 		background-size: cover;
+		overflow: hidden;
 	}
 }
 
-h1{
+.page-title {
+	@include animation('show-elemet 1.5s ease');
+	padding: 60px 0;
 	font-size: 66px;
-	font-weight: 300;
 	letter-spacing: 3px;
+	font-family: "Muli-ExtraLight";
 }
 
-h2 {
-	font-size: 46px;
-	font-weight: 300;
-	margin-bottom: 50px;
+.item {
+	margin: 40px auto;
+	overflow: hidden;
+	&__title {
+		@include animation('show-elemet 1.5s ease');
+		font-family: "Muli-Light";
+		font-size: 46px;
+		font-weight: 300;
+		margin-bottom: 50px;
+	}
+	&__copy {
+		@include animation('show-elemet 1.5s ease');
+		font-family: "Quicksand-Light";
+		font-size: 20px;
+		max-width: 720px;
+		@include media-min-width(table) {
+			margin: 20px auto;
+		}
+	    text-align: center;
+	    line-height: 1.5;
+	    letter-spacing: 2px;
+	}
 }
 
-p {
-  max-width: 720px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
+.legal {
+	overflow: hidden;
+	margin-bottom: 40px;
+	padding-bottom:60px;
+	&__copy {
+	  font-family: "Quicksand-Light";
+	  font-size: 20px;
+	  max-width: 720px;
+	  text-align: center;
+	  line-height: 1.5;
+	  margin-bottom: 10px;
+	  letter-spacing: 2px;
+	}
 }
 
-a {
-	text-decoration: none;
-}
 
 .center {
 	margin: 0;
@@ -89,50 +114,56 @@ a {
 	font-size: 30px;
 }
 
-section {
-	margin: 40px auto;
-	overflow: hidden;
-}
-
-section, h1 {
-	@include animation('show-elemet 3.5s ease');
-}
-
-.legal {
-	overflow: hidden;
-	margin-bottom: 40px;
-	padding-bottom:60px;
-}
-
-footer {
-	position: absolute;
+.menu {
 	width: 100%;
 	margin-top: 20px;
 	bottom: 0;
 
-	ul {
-		@include animation('show-elemet 2.5s ease');
-		width: 698px;
+	&__list {
+		width: 780px;
+		display: block;
 		margin: 0 auto;
-		li {
-			display: block;
-			float: left;
-			margin-right: 200px;
-			padding-bottom: 25px;
-			&:last-child {
-				margin-right: 0;
-			}
-		 	a {
-		 		display: block;
-		 		letter-spacing: 2px;
-		 		color: $white;
-		 		&:hover {
-		 			color: $gray;
-		 		}	
-	 		}
-	 	}	
- 	}
+	}	
+	&__item {
+		display: block;
+		float: left;
+		text-align: center;
+		width: 33%;
+		margin: 30px auto;
+		&:last-child {
+			margin-right: 0;
+		}
+	}	
+	&__link {
+ 		font-family: "Quicksand";
+ 		letter-spacing: 1px;
+		font-size: 22px;
+ 		color: $white;
+ 		margin-bottom: 30px;
+ 		@include animation('show-elemet 2.5s ease');
+ 		&:hover {
+ 			border-bottom: 2px solid  $white;
+ 			margin-bottom: 26px;
+ 			padding-bottom: 2px;
+ 		}
+ 	}		
 }
+
+.home, 
+.history,
+.location {
+	.menu{
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+.home {
+	.page-title {
+		font-size: 70px;
+	}
+}
+
 
 @include media(tablet) {
 
