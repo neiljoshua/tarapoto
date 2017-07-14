@@ -6,30 +6,29 @@
 @import "hamburger";
 
 @include keyframes(show-elemet) {
- 	0%{opacity: 0;}
- 	100%{ opacity: 1;}
-}
+    0%{opacity: 0;}
+    100%{ opacity: 1;}
+} 
 
 html {
 	height: 100%;
 }
 
 body {
-	min-height: 100%;
 	position: relative;
+	min-height: 100%;
 	width: 100%;
 	background-color: $green;
 	color: $white;
 	text-align: center;
-	
-	
 	&.home {
+		position: fixed;
 		background: url('/src/images/resort.jpg') center center no-repeat;
 		background-size: cover;
 		overflow: hidden;
 	}
 	&.location {
-		background: url('/src/images/map2.jpg') center center no-repeat;
+		background: url('/src/images/tarapoto1.jpg') center center no-repeat;
 		background-size: cover;
 		overflow: hidden;
 	}
@@ -37,10 +36,17 @@ body {
 
 .page-title {
 	@include animation('show-elemet 1.5s ease');
-	padding: 60px 0;
-	font-size: 66px;
+	padding: 90px 0 30px;
+	font-size: 30px;
 	letter-spacing: 3px;
-	font-family: "Muli-ExtraLight";
+	font-family: "Muli-Light";
+	@include media-min-width(mobile) {
+		padding: 90px 0 60px;
+	}
+	@include media-min-width(tablet) {
+		font-family: "Muli-ExtraLight";
+		font-size: 65px;
+	}
 }
 
 .item {
@@ -49,16 +55,20 @@ body {
 	&__title {
 		@include animation('show-elemet 1.5s ease');
 		font-family: "Muli-Light";
-		font-size: 46px;
+		font-size: 35px;
 		font-weight: 300;
 		margin-bottom: 50px;
+		@include media-min-width(tablet) {
+			font-size: 45px;
+		}
 	}
 	&__copy {
 		@include animation('show-elemet 1.5s ease');
 		font-family: "Quicksand-Light";
 		font-size: 20px;
-		max-width: 720px;
-		@include media-min-width(table) {
+		padding: 0 20px 40px;
+		@include media-min-width(tablet) {
+			max-width: 720px;
 			margin: 20px auto;
 		}
 	    text-align: center;
@@ -77,15 +87,13 @@ body {
 	  max-width: 720px;
 	  text-align: center;
 	  line-height: 1.5;
-	  margin-bottom: 10px;
+	  padding: 0 20px;
 	  letter-spacing: 2px;
 	}
 }
 
 
 .center {
-	margin: 0;
-	padding:0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -95,14 +103,14 @@ body {
 .close {
 	position: fixed;
 	display:block;
+	width: 25px;
+    height: 25px;
 	font-size: 30px;
+	line-height: 25px;
 	font-weight: 300;
 	padding: 10px;
 	color: $gray;
 	background-color: $white;
-	opacity: 0.8;
-	width: 30px;
-    height: 30px;
 }
 
 .logo {
@@ -115,66 +123,125 @@ body {
 }
 
 .menu {
-	width: 100%;
-	margin-top: 20px;
-	bottom: 0;
-
+	@include media-max-width(tablet) {
+		visibility: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 0;
+		bottom:0;
+		right: 0;
+		overflow: hidden;
+		transition: all .6s ease-in;
+		background: white;
+		&.active {
+			visibility: visible;
+			height: 100%;
+			transition: height .6s ease-in;
+		}
+	}
+	@include media-min-width(tablet) {
+		width: 100%;
+		margin-top: 20px;
+		bottom: 0;
+	}
 	&__list {
-		width: 780px;
-		display: block;
-		margin: 0 auto;
+		@include media-max-width(tablet) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			background-color: white;
+		}
+		@include media-min-width(tablet) {
+			width: 780px;
+			display: block;
+			margin: 0 auto;
+		}
 	}	
 	&__item {
 		display: block;
-		float: left;
 		text-align: center;
-		width: 33%;
-		margin: 30px auto;
-		&:last-child {
-			margin-right: 0;
+		margin: 50px auto;
+		@include media-min-width(tablet) {
+			float: left;
+			width: 33%;
+			margin: 30px auto;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
+		
 	}	
 	&__link {
- 		font-family: "Quicksand";
- 		letter-spacing: 1px;
-		font-size: 22px;
- 		color: $white;
- 		margin-bottom: 30px;
  		@include animation('show-elemet 2.5s ease');
+ 		font-family: "Quicksand";
+ 		color: $gray;
+		font-size: 35px;
+ 		letter-spacing: 1px;
  		&:hover {
- 			border-bottom: 2px solid  $white;
- 			margin-bottom: 26px;
- 			padding-bottom: 2px;
+ 			color: $black;
+ 		}
+ 		@include media-min-width(tablet) {
+ 			font-size: 22px;
+ 			color: $white;
+ 			margin-bottom: 30px;
+ 			&:hover {
+ 				color: $white;
+	 			border-bottom: 2px solid  $white;
+	 			margin-bottom: 26px;
+	 			padding-bottom: 2px;
+	 		}
  		}
  	}		
+}
+
+#currentpage {
+	.menu__link{
+		color: $green;
+		font-style: bold;
+		@include media-min-width(tablet) {
+			color: $white;
+	 		border-bottom: 2px solid  $white;
+		}
+	}
 }
 
 .home, 
 .history,
 .location {
 	.menu{
-		position: absolute;
-		bottom: 0;
+		@include media-min-width(tablet) {
+			position: absolute;
+			bottom: 0;
+		}
 	}
 }
 
 .home {
 	.page-title {
-		font-size: 70px;
+		font-family: "Muli-ExtraLight";
+		font-size: 55px;
+		@include media-min-width(mobile) {
+			font-size: 70px;
+		}
+		width: 100%;
+		padding: 0;
 	}
+}
+
+.location {
+	@include media-min-width(tablet) {
+		.menu {
+			background-color: $green;
+		}
+	}
+
 }
 
 
 @include media(tablet) {
 
-	body {
-		height: 100%;
-	}
-
-	p {
-	 	padding-right:35px;
-	 	padding-left: 35px;
-	}
 
 	fieldset {
 		*:first-child {
@@ -186,10 +253,6 @@ body {
 		width: 250px;
 	}
 
-	.center {
-		width: 90%;
-	}
-
 	.c-hamburger {
     	right: 0;
 		display: block;
@@ -197,72 +260,13 @@ body {
 		z-index: 10;
 	}
 
-	footer {
-		visibility: hidden;
-		position: fixed;
-		background: white;
-		margin: 0;
-		height: 0;
-		top: 0;
-		bottom:0;
-		right: 0;
-		left: 0;
-		opacity: 0;
-		overflow: hidden;
-		transition: all .6s ease-in;
-
-		&.active {
-			visibility: visible;
-			height: 100%;
-			opacity: 1;
-			transition: all .6s ease-in;
-			
-		}
-		ul{
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 100%;
-			background-color: white;
-			li{
-				float: none;
-				margin: 0;
-				padding-top:25px;
-				background-color: $white;
-				a {
-		 			color: $black;
-		 			&:hover {
-		 				color: $gray;
-		 				opacity: 0.5;
-		 			}
-	 			}
-	 		}
-		}
- 	}	
+	
 
 }
 
 @include media(mobile) {
 
 
-	.logo {
-		font-size: 20px;
-	}
-
-	.center.mobile {
-		position: relative;
-		top:auto;
-		left: auto;
-		transform: none;
-		h2{
-			margin-bottom: 25px;
-			font-size: 20px;
-		}
-	}
-
-	p {
-		font-size: 16px;
-	}
 
 	fieldset {
 		input[type="text"] {

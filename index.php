@@ -1,6 +1,6 @@
 <?php $thisPage="index-page"; ?>
 <?php 
-	include('src/includes/head.php'); 
+	include('src/includes/header.php'); 
 ?>
 <body class="home">
 
@@ -10,7 +10,6 @@
 <?php 
 	include('src/includes/menu.php');
 ?>
-<footer>
 <?php 
 	include('src/includes/footer.php'); 
 ?>

@@ -1,6 +1,6 @@
 <?php $thisPage="inquiries"; ?>
 <?php 
-	include('src/includes/head.php'); 
+	include('src/includes/header.php'); 
 ?>
 	<body class="inquiries">
 		<a href="/" class="close">X</a>
@@ -310,7 +310,6 @@
 <?php 
 	include('src/includes/menu.php');
 ?>		
-<footer>		
 <?php 
 	include('src/includes/footer.php'); 
 ?>
