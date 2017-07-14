@@ -332,7 +332,7 @@ body {
 /* line 24, ../sass/tarapoto.scss */
 body.home {
   position: fixed;
-  background: url("/src/images/resort.jpg") center center no-repeat;
+  background: url("/src/images/tresorts.jpg") center center no-repeat;
   background-size: cover;
   overflow: hidden;
 }
