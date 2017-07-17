@@ -3,18 +3,15 @@
 	include('src/includes/header.php'); 
 ?>
 	<body class="inquiries">
-		<a href="/" class="close">X</a>
+		<!-- <a href="/" class="close">X</a> -->
+		<a href="/">
+			<img class="logo" src="src/images/logo.png" alt="Tarapoto logo">
+		</a>
 		<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
 		<h1 class="page-title">TARAPOTO RESORT</h1>
 		<section class="item">
-			<p class="item__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh. Ut laoreet urna est, sed elementum ex tincidunt sit amet.
+			<p class="item__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh. 
 			</p>
-
-			<p class="item__copy">Donec pretium vel erat porttitor tincidunt. In fermentum rhoncus leo, at aliquam nulla aliquet vitae. In hac habitasse platea dictumst. Donec aliquam leo semper, venenatis nisl nec, eleifend libero.
-			</p>
-
-			 <p class="item__copy">Nulla pulvinar leo ante, at pulvinar justo faucibus a. Curabitur non pellentesque mauris, a malesuada enim. Integer in ipsum mi. Mauris facilisis sit amet elit quis lacinia. Integer et fringilla velit. Aliquam molestie vehicula purus non viverra. Suspendisse sollicitudin tristique orci auctor auctor.
-			 </p>
 
 			<p class="item__copy">Integer sed enim augue.</p>
 

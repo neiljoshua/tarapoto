@@ -50,7 +50,10 @@ body {
 }
 
 .item {
-	margin: 40px auto;
+	margin: 20px auto;
+	@include media-min-width(mobile) {
+		margin: 40px auto;
+	}
 	overflow: hidden;
 	&__title {
 		@include animation('show-elemet 1.5s ease');
@@ -100,26 +103,15 @@ body {
 	transform: translateY(-50%) translateX(-50%);
 }
 
-.close {
+.logo {
 	position: fixed;
 	display:block;
-	width: 25px;
-    height: 25px;
-	font-size: 30px;
-	line-height: 25px;
-	font-weight: 300;
-	padding: 10px;
-	color: $gray;
-	background-color: $white;
-}
-
-.logo {
-	max-width: 400px;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	padding-top: 50px;
-	font-size: 30px;
+	margin: 8px 10px;
+	width: 30px;
+	z-index: 30;
+	@include media-min-width(desktop) {
+		width: 50px;
+	}
 }
 
 .menu {
@@ -132,12 +124,12 @@ body {
 		bottom:0;
 		right: 0;
 		overflow: hidden;
-		transition: all .6s ease-in;
+		transition: all .5s ease-in;
 		background: white;
 		&.active {
 			visibility: visible;
 			height: 100%;
-			transition: height .6s ease-in;
+			transition: height .5s ease-in;
 		}
 	}
 	@include media-min-width(tablet) {

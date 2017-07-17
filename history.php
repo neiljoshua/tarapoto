@@ -3,7 +3,9 @@
 	include('src/includes/header.php'); 
 ?>
 <body class="history">
-	<a href="/" class="close">X</a>
+	<a href="/">
+		<img class="logo" src="src/images/logo.png" alt="Tarapoto logo">
+	</a>
 	<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
 	<!-- <img class="logo" src="/images/logo.png"> -->
 	<h1 class="page-title">TARAPOTO RESORT</h1>

@@ -371,10 +371,16 @@ body.location {
 
 /* line 52, ../sass/tarapoto.scss */
 .item {
-  margin: 40px auto;
+  margin: 20px auto;
   overflow: hidden;
 }
-/* line 55, ../sass/tarapoto.scss */
+@media (min-width: 601px) {
+  /* line 52, ../sass/tarapoto.scss */
+  .item {
+    margin: 40px auto;
+  }
+}
+/* line 58, ../sass/tarapoto.scss */
 .item__title {
   -webkit-animation: show-elemet 1.5s ease;
   -moz-animation: show-elemet 1.5s ease;
@@ -387,12 +393,12 @@ body.location {
   margin-bottom: 50px;
 }
 @media (min-width: 769px) {
-  /* line 55, ../sass/tarapoto.scss */
+  /* line 58, ../sass/tarapoto.scss */
   .item__title {
     font-size: 45px;
   }
 }
-/* line 65, ../sass/tarapoto.scss */
+/* line 68, ../sass/tarapoto.scss */
 .item__copy {
   -webkit-animation: show-elemet 1.5s ease;
   -moz-animation: show-elemet 1.5s ease;
@@ -407,20 +413,20 @@ body.location {
   letter-spacing: 2px;
 }
 @media (min-width: 769px) {
-  /* line 65, ../sass/tarapoto.scss */
+  /* line 68, ../sass/tarapoto.scss */
   .item__copy {
     max-width: 720px;
     margin: 20px auto;
   }
 }
 
-/* line 80, ../sass/tarapoto.scss */
+/* line 83, ../sass/tarapoto.scss */
 .legal {
   overflow: hidden;
   margin-bottom: 40px;
   padding-bottom: 60px;
 }
-/* line 84, ../sass/tarapoto.scss */
+/* line 87, ../sass/tarapoto.scss */
 .legal__copy {
   font-family: "Quicksand-Light";
   font-size: 20px;
@@ -431,7 +437,7 @@ body.location {
   letter-spacing: 2px;
 }
 
-/* line 96, ../sass/tarapoto.scss */
+/* line 99, ../sass/tarapoto.scss */
 .center {
   position: absolute;
   top: 50%;
@@ -439,32 +445,23 @@ body.location {
   transform: translateY(-50%) translateX(-50%);
 }
 
-/* line 103, ../sass/tarapoto.scss */
-.close {
+/* line 106, ../sass/tarapoto.scss */
+.logo {
   position: fixed;
   display: block;
-  width: 25px;
-  height: 25px;
-  font-size: 30px;
-  line-height: 25px;
-  font-weight: 300;
-  padding: 10px;
-  color: #595959;
-  background-color: #fff;
+  margin: 8px 10px;
+  width: 30px;
+  z-index: 30;
 }
-
-/* line 116, ../sass/tarapoto.scss */
-.logo {
-  max-width: 400px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  padding-top: 50px;
-  font-size: 30px;
+@media (min-width: 981px) {
+  /* line 106, ../sass/tarapoto.scss */
+  .logo {
+    width: 50px;
+  }
 }
 
 @media (max-width: 768px) {
-  /* line 125, ../sass/tarapoto.scss */
+  /* line 117, ../sass/tarapoto.scss */
   .menu {
     visibility: hidden;
     position: fixed;
@@ -474,18 +471,18 @@ body.location {
     bottom: 0;
     right: 0;
     overflow: hidden;
-    transition: all .6s ease-in;
+    transition: all .5s ease-in;
     background: white;
   }
-  /* line 137, ../sass/tarapoto.scss */
+  /* line 129, ../sass/tarapoto.scss */
   .menu.active {
     visibility: visible;
     height: 100%;
-    transition: height .6s ease-in;
+    transition: height .5s ease-in;
   }
 }
 @media (min-width: 769px) {
-  /* line 125, ../sass/tarapoto.scss */
+  /* line 117, ../sass/tarapoto.scss */
   .menu {
     width: 100%;
     margin-top: 20px;
@@ -493,7 +490,7 @@ body.location {
   }
 }
 @media (max-width: 768px) {
-  /* line 148, ../sass/tarapoto.scss */
+  /* line 140, ../sass/tarapoto.scss */
   .menu__list {
     position: absolute;
     top: 50%;
@@ -503,32 +500,32 @@ body.location {
   }
 }
 @media (min-width: 769px) {
-  /* line 148, ../sass/tarapoto.scss */
+  /* line 140, ../sass/tarapoto.scss */
   .menu__list {
     width: 780px;
     display: block;
     margin: 0 auto;
   }
 }
-/* line 162, ../sass/tarapoto.scss */
+/* line 154, ../sass/tarapoto.scss */
 .menu__item {
   display: block;
   text-align: center;
   margin: 50px auto;
 }
 @media (min-width: 769px) {
-  /* line 162, ../sass/tarapoto.scss */
+  /* line 154, ../sass/tarapoto.scss */
   .menu__item {
     float: left;
     width: 33%;
     margin: 30px auto;
   }
-  /* line 170, ../sass/tarapoto.scss */
+  /* line 162, ../sass/tarapoto.scss */
   .menu__item:last-child {
     margin-right: 0;
   }
 }
-/* line 176, ../sass/tarapoto.scss */
+/* line 168, ../sass/tarapoto.scss */
 .menu__link {
   -webkit-animation: show-elemet 2.5s ease;
   -moz-animation: show-elemet 2.5s ease;
@@ -540,18 +537,18 @@ body.location {
   font-size: 35px;
   letter-spacing: 1px;
 }
-/* line 182, ../sass/tarapoto.scss */
+/* line 174, ../sass/tarapoto.scss */
 .menu__link:hover {
   color: #000;
 }
 @media (min-width: 769px) {
-  /* line 176, ../sass/tarapoto.scss */
+  /* line 168, ../sass/tarapoto.scss */
   .menu__link {
     font-size: 22px;
     color: #fff;
     margin-bottom: 30px;
   }
-  /* line 189, ../sass/tarapoto.scss */
+  /* line 181, ../sass/tarapoto.scss */
   .menu__link:hover {
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -560,13 +557,13 @@ body.location {
   }
 }
 
-/* line 200, ../sass/tarapoto.scss */
+/* line 192, ../sass/tarapoto.scss */
 #currentpage .menu__link {
   color: #74AFAD;
   font-style: bold;
 }
 @media (min-width: 769px) {
-  /* line 200, ../sass/tarapoto.scss */
+  /* line 192, ../sass/tarapoto.scss */
   #currentpage .menu__link {
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -574,7 +571,7 @@ body.location {
 }
 
 @media (min-width: 769px) {
-  /* line 213, ../sass/tarapoto.scss */
+  /* line 205, ../sass/tarapoto.scss */
   .home .menu,
   .history .menu,
   .location .menu {
@@ -583,7 +580,7 @@ body.location {
   }
 }
 
-/* line 222, ../sass/tarapoto.scss */
+/* line 214, ../sass/tarapoto.scss */
 .home .page-title {
   font-family: "Muli-ExtraLight";
   font-size: 55px;
@@ -591,31 +588,31 @@ body.location {
   padding: 0;
 }
 @media (min-width: 601px) {
-  /* line 222, ../sass/tarapoto.scss */
+  /* line 214, ../sass/tarapoto.scss */
   .home .page-title {
     font-size: 70px;
   }
 }
 
 @media (min-width: 769px) {
-  /* line 235, ../sass/tarapoto.scss */
+  /* line 227, ../sass/tarapoto.scss */
   .location .menu {
     background-color: #74AFAD;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 247, ../sass/tarapoto.scss */
+  /* line 239, ../sass/tarapoto.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 
-  /* line 252, ../sass/tarapoto.scss */
+  /* line 244, ../sass/tarapoto.scss */
   input[type="text"], select {
     width: 250px;
   }
 
-  /* line 256, ../sass/tarapoto.scss */
+  /* line 248, ../sass/tarapoto.scss */
   .c-hamburger {
     right: 0;
     display: block;
@@ -628,18 +625,18 @@ body.location {
   }
 }
 @media (max-width: 600px) {
-  /* line 272, ../sass/tarapoto.scss */
+  /* line 264, ../sass/tarapoto.scss */
   fieldset input[type="text"] {
     width: 90%;
     margin: 20px auto;
   }
-  /* line 276, ../sass/tarapoto.scss */
+  /* line 268, ../sass/tarapoto.scss */
   fieldset select {
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* line 278, ../sass/tarapoto.scss */
+  /* line 270, ../sass/tarapoto.scss */
   fieldset select:first-child {
     margin-right: 0;
   }
