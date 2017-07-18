@@ -332,7 +332,7 @@ body {
 /* line 24, ../sass/tarapoto.scss */
 body.home {
   position: fixed;
-  background: url("/src/images/tresorts.jpg") center center no-repeat;
+  background: url("/src/images/darkresort.jpg") center center no-repeat;
   background-size: cover;
   overflow: hidden;
 }
@@ -582,6 +582,9 @@ body.location {
 
 /* line 214, ../sass/tarapoto.scss */
 .home .page-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: "Muli-ExtraLight";
   font-size: 55px;
   width: 100%;
@@ -590,29 +593,29 @@ body.location {
 @media (min-width: 601px) {
   /* line 214, ../sass/tarapoto.scss */
   .home .page-title {
-    font-size: 70px;
+    font-size: 85px;
   }
 }
 
 @media (min-width: 769px) {
-  /* line 227, ../sass/tarapoto.scss */
+  /* line 230, ../sass/tarapoto.scss */
   .location .menu {
     background-color: #74AFAD;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 239, ../sass/tarapoto.scss */
+  /* line 242, ../sass/tarapoto.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 
-  /* line 244, ../sass/tarapoto.scss */
+  /* line 247, ../sass/tarapoto.scss */
   input[type="text"], select {
     width: 250px;
   }
 
-  /* line 248, ../sass/tarapoto.scss */
+  /* line 251, ../sass/tarapoto.scss */
   .c-hamburger {
     right: 0;
     display: block;
@@ -625,18 +628,18 @@ body.location {
   }
 }
 @media (max-width: 600px) {
-  /* line 264, ../sass/tarapoto.scss */
+  /* line 267, ../sass/tarapoto.scss */
   fieldset input[type="text"] {
     width: 90%;
     margin: 20px auto;
   }
-  /* line 268, ../sass/tarapoto.scss */
+  /* line 271, ../sass/tarapoto.scss */
   fieldset select {
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* line 270, ../sass/tarapoto.scss */
+  /* line 273, ../sass/tarapoto.scss */
   fieldset select:first-child {
     margin-right: 0;
   }
