@@ -53,6 +53,7 @@
     color: #fff;
     text-shadow: none;
 	}
+
 	&.dk-open {
 		color: $green;
 		background-color: $white;
@@ -61,7 +62,6 @@
 	    color: #fff;
 	    text-shadow: none;
 		}
-
 	}
 
 	/* Options Menu */
@@ -72,7 +72,7 @@
 	    color: #fff;
 	    text-shadow: none;
 			&:hover {
-				 background-color: #E15A01;
+				background-color: #E15A01;
 	      color: #fff;
 	      text-shadow: #604A42 0 1px 0;
 			}
@@ -81,11 +81,9 @@
 
 	.dk-option-current {
 		a{
-			 background-color: #E15A01;
+			background-color: #E15A01;
       color: #fff;
       text-shadow: #604A42 0 1px 0;
-			// color: $green;
-			// background-color: $white;
 		}
 	}
 
