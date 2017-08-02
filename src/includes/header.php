@@ -5,7 +5,9 @@
 		<title>Tarapoto Resort</title>
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" type="text/css" href="src/css/tarapoto.css">
+		<link rel="stylesheet" type="text/css" href="src/css/plugins/dropkick.css">
 		<script src="src/js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="src/js/vendor/dropkick.2.1.9.min.js"></script>
 		<script src="src/js/tarapoto.js"></script>
 	</head>
 	

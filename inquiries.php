@@ -1,6 +1,6 @@
 <?php $thisPage="inquiries"; ?>
-<?php 
-	include('src/includes/header.php'); 
+<?php
+	include('src/includes/header.php');
 ?>
 	<body class="inquiries">
 		<!-- <a href="/" class="close">X</a> -->
@@ -10,7 +10,7 @@
 		<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
 		<h1 class="page-title">TARAPOTO RESORT</h1>
 		<section class="item">
-			<p class="item__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh. 
+			<p class="item__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh.
 			</p>
 
 			<p class="item__copy">Integer sed enim augue.</p>
@@ -29,8 +29,8 @@
 				</fieldset>
 				<fieldset>
 					<input type="text" name="address" placeholder="Address">
-					<select name="country">
-						<option default>Country*</option>
+					<select name="country" class="default" tabindex="1">
+						<option default>Country</option>
 			            <option value="Afganistan">Afghanistan</option>
 			            <option value="Albania">Albania</option>
 			            <option value="Algeria">Algeria</option>
@@ -281,14 +281,14 @@
 					</select>
 				</fieldset>
 				<fieldset>
-					<select name="room-type">
+					<select name="room-type" class="default" tabindex="1">
 						<option value="Default">Room type</option>
 						<option value="Standard">Standard</option>
 						<option value="Deluxe">Deluxe</option>
 						<option value="Suite">Suite</option>
 						<option value="Penthouse">Penthouse</option>
 					</select>
-					<select name="guests">
+					<select name="guests" class="default" tabindex="1">
 						<option value="default">Number of Guests</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -304,9 +304,9 @@
 				<p class="legal__copy">Donec pretium vel erat porttitor tincidunt. In fermentum rhoncus leo, at aliquam nulla aliquet vitae. In hac habitasse platea dictumst. Donec aliquam leo semper, venenatis nisl nec, eleifend libero.</p>
 			</div>
 		</section>
-<?php 
+<?php
 	include('src/includes/menu.php');
-?>		
-<?php 
-	include('src/includes/footer.php'); 
+?>
+<?php
+	include('src/includes/footer.php');
 ?>

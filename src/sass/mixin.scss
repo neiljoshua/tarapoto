@@ -1,21 +1,21 @@
 // animation
 
 @mixin keyframes($animation-name) {
-    @-webkit-keyframes #{$animation-name} {
-        @content;
-    }
-    @-moz-keyframes #{$animation-name} {
-        @content;
-    }  
-    @-ms-keyframes #{$animation-name} {
-        @content;
-    }
-    @-o-keyframes #{$animation-name} {
-        @content;
-    }  
-    @keyframes #{$animation-name} {
-        @content;
-    }
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
 }
 
 @mixin animation($str) {
@@ -23,36 +23,36 @@
   -moz-animation: #{$str};
   -ms-animation: #{$str};
   -o-animation: #{$str};
-  animation: #{$str};      
+  animation: #{$str};
 }
 
 // media queries
 @mixin media($type) {
-    @if $type == tablet {
-        @media (max-width: 768px)  { @content; }
-    }
-    @else if $type == mobile {
-        @media (max-width: 600px)  { @content; }
-    }
+  @if $type == tablet {
+    @media (max-width: 768px)  { @content; }
+  }
+  @else if $type == mobile {
+    @media (max-width: 600px)  { @content; }
+  }
 }
 
 // animation
 @mixin keyframes($animation-name) {
-    @-webkit-keyframes #{$animation-name} {
-        @content;
-    }
-    @-moz-keyframes #{$animation-name} {
-        @content;
-    }  
-    @-ms-keyframes #{$animation-name} {
-        @content;
-    }
-    @-o-keyframes #{$animation-name} {
-        @content;
-    }  
-    @keyframes #{$animation-name} {
-        @content;
-    }
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
 }
 
 @mixin animation($str) {
@@ -60,15 +60,15 @@
   -moz-animation: #{$str};
   -ms-animation: #{$str};
   -o-animation: #{$str};
-  animation: #{$str};      
+  animation: #{$str};
 }
 
-// CSS3 calc() function to perform calculations 
-@mixin calc($property, $expression) { 
-  #{$property}: -webkit-calc(#{$expression}); 
+// CSS3 calc() function to perform calculations
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
   #{$property}: -moz-calc(#{$expression});
-  #{$property}: calc(#{$expression}); 
-} 
+  #{$property}: calc(#{$expression});
+}
 
 /// Mixin to prefix a property
 /// @author Hugo Giraudel
@@ -79,7 +79,7 @@
   @each $prefix in $prefixes {
     #{'-' + $prefix + '-' + $property}: $value;
   }
- 
+
   // Output standard non-prefixed declaration
   #{$property}: $value;
 }
