@@ -1,14 +1,15 @@
 @import 'reset';
 @import 'fonts';
 @import 'variables';
-@import 'form';
 @import "mixin";
+@import 'form';
+@import "dktarapoto";
 @import "hamburger";
 
 @include keyframes(show-elemet) {
-    0%{opacity: 0;}
-    100%{ opacity: 1;}
-} 
+  0%{opacity: 0;}
+  100%{ opacity: 1;}
+}
 
 html {
 	height: 100%;
@@ -23,7 +24,6 @@ body {
 	text-align: center;
 	&.home {
 		background-color: $gray;
-		position: fixed;
 		overflow: hidden;
 	}
 	&.location {
@@ -43,13 +43,12 @@ body {
 	}
 }
 
-
 .page-title {
-	@include animation('show-elemet 1.5s ease');
 	padding: 90px 0 30px;
+	font-family: "Muli-Light";
 	font-size: 30px;
 	letter-spacing: 3px;
-	font-family: "Muli-Light";
+	@include animation('show-elemet 1.5s ease');
 	@include media-min-width(mobile) {
 		padding: 90px 0 60px;
 	}
@@ -61,25 +60,25 @@ body {
 
 .item {
 	margin: 20px auto;
+	overflow: hidden;
 	@include media-min-width(mobile) {
 		margin: 40px auto;
 	}
-	overflow: hidden;
 	&__title {
-		@include animation('show-elemet 1.5s ease');
+		margin-bottom: 50px;
 		font-family: "Muli-Light";
 		font-size: 35px;
 		font-weight: 300;
-		margin-bottom: 50px;
+		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
 			font-size: 45px;
 		}
 	}
 	&__copy {
-		@include animation('show-elemet 1.5s ease');
+		padding: 0 20px 40px;
 		font-family: "Quicksand-Light";
 		font-size: 20px;
-		padding: 0 20px 40px;
+		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
 			max-width: 720px;
 			margin: 20px auto;
@@ -105,7 +104,6 @@ body {
 	}
 }
 
-
 .center {
 	position: absolute;
 	top: 50%;
@@ -116,8 +114,8 @@ body {
 .logo {
 	position: fixed;
 	display:block;
-	margin: 8px 10px;
-	width: 30px;
+	margin: 10px;
+	width: 40px;
 	z-index: 30;
 	@include media-min-width(desktop) {
 		width: 50px;
@@ -160,7 +158,7 @@ body {
 			display: block;
 			margin: 0 auto;
 		}
-	}	
+	}
 	&__item {
 		display: block;
 		text-align: center;
@@ -173,8 +171,7 @@ body {
 				margin-right: 0;
 			}
 		}
-		
-	}	
+	}
 	&__link {
  		@include animation('show-elemet 2.5s ease');
  		font-family: "Quicksand";
@@ -195,11 +192,11 @@ body {
 	 			padding-bottom: 2px;
 	 		}
  		}
- 	}		
+ 	}
 }
 
 #currentpage {
-	.menu__link{
+	.menu__link {
 		color: $green;
 		font-style: bold;
 		@include media-min-width(tablet) {
@@ -209,10 +206,10 @@ body {
 	}
 }
 
-.home, 
+.home,
 .history,
 .location {
-	.menu{
+	.menu {
 		@include media-min-width(tablet) {
 			position: absolute;
 			bottom: 0;
@@ -224,13 +221,13 @@ body {
 	.page-title {
 		position: absolute;
 		top: 40%;
+		padding: 0;
+		width: 100%;
 		font-family: "Muli-ExtraLight";
 		font-size: 55px;
 		@include media-min-width(mobile) {
 			font-size: 85px;
 		}
-		width: 100%;
-		padding: 0;
 	}
 }
 
@@ -240,51 +237,22 @@ body {
 			background-color: $green;
 		}
 	}
-
 }
 
-@include media(tablet) {
+.dk-select *:first-child {
+	margin-right: 0;
+}
 
-
-	fieldset {
-		*:first-child {
-			margin-right: 20px;
-		}
-	}
-
-	input[type="text"], select {
+div.dk-select,
+div.dk-select-multi {
+	margin-top: 30px;
+	width: 	90%;
+	max-width: 320px;
+	font-family: "Quicksand-Light";
+	@include media-min-width(mobile) {
 		width: 250px;
 	}
-
-	.c-hamburger {
-    	right: 0;
-		display: block;
-		@include animation('show-elemet 2.5s ease');
-		z-index: 10;
+	@include media-min-width(tablet) {
+		width: 320px;
 	}
-
-	
-
 }
-
-@include media(mobile) {
-
-
-
-	fieldset {
-		input[type="text"] {
-		    width: 90%;
-		    margin: 20px auto;
-		}
-		select{
-			padding-bottom: 10px;
-			&:first-child {
-    			margin-right: 0;
-    		}
-			margin-top: 20px;
-    		margin-bottom: 20px;
-		}
-	}
-
-}
-

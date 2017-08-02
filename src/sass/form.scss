@@ -14,10 +14,17 @@ input[type="text"], select {
 }
 
 input[type="text"] {
-	border-bottom: 1px solid #fff;
-	width: 320px;
+	width: 90%;
+	max-width: 320px;
 	padding: 10px 0;
 	margin: 20px auto;
+	border-bottom: 1px solid #fff;
+	@include media-min-width(mobile) {
+		width: 250px;
+	}
+	@include media-min-width(tablet) {
+		width: 320px;
+	}
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -37,6 +44,7 @@ input[type="text"] {
 
 select {
 	width: 320px;
+	max-width: 320px;
 	background-color: $green;
 	border-color: $white;
 	padding: 10px 0;
@@ -45,7 +53,12 @@ select {
 
 fieldset {
 	*:first-child {
-		margin-right: 40px;
+		@include media-min-width(mobile) {
+			margin-right: 20px;
+		}
+		@include media-min-width(tablet) {
+			margin-right: 40px;
+		}
 	}
 }
 
@@ -58,10 +71,9 @@ button {
 	font-family: "Quicksand";
 	text-transform: uppercase;
 	font-size: 18px;
-
 	&:hover {
 		background-color: $white;
-		color: $blue;
+		color: $green;
 		transition: background-color 0.6s;
 	}
 }
