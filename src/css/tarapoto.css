@@ -242,61 +242,79 @@ button:hover {
 .dk-tarapoto .dk-selected,
 .dk-tarapoto .dk-select-multi {
   width: 320px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 320px;
+  font-family: "Quicksand-Light";
 }
-/* line 15, ../sass/dktarapoto.scss */
+@media (min-width: 601px) {
+  /* line 10, ../sass/dktarapoto.scss */
+  .dk-tarapoto .dk-selected,
+  .dk-tarapoto .dk-select-multi {
+    width: 250px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 10, ../sass/dktarapoto.scss */
+  .dk-tarapoto .dk-selected,
+  .dk-tarapoto .dk-select-multi {
+    width: 320px;
+  }
+}
+/* line 25, ../sass/dktarapoto.scss */
 .dk-tarapoto .dk_selected {
   width: 320px;
   border-color: #74AFAD;
 }
-/* line 21, ../sass/dktarapoto.scss */
+/* line 31, ../sass/dktarapoto.scss */
 .dk-tarapoto .dk-container {
   width: 320px;
 }
-/* line 26, ../sass/dktarapoto.scss */
+/* line 36, ../sass/dktarapoto.scss */
 .dk-tarapoto a {
   width: 320px;
   color: #fff;
 }
-/* line 51, ../sass/dktarapoto.scss */
+/* line 61, ../sass/dktarapoto.scss */
 .dk-tarapoto .dk-open {
   background-color: transparent;
   color: #fff;
   text-shadow: none;
 }
-/* line 56, ../sass/dktarapoto.scss */
+/* line 67, ../sass/dktarapoto.scss */
 .dk-tarapoto.dk-open {
   color: #74AFAD;
   background-color: #fff;
 }
-/* line 59, ../sass/dktarapoto.scss */
+/* line 70, ../sass/dktarapoto.scss */
 .dk-tarapoto.dk-open .dk-toggle {
   background-color: transparent;
   color: #fff;
   text-shadow: none;
 }
-/* line 70, ../sass/dktarapoto.scss */
+/* line 80, ../sass/dktarapoto.scss */
 .dk-tarapoto .dk-options a {
   background-color: #333;
   color: #fff;
   text-shadow: none;
 }
-/* line 74, ../sass/dktarapoto.scss */
+/* line 84, ../sass/dktarapoto.scss */
 .dk-tarapoto .dk-options a:hover {
   background-color: #E15A01;
   color: #fff;
   text-shadow: #604A42 0 1px 0;
 }
-/* line 83, ../sass/dktarapoto.scss */
+/* line 93, ../sass/dktarapoto.scss */
 .dk-tarapoto .dk-option-current a {
   background-color: #E15A01;
   color: #fff;
   text-shadow: #604A42 0 1px 0;
 }
-/* line 98, ../sass/dktarapoto.scss */
+/* line 106, ../sass/dktarapoto.scss */
 .dk-tarapoto .dk-options-inner {
   width: 320px;
 }
-/* line 102, ../sass/dktarapoto.scss */
+/* line 110, ../sass/dktarapoto.scss */
 .dk-tarapoto.dk-touch .dk-options {
   width: 320px;
 }
