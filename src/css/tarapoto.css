@@ -183,28 +183,41 @@ input[type="text"] {
 
 /* line 45, ../sass/form.scss */
 select {
-  width: 320px;
-  max-width: 320px;
   background-color: #74AFAD;
   border-color: #fff;
   padding: 10px 0;
   margin-top: 15px;
+  margin-top: 30px;
+  width: 90%;
+  font-family: "Quicksand-Light";
+}
+@media (min-width: 601px) {
+  /* line 45, ../sass/form.scss */
+  select {
+    width: 250px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../sass/form.scss */
+  select {
+    width: 320px;
+  }
 }
 
 @media (min-width: 601px) {
-  /* line 55, ../sass/form.scss */
+  /* line 62, ../sass/form.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 }
 @media (min-width: 769px) {
-  /* line 55, ../sass/form.scss */
+  /* line 62, ../sass/form.scss */
   fieldset *:first-child {
     margin-right: 40px;
   }
 }
 
-/* line 65, ../sass/form.scss */
+/* line 72, ../sass/form.scss */
 button {
   margin: 40px auto;
   width: 200px;
@@ -215,108 +228,11 @@ button {
   text-transform: uppercase;
   font-size: 18px;
 }
-/* line 74, ../sass/form.scss */
+/* line 81, ../sass/form.scss */
 button:hover {
   background-color: #fff;
   color: #74AFAD;
   transition: background-color 0.6s;
-}
-
-/**
-* dk_tarapoto
-*
-* Aqua color dropdowns
-*
-**/
-/* line 8, ../sass/dktarapoto.scss */
-.dk-tarapoto {
-  /*container*/
-  /* Toggle */
-  /* Focus State */
-  /* Open State */
-  /* Options Menu */
-  /* Inner options */
-  /* Set a width property here */
-}
-/* line 10, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk-selected,
-.dk-tarapoto .dk-select-multi {
-  width: 320px;
-  margin-top: 30px;
-  width: 90%;
-  max-width: 320px;
-  font-family: "Quicksand-Light";
-}
-@media (min-width: 601px) {
-  /* line 10, ../sass/dktarapoto.scss */
-  .dk-tarapoto .dk-selected,
-  .dk-tarapoto .dk-select-multi {
-    width: 250px;
-  }
-}
-@media (min-width: 769px) {
-  /* line 10, ../sass/dktarapoto.scss */
-  .dk-tarapoto .dk-selected,
-  .dk-tarapoto .dk-select-multi {
-    width: 320px;
-  }
-}
-/* line 25, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk_selected {
-  width: 320px;
-  border-color: #74AFAD;
-}
-/* line 31, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk-container {
-  width: 320px;
-}
-/* line 36, ../sass/dktarapoto.scss */
-.dk-tarapoto a {
-  width: 320px;
-  color: #fff;
-}
-/* line 61, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk-open {
-  background-color: transparent;
-  color: #fff;
-  text-shadow: none;
-}
-/* line 67, ../sass/dktarapoto.scss */
-.dk-tarapoto.dk-open {
-  color: #74AFAD;
-  background-color: #fff;
-}
-/* line 70, ../sass/dktarapoto.scss */
-.dk-tarapoto.dk-open .dk-toggle {
-  background-color: transparent;
-  color: #fff;
-  text-shadow: none;
-}
-/* line 80, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk-options a {
-  background-color: #333;
-  color: #fff;
-  text-shadow: none;
-}
-/* line 84, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk-options a:hover {
-  background-color: #E15A01;
-  color: #fff;
-  text-shadow: #604A42 0 1px 0;
-}
-/* line 93, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk-option-current a {
-  background-color: #E15A01;
-  color: #fff;
-  text-shadow: #604A42 0 1px 0;
-}
-/* line 106, ../sass/dktarapoto.scss */
-.dk-tarapoto .dk-options-inner {
-  width: 320px;
-}
-/* line 110, ../sass/dktarapoto.scss */
-.dk-tarapoto.dk-touch .dk-options {
-  width: 320px;
 }
 
 /* line 1, ../sass/hamburger.scss */
@@ -359,8 +275,8 @@ button:hover {
   display: block;
   position: absolute;
   top: 24px;
-  left: 14px;
-  right: 14px;
+  left: 10px;
+  right: 10px;
   height: 2px;
   background: white;
 }
@@ -376,11 +292,11 @@ button:hover {
 }
 /* line 43, ../sass/hamburger.scss */
 .c-hamburger span::before {
-  top: -8px;
+  top: -10px;
 }
 /* line 46, ../sass/hamburger.scss */
 .c-hamburger span::after {
-  bottom: -8px;
+  bottom: -10px;
 }
 
 /* line 52, ../sass/hamburger.scss */
@@ -447,12 +363,12 @@ button:hover {
     opacity: 1;
   }
 }
-/* line 14, ../sass/tarapoto.scss */
+/* line 13, ../sass/tarapoto.scss */
 html {
   height: 100%;
 }
 
-/* line 18, ../sass/tarapoto.scss */
+/* line 17, ../sass/tarapoto.scss */
 body {
   position: relative;
   min-height: 100%;
@@ -461,18 +377,18 @@ body {
   color: #fff;
   text-align: center;
 }
-/* line 25, ../sass/tarapoto.scss */
+/* line 24, ../sass/tarapoto.scss */
 body.home {
   background-color: #595959;
   overflow: hidden;
 }
-/* line 29, ../sass/tarapoto.scss */
+/* line 28, ../sass/tarapoto.scss */
 body.location {
   background: url("/src/images/tarapoto1.jpg") center center no-repeat;
   background-size: cover;
   overflow: hidden;
 }
-/* line 34, ../sass/tarapoto.scss */
+/* line 33, ../sass/tarapoto.scss */
 body .home-hero {
   position: absolute;
   min-height: 100%;
@@ -484,7 +400,7 @@ body .home-hero {
   filter: sepia(50%);
 }
 
-/* line 46, ../sass/tarapoto.scss */
+/* line 45, ../sass/tarapoto.scss */
 .page-title {
   padding: 90px 0 30px;
   font-family: "Muli-Light";
@@ -497,31 +413,31 @@ body .home-hero {
   animation: show-elemet 1.5s ease;
 }
 @media (min-width: 601px) {
-  /* line 46, ../sass/tarapoto.scss */
+  /* line 45, ../sass/tarapoto.scss */
   .page-title {
     padding: 90px 0 60px;
   }
 }
 @media (min-width: 769px) {
-  /* line 46, ../sass/tarapoto.scss */
+  /* line 45, ../sass/tarapoto.scss */
   .page-title {
     font-family: "Muli-ExtraLight";
     font-size: 65px;
   }
 }
 
-/* line 61, ../sass/tarapoto.scss */
+/* line 60, ../sass/tarapoto.scss */
 .item {
   margin: 20px auto;
   overflow: hidden;
 }
 @media (min-width: 601px) {
-  /* line 61, ../sass/tarapoto.scss */
+  /* line 60, ../sass/tarapoto.scss */
   .item {
     margin: 40px auto;
   }
 }
-/* line 67, ../sass/tarapoto.scss */
+/* line 66, ../sass/tarapoto.scss */
 .item__title {
   margin-bottom: 50px;
   font-family: "Muli-Light";
@@ -534,12 +450,12 @@ body .home-hero {
   animation: show-elemet 1.5s ease;
 }
 @media (min-width: 769px) {
-  /* line 67, ../sass/tarapoto.scss */
+  /* line 66, ../sass/tarapoto.scss */
   .item__title {
     font-size: 45px;
   }
 }
-/* line 77, ../sass/tarapoto.scss */
+/* line 76, ../sass/tarapoto.scss */
 .item__copy {
   padding: 0 20px 40px;
   font-family: "Quicksand-Light";
@@ -554,20 +470,20 @@ body .home-hero {
   letter-spacing: 2px;
 }
 @media (min-width: 769px) {
-  /* line 77, ../sass/tarapoto.scss */
+  /* line 76, ../sass/tarapoto.scss */
   .item__copy {
     max-width: 720px;
     margin: 20px auto;
   }
 }
 
-/* line 92, ../sass/tarapoto.scss */
+/* line 91, ../sass/tarapoto.scss */
 .legal {
   overflow: hidden;
   margin-bottom: 40px;
   padding-bottom: 60px;
 }
-/* line 96, ../sass/tarapoto.scss */
+/* line 95, ../sass/tarapoto.scss */
 .legal__copy {
   font-family: "Quicksand-Light";
   font-size: 20px;
@@ -578,7 +494,7 @@ body .home-hero {
   letter-spacing: 2px;
 }
 
-/* line 107, ../sass/tarapoto.scss */
+/* line 106, ../sass/tarapoto.scss */
 .center {
   position: absolute;
   top: 50%;
@@ -586,23 +502,23 @@ body .home-hero {
   transform: translateY(-50%) translateX(-50%);
 }
 
-/* line 114, ../sass/tarapoto.scss */
+/* line 113, ../sass/tarapoto.scss */
 .logo {
   position: fixed;
   display: block;
-  margin: 10px;
+  margin: 5px;
   width: 40px;
   z-index: 30;
 }
 @media (min-width: 981px) {
-  /* line 114, ../sass/tarapoto.scss */
+  /* line 113, ../sass/tarapoto.scss */
   .logo {
     width: 50px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 125, ../sass/tarapoto.scss */
+  /* line 124, ../sass/tarapoto.scss */
   .menu {
     visibility: hidden;
     position: fixed;
@@ -615,7 +531,7 @@ body .home-hero {
     transition: all .5s ease-in;
     background: white;
   }
-  /* line 137, ../sass/tarapoto.scss */
+  /* line 136, ../sass/tarapoto.scss */
   .menu.active {
     visibility: visible;
     height: 100%;
@@ -623,7 +539,7 @@ body .home-hero {
   }
 }
 @media (min-width: 769px) {
-  /* line 125, ../sass/tarapoto.scss */
+  /* line 124, ../sass/tarapoto.scss */
   .menu {
     width: 100%;
     margin-top: 20px;
@@ -631,7 +547,7 @@ body .home-hero {
   }
 }
 @media (max-width: 768px) {
-  /* line 148, ../sass/tarapoto.scss */
+  /* line 147, ../sass/tarapoto.scss */
   .menu__list {
     position: absolute;
     top: 50%;
@@ -641,32 +557,32 @@ body .home-hero {
   }
 }
 @media (min-width: 769px) {
-  /* line 148, ../sass/tarapoto.scss */
+  /* line 147, ../sass/tarapoto.scss */
   .menu__list {
     width: 780px;
     display: block;
     margin: 0 auto;
   }
 }
-/* line 162, ../sass/tarapoto.scss */
+/* line 161, ../sass/tarapoto.scss */
 .menu__item {
   display: block;
   text-align: center;
   margin: 50px auto;
 }
 @media (min-width: 769px) {
-  /* line 162, ../sass/tarapoto.scss */
+  /* line 161, ../sass/tarapoto.scss */
   .menu__item {
     float: left;
     width: 33%;
     margin: 30px auto;
   }
-  /* line 170, ../sass/tarapoto.scss */
+  /* line 169, ../sass/tarapoto.scss */
   .menu__item:last-child {
     margin-right: 0;
   }
 }
-/* line 175, ../sass/tarapoto.scss */
+/* line 174, ../sass/tarapoto.scss */
 .menu__link {
   -webkit-animation: show-elemet 2.5s ease;
   -moz-animation: show-elemet 2.5s ease;
@@ -678,18 +594,18 @@ body .home-hero {
   font-size: 35px;
   letter-spacing: 1px;
 }
-/* line 181, ../sass/tarapoto.scss */
+/* line 180, ../sass/tarapoto.scss */
 .menu__link:hover {
   color: #000;
 }
 @media (min-width: 769px) {
-  /* line 175, ../sass/tarapoto.scss */
+  /* line 174, ../sass/tarapoto.scss */
   .menu__link {
     font-size: 22px;
     color: #fff;
     margin-bottom: 30px;
   }
-  /* line 188, ../sass/tarapoto.scss */
+  /* line 187, ../sass/tarapoto.scss */
   .menu__link:hover {
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -698,13 +614,13 @@ body .home-hero {
   }
 }
 
-/* line 199, ../sass/tarapoto.scss */
+/* line 198, ../sass/tarapoto.scss */
 #currentpage .menu__link {
   color: #74AFAD;
   font-style: bold;
 }
 @media (min-width: 769px) {
-  /* line 199, ../sass/tarapoto.scss */
+  /* line 198, ../sass/tarapoto.scss */
   #currentpage .menu__link {
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -712,7 +628,7 @@ body .home-hero {
 }
 
 @media (min-width: 769px) {
-  /* line 212, ../sass/tarapoto.scss */
+  /* line 211, ../sass/tarapoto.scss */
   .home .menu,
   .history .menu,
   .location .menu {
@@ -721,7 +637,7 @@ body .home-hero {
   }
 }
 
-/* line 221, ../sass/tarapoto.scss */
+/* line 220, ../sass/tarapoto.scss */
 .home .page-title {
   position: absolute;
   top: 40%;
@@ -731,41 +647,40 @@ body .home-hero {
   font-size: 55px;
 }
 @media (min-width: 601px) {
-  /* line 221, ../sass/tarapoto.scss */
+  /* line 220, ../sass/tarapoto.scss */
   .home .page-title {
     font-size: 85px;
   }
 }
 
 @media (min-width: 769px) {
-  /* line 236, ../sass/tarapoto.scss */
+  /* line 235, ../sass/tarapoto.scss */
   .location .menu {
     background-color: #74AFAD;
   }
 }
 
-/* line 242, ../sass/tarapoto.scss */
+/* line 241, ../sass/tarapoto.scss */
 .dk-select *:first-child {
   margin-right: 0;
 }
 
-/* line 246, ../sass/tarapoto.scss */
+/* line 245, ../sass/tarapoto.scss */
 div.dk-select,
 div.dk-select-multi {
   margin-top: 30px;
   width: 90%;
-  max-width: 320px;
   font-family: "Quicksand-Light";
 }
 @media (min-width: 601px) {
-  /* line 246, ../sass/tarapoto.scss */
+  /* line 245, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     width: 250px;
   }
 }
 @media (min-width: 769px) {
-  /* line 246, ../sass/tarapoto.scss */
+  /* line 245, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     width: 320px;

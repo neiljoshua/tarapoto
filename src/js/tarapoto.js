@@ -1,8 +1,12 @@
 $( document ).ready( function(){
 
 	$('.default').dropkick({
-        monbile: 'true',
-  });
+        theme: 'dk-tarapoto',
+        mobile: 'true',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
 
 	$('.c-hamburger').on('click', function(e){
 		e.preventDefault();

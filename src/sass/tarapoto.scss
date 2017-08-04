@@ -3,7 +3,6 @@
 @import 'variables';
 @import "mixin";
 @import 'form';
-@import "dktarapoto";
 @import "hamburger";
 
 @include keyframes(show-elemet) {
@@ -114,7 +113,7 @@ body {
 .logo {
 	position: fixed;
 	display:block;
-	margin: 10px;
+	margin: 5px;
 	width: 40px;
 	z-index: 30;
 	@include media-min-width(desktop) {
@@ -247,7 +246,6 @@ div.dk-select,
 div.dk-select-multi {
 	margin-top: 30px;
 	width: 	90%;
-	max-width: 320px;
 	font-family: "Quicksand-Light";
 	@include media-min-width(mobile) {
 		width: 250px;

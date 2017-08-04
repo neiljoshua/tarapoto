@@ -43,12 +43,19 @@ input[type="text"] {
 }
 
 select {
-	width: 320px;
-	max-width: 320px;
 	background-color: $green;
 	border-color: $white;
 	padding: 10px 0;
 	margin-top: 15px;
+	margin-top: 30px;
+	width: 	90%;
+	font-family: "Quicksand-Light";
+	@include media-min-width(mobile) {
+		width: 250px;
+	}
+	@include media-min-width(tablet) {
+		width: 320px;
+	}
 }
 
 fieldset {
