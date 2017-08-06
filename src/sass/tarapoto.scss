@@ -80,7 +80,7 @@ body {
 		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
 			max-width: 720px;
-			margin: 20px auto;
+			margin: 10px auto;
 		}
 	    text-align: center;
 	    line-height: 1.5;
@@ -244,10 +244,14 @@ body {
 
 div.dk-select,
 div.dk-select-multi {
-	margin-top: 30px;
 	width: 	90%;
+	max-width: 320px;
+	margin-top: 30px;
+  margin-bottom: 20px;
+	font-size: 18px;
 	font-family: "Quicksand-Light";
 	@include media-min-width(mobile) {
+		margin-top: 20px;
 		width: 250px;
 	}
 	@include media-min-width(tablet) {
