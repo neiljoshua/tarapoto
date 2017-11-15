@@ -5,15 +5,15 @@
 	<body class="inquiries">
 		<!-- <a href="/" class="close">X</a> -->
 		<a href="/">
-			<img class="logo" src="src/images/logo.png" alt="Tarapoto logo">
+			<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
 		</a>
 		<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
 		<h1 class="page-title">TARAPOTO RESORT</h1>
 		<section class="item">
-			<p class="item__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh.
+			<p class="item__copy">We are ready to help you. If you have a request or comment, or if you would like additional information about Tarapoto Resorts, the following is how to reach us and individual departments related to your need..
 			</p>
 
-			<p class="item__copy">Integer sed enim augue.</p>
+			<p class="item__copy">We are looking forward to hearing any questions or taking care of your requests.</p>
 
 		</section>
 
@@ -299,9 +299,8 @@
 				<button>Submit</button>
 			</form>
 			<div class="legal">
-				<p class="legal__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, pretium eu suscipit et, fermentum vel ligula. Aliquam non purus nibh. Ut laoreet urna est, sed elementum ex tincidunt sit amet.</p>
-
-				<p class="legal__copy">Donec pretium vel erat porttitor tincidunt. In fermentum rhoncus leo, at aliquam nulla aliquet vitae. In hac habitasse platea dictumst. Donec aliquam leo semper, venenatis nisl nec, eleifend libero.</p>
+				<p class="legal__copy">Enjoy the stupendous calm and peace of this tree-shaded lakeside location cradled by mountains where time stands still. Choose ease, harmony and wellbeing over the hectic pace of today's lifestyle! .
+				</p>
 			</div>
 		</section>
 <?php
