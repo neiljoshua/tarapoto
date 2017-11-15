@@ -28,3 +28,27 @@
   font-weight: 400;
   src: url('/src/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
 }
+
+/* Acme Regular */
+@font-face {
+  font-family: 'Acme-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/fonts/Acme/Acme-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* AmaticSC-Regular.ttf */
+@font-face {
+  font-family: 'AmaticSC-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/fonts/Amatic_SC/AmaticSC-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* AmaticSC-Regular.ttf */
+@font-face {
+  font-family: 'AmaticSC-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/src/fonts/Amatic_SC/AmaticSC-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
