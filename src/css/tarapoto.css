@@ -140,9 +140,73 @@ button {
   src: url("/src/fonts/Amatic_SC/AmaticSC-Bold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-ms-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -154,6 +218,50 @@ button {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes fadeOut {
@@ -468,6 +576,10 @@ body.home {
 body.home .page-title,
 body.home .logo,
 body.home .menu {
+  -webkit-animation: fadeIn 14s ease;
+  -moz-animation: fadeIn 14s ease;
+  -ms-animation: fadeIn 14s ease;
+  -o-animation: fadeIn 14s ease;
   animation: fadeIn 14s ease;
 }
 /* line 33, ../sass/tarapoto.scss */
@@ -629,11 +741,11 @@ body .home-hero {
 
 /* line 144, ../sass/tarapoto.scss */
 .c-hamburger {
-  -webkit-animation: show-elemet 2s ease;
-  -moz-animation: show-elemet 2s ease;
-  -ms-animation: show-elemet 2s ease;
-  -o-animation: show-elemet 2s ease;
-  animation: show-elemet 2s ease;
+  -webkit-animation: fadeIn 14s ease;
+  -moz-animation: fadeIn 14s ease;
+  -ms-animation: fadeIn 14s ease;
+  -o-animation: fadeIn 14s ease;
+  animation: fadeIn 14s ease;
 }
 
 @media (max-width: 768px) {

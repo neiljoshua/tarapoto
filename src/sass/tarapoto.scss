@@ -28,7 +28,7 @@ body {
 		.page-title,
 		.logo,
 		.menu {
-			animation: fadeIn 14s ease;
+			@include animation('fadeIn 14s ease');
 		}
 		.logo {
 			left: 10px;
@@ -142,7 +142,7 @@ body {
 }
 
 .c-hamburger {
-	@include animation('show-elemet 2s ease');
+	@include animation('fadeIn 14s ease');
 }
 .menu {
 	@include media-max-width(tablet) {
