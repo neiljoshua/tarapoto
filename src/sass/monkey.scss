@@ -7,12 +7,7 @@
     stroke-width: 5;
     stroke-dasharray: 6957;
     stroke-dashoffset: 6957;
-    // animation: draw 5s linear;
-    animation-name: draw;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    @include animation('draw 6s 1 forwards linear');
   }
   animation: fadeOut 6.5s ease;
   @include media-min-width(desktop) {
