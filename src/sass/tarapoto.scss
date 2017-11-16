@@ -39,12 +39,15 @@ body {
 		.page-title {
 
 			@include media-min-width(desktop) {
-				font-size: 103px;
+				font-size: 110px;
 			}
+		}
+		.c-hamburger {
+			@include animation('fadeIn 14s ease');
 		}
 	}
 	&.location {
-		background: url('/src/images/tarapoto1.jpg') center center no-repeat;
+		background: url('/src/images/tmap.jpg') center center no-repeat;
 		background-size: cover;
 		overflow: hidden;
 	}
@@ -131,18 +134,18 @@ body {
 .logo {
 	position: fixed;
 	display:block;
-	margin: 5px;
+	margin: 0 10px;
 	width: 40px;
 	z-index: 30;
 	@include animation('show-elemet 1.6s ease');
-	@include media-min-width(desktop) {
+	@include media-min-width(mobile) {
 		width: 50px;
-		left: 10px;
+		left: 0px;
 	}
 }
 
 .c-hamburger {
-	@include animation('fadeIn 14s ease');
+	@include animation('show-elemet 1.6s ease');
 }
 .menu {
 	@include media-max-width(tablet) {
