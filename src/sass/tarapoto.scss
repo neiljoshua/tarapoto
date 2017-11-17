@@ -3,6 +3,7 @@
 @import 'variables';
 @import "mixin";
 @import 'animation';
+@import 'home';
 @import 'form';
 @import "hamburger";
 @import "monkey";
@@ -23,43 +24,10 @@ body {
 	background-color: $green;
 	color: $white;
 	text-align: center;
-	&.home {
-		overflow: hidden;
-		.page-title,
-		.logo,
-		.menu {
-			@include animation('fadeIn 14s ease');
-		}
-		.logo {
-			left: 10px;
-			@include media-min-width(desktop) {
-				left: 95%;
-			}
-		}
-		.page-title {
-
-			@include media-min-width(desktop) {
-				font-size: 110px;
-			}
-		}
-		.c-hamburger {
-			@include animation('fadeIn 14s ease');
-		}
-	}
 	&.location {
 		background: url('/src/images/tmap.jpg') center center no-repeat;
 		background-size: cover;
 		overflow: hidden;
-	}
-	.home-hero {
-		position: absolute;
-		min-height: 100%;
-		min-width: 100%;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		bottom: 0;
-		filter: sepia(50%);
 	}
 }
 
