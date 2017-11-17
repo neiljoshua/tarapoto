@@ -275,6 +275,56 @@ button {
     opacity: 0;
   }
 }
+/* line 1, ../sass/home.scss */
+.home {
+  overflow: hidden;
+}
+/* line 3, ../sass/home.scss */
+.home .page-title,
+.home .logo,
+.home .menu {
+  -webkit-animation: fadeIn 14s ease;
+  -moz-animation: fadeIn 14s ease;
+  -ms-animation: fadeIn 14s ease;
+  -o-animation: fadeIn 14s ease;
+  animation: fadeIn 14s ease;
+}
+/* line 8, ../sass/home.scss */
+.home .logo {
+  left: 10px;
+}
+@media (min-width: 981px) {
+  /* line 8, ../sass/home.scss */
+  .home .logo {
+    left: 95%;
+  }
+}
+@media (min-width: 981px) {
+  /* line 14, ../sass/home.scss */
+  .home .page-title {
+    font-size: 110px;
+  }
+}
+/* line 20, ../sass/home.scss */
+.home .c-hamburger {
+  -webkit-animation: fadeIn 14s ease;
+  -moz-animation: fadeIn 14s ease;
+  -ms-animation: fadeIn 14s ease;
+  -o-animation: fadeIn 14s ease;
+  animation: fadeIn 14s ease;
+}
+/* line 23, ../sass/home.scss */
+.home .home-hero {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+  filter: sepia(50%);
+}
+
 /* line 1, ../sass/form.scss */
 section {
   max-width: 700px;
@@ -492,14 +542,34 @@ button:hover {
 .monkey {
   width: 320px;
   opacity: 0;
+  -webkit-animation: fadeOut 6.5s ease;
+  -moz-animation: fadeOut 6.5s ease;
+  -ms-animation: fadeOut 6.5s ease;
+  -o-animation: fadeOut 6.5s ease;
   animation: fadeOut 6.5s ease;
 }
 /* line 4, ../sass/monkey.scss */
 .monkey path {
   fill-opacity: 0;
+  -webkit-stroke: #000;
+  -moz-stroke: #000;
+  -ms-stroke: #000;
+  -o-stroke: #000;
   stroke: #000;
+  -webkit-stroke-width: 5;
+  -moz-stroke-width: 5;
+  -ms-stroke-width: 5;
+  -o-stroke-width: 5;
   stroke-width: 5;
+  -webkit-stroke-dasharray: 6957;
+  -moz-stroke-dasharray: 6957;
+  -ms-stroke-dasharray: 6957;
+  -o-stroke-dasharray: 6957;
   stroke-dasharray: 6957;
+  -webkit-stroke-dashoffset: 6957;
+  -moz-stroke-dashoffset: 6957;
+  -ms-stroke-dashoffset: 6957;
+  -o-stroke-dashoffset: 6957;
   stroke-dashoffset: 6957;
   -webkit-animation: draw 6s 1 forwards linear;
   -moz-animation: draw 6s 1 forwards linear;
@@ -554,12 +624,12 @@ button:hover {
     opacity: 1;
   }
 }
-/* line 15, ../sass/tarapoto.scss */
+/* line 16, ../sass/tarapoto.scss */
 html {
   height: 100%;
 }
 
-/* line 19, ../sass/tarapoto.scss */
+/* line 20, ../sass/tarapoto.scss */
 body {
   position: relative;
   min-height: 100%;
@@ -568,63 +638,14 @@ body {
   color: #fff;
   text-align: center;
 }
-/* line 26, ../sass/tarapoto.scss */
-body.home {
-  overflow: hidden;
-}
-/* line 28, ../sass/tarapoto.scss */
-body.home .page-title,
-body.home .logo,
-body.home .menu {
-  -webkit-animation: fadeIn 14s ease;
-  -moz-animation: fadeIn 14s ease;
-  -ms-animation: fadeIn 14s ease;
-  -o-animation: fadeIn 14s ease;
-  animation: fadeIn 14s ease;
-}
-/* line 33, ../sass/tarapoto.scss */
-body.home .logo {
-  left: 10px;
-}
-@media (min-width: 981px) {
-  /* line 33, ../sass/tarapoto.scss */
-  body.home .logo {
-    left: 95%;
-  }
-}
-@media (min-width: 981px) {
-  /* line 39, ../sass/tarapoto.scss */
-  body.home .page-title {
-    font-size: 110px;
-  }
-}
-/* line 45, ../sass/tarapoto.scss */
-body.home .c-hamburger {
-  -webkit-animation: fadeIn 14s ease;
-  -moz-animation: fadeIn 14s ease;
-  -ms-animation: fadeIn 14s ease;
-  -o-animation: fadeIn 14s ease;
-  animation: fadeIn 14s ease;
-}
-/* line 49, ../sass/tarapoto.scss */
+/* line 27, ../sass/tarapoto.scss */
 body.location {
   background: url("/src/images/tmap.jpg") center center no-repeat;
   background-size: cover;
   overflow: hidden;
 }
-/* line 54, ../sass/tarapoto.scss */
-body .home-hero {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  bottom: 0;
-  filter: sepia(50%);
-}
 
-/* line 66, ../sass/tarapoto.scss */
+/* line 34, ../sass/tarapoto.scss */
 .page-title {
   padding: 90px 0 30px;
   font-family: "AmaticSC-Bold";
@@ -637,31 +658,31 @@ body .home-hero {
   animation: show-elemet 1.5s ease;
 }
 @media (min-width: 601px) {
-  /* line 66, ../sass/tarapoto.scss */
+  /* line 34, ../sass/tarapoto.scss */
   .page-title {
     font-size: 60px;
     padding: 90px 0 60px;
   }
 }
 @media (min-width: 769px) {
-  /* line 66, ../sass/tarapoto.scss */
+  /* line 34, ../sass/tarapoto.scss */
   .page-title {
     font-size: 75px;
   }
 }
 
-/* line 81, ../sass/tarapoto.scss */
+/* line 49, ../sass/tarapoto.scss */
 .item {
   margin: 20px auto;
   overflow: hidden;
 }
 @media (min-width: 601px) {
-  /* line 81, ../sass/tarapoto.scss */
+  /* line 49, ../sass/tarapoto.scss */
   .item {
     margin: 40px auto;
   }
 }
-/* line 87, ../sass/tarapoto.scss */
+/* line 55, ../sass/tarapoto.scss */
 .item__title {
   margin-bottom: 50px;
   font-family: "Muli-Light";
@@ -674,12 +695,12 @@ body .home-hero {
   animation: show-elemet 1.5s ease;
 }
 @media (min-width: 769px) {
-  /* line 87, ../sass/tarapoto.scss */
+  /* line 55, ../sass/tarapoto.scss */
   .item__title {
     font-size: 45px;
   }
 }
-/* line 97, ../sass/tarapoto.scss */
+/* line 65, ../sass/tarapoto.scss */
 .item__copy {
   padding: 0 20px 40px;
   font-family: "Quicksand-Light";
@@ -694,20 +715,20 @@ body .home-hero {
   letter-spacing: 2px;
 }
 @media (min-width: 769px) {
-  /* line 97, ../sass/tarapoto.scss */
+  /* line 65, ../sass/tarapoto.scss */
   .item__copy {
     max-width: 720px;
     margin: 10px auto;
   }
 }
 
-/* line 112, ../sass/tarapoto.scss */
+/* line 80, ../sass/tarapoto.scss */
 .legal {
   overflow: hidden;
   margin-bottom: 40px;
   padding-bottom: 60px;
 }
-/* line 116, ../sass/tarapoto.scss */
+/* line 84, ../sass/tarapoto.scss */
 .legal__copy {
   font-family: "Quicksand-Light";
   font-size: 20px;
@@ -718,7 +739,7 @@ body .home-hero {
   letter-spacing: 2px;
 }
 
-/* line 127, ../sass/tarapoto.scss */
+/* line 95, ../sass/tarapoto.scss */
 .center {
   position: absolute;
   top: 50%;
@@ -726,7 +747,7 @@ body .home-hero {
   transform: translateY(-50%) translateX(-50%);
 }
 
-/* line 134, ../sass/tarapoto.scss */
+/* line 102, ../sass/tarapoto.scss */
 .logo {
   position: fixed;
   display: block;
@@ -740,14 +761,14 @@ body .home-hero {
   animation: show-elemet 1.6s ease;
 }
 @media (min-width: 601px) {
-  /* line 134, ../sass/tarapoto.scss */
+  /* line 102, ../sass/tarapoto.scss */
   .logo {
     width: 50px;
     left: 0px;
   }
 }
 
-/* line 147, ../sass/tarapoto.scss */
+/* line 115, ../sass/tarapoto.scss */
 .c-hamburger {
   -webkit-animation: show-elemet 1.6s ease;
   -moz-animation: show-elemet 1.6s ease;
@@ -757,7 +778,7 @@ body .home-hero {
 }
 
 @media (max-width: 768px) {
-  /* line 150, ../sass/tarapoto.scss */
+  /* line 118, ../sass/tarapoto.scss */
   .menu {
     visibility: hidden;
     position: fixed;
@@ -770,7 +791,7 @@ body .home-hero {
     transition: all .5s ease-in;
     background: white;
   }
-  /* line 162, ../sass/tarapoto.scss */
+  /* line 130, ../sass/tarapoto.scss */
   .menu.active {
     visibility: visible;
     height: 100%;
@@ -778,7 +799,7 @@ body .home-hero {
   }
 }
 @media (min-width: 769px) {
-  /* line 150, ../sass/tarapoto.scss */
+  /* line 118, ../sass/tarapoto.scss */
   .menu {
     width: 100%;
     margin-top: 20px;
@@ -786,7 +807,7 @@ body .home-hero {
   }
 }
 @media (max-width: 768px) {
-  /* line 173, ../sass/tarapoto.scss */
+  /* line 141, ../sass/tarapoto.scss */
   .menu__list {
     position: absolute;
     top: 50%;
@@ -796,32 +817,32 @@ body .home-hero {
   }
 }
 @media (min-width: 769px) {
-  /* line 173, ../sass/tarapoto.scss */
+  /* line 141, ../sass/tarapoto.scss */
   .menu__list {
     width: 780px;
     display: block;
     margin: 0 auto;
   }
 }
-/* line 187, ../sass/tarapoto.scss */
+/* line 155, ../sass/tarapoto.scss */
 .menu__item {
   display: block;
   text-align: center;
   margin: 50px auto;
 }
 @media (min-width: 769px) {
-  /* line 187, ../sass/tarapoto.scss */
+  /* line 155, ../sass/tarapoto.scss */
   .menu__item {
     float: left;
     width: 33%;
     margin: 30px auto;
   }
-  /* line 195, ../sass/tarapoto.scss */
+  /* line 163, ../sass/tarapoto.scss */
   .menu__item:last-child {
     margin-right: 0;
   }
 }
-/* line 200, ../sass/tarapoto.scss */
+/* line 168, ../sass/tarapoto.scss */
 .menu__link {
   -webkit-animation: show-elemet 2.5s ease;
   -moz-animation: show-elemet 2.5s ease;
@@ -833,18 +854,18 @@ body .home-hero {
   font-size: 35px;
   letter-spacing: 1px;
 }
-/* line 206, ../sass/tarapoto.scss */
+/* line 174, ../sass/tarapoto.scss */
 .menu__link:hover {
   color: #000;
 }
 @media (min-width: 769px) {
-  /* line 200, ../sass/tarapoto.scss */
+  /* line 168, ../sass/tarapoto.scss */
   .menu__link {
     font-size: 22px;
     color: #fff;
     margin-bottom: 30px;
   }
-  /* line 213, ../sass/tarapoto.scss */
+  /* line 181, ../sass/tarapoto.scss */
   .menu__link:hover {
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -853,13 +874,13 @@ body .home-hero {
   }
 }
 
-/* line 224, ../sass/tarapoto.scss */
+/* line 192, ../sass/tarapoto.scss */
 #currentpage .menu__link {
   color: #74AFAD;
   font-style: bold;
 }
 @media (min-width: 769px) {
-  /* line 224, ../sass/tarapoto.scss */
+  /* line 192, ../sass/tarapoto.scss */
   #currentpage .menu__link {
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -867,7 +888,7 @@ body .home-hero {
 }
 
 @media (min-width: 769px) {
-  /* line 237, ../sass/tarapoto.scss */
+  /* line 205, ../sass/tarapoto.scss */
   .home .menu,
   .history .menu,
   .location .menu {
@@ -876,7 +897,7 @@ body .home-hero {
   }
 }
 
-/* line 246, ../sass/tarapoto.scss */
+/* line 214, ../sass/tarapoto.scss */
 .home .page-title {
   position: absolute;
   top: 40%;
@@ -886,25 +907,25 @@ body .home-hero {
   font-size: 55px;
 }
 @media (min-width: 601px) {
-  /* line 246, ../sass/tarapoto.scss */
+  /* line 214, ../sass/tarapoto.scss */
   .home .page-title {
     font-size: 103px;
   }
 }
 
 @media (min-width: 769px) {
-  /* line 262, ../sass/tarapoto.scss */
+  /* line 230, ../sass/tarapoto.scss */
   .location .menu {
     background-color: #74AFAD;
   }
 }
 
-/* line 268, ../sass/tarapoto.scss */
+/* line 236, ../sass/tarapoto.scss */
 .dk-select *:first-child {
   margin-right: 0;
 }
 
-/* line 272, ../sass/tarapoto.scss */
+/* line 240, ../sass/tarapoto.scss */
 div.dk-select,
 div.dk-select-multi {
   width: 90%;
@@ -915,7 +936,7 @@ div.dk-select-multi {
   font-family: "Quicksand-Light";
 }
 @media (min-width: 601px) {
-  /* line 272, ../sass/tarapoto.scss */
+  /* line 240, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     margin-top: 20px;
@@ -923,7 +944,7 @@ div.dk-select-multi {
   }
 }
 @media (min-width: 769px) {
-  /* line 272, ../sass/tarapoto.scss */
+  /* line 240, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     width: 320px;

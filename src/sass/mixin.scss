@@ -1,30 +1,3 @@
-// animation
-
-@mixin keyframes($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-  @-moz-keyframes #{$animation-name} {
-    @content;
-  }
-  @-ms-keyframes #{$animation-name} {
-    @content;
-  }
-  @-o-keyframes #{$animation-name} {
-    @content;
-  }
-  @keyframes #{$animation-name} {
-    @content;
-  }
-}
-
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
-}
 
 // media queries
 @mixin media($type) {
@@ -36,32 +9,39 @@
   }
 }
 
-// animation
-@mixin keyframes($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-  @-moz-keyframes #{$animation-name} {
-    @content;
-  }
-  @-ms-keyframes #{$animation-name} {
-    @content;
-  }
-  @-o-keyframes #{$animation-name} {
-    @content;
-  }
-  @keyframes #{$animation-name} {
-    @content;
-  }
+
+@mixin stroke($str) {
+	-webkit-stroke: #{$str};
+  -moz-stroke: #{$str};
+  -ms-stroke: #{$str};
+  -o-stroke: #{$str};
+  stroke: #{$str};
 }
 
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
+@mixin stroke-width($str) {
+	-webkit-stroke-width: #{$str};
+  -moz-stroke-width: #{$str};
+  -ms-stroke-width: #{$str};
+  -o-stroke-width: #{$str};
+  stroke-width: #{$str};
 }
+
+@mixin stroke-dasharray($str) {
+	-webkit-stroke-dasharray: #{$str};
+  -moz-stroke-dasharray: #{$str};
+  -ms-stroke-dasharray: #{$str};
+  -o-stroke-dasharray: #{$str};
+  stroke-dasharray: #{$str};
+}
+
+@mixin stroke-dashoffset($str) {
+	-webkit-stroke-dashoffset: #{$str};
+  -moz-stroke-dashoffset: #{$str};
+  -ms-stroke-dashoffset: #{$str};
+  -o-stroke-dashoffset: #{$str};
+  stroke-dashoffset: #{$str};
+}
+
 
 // CSS3 calc() function to perform calculations
 @mixin calc($property, $expression) {
