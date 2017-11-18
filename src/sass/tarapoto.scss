@@ -33,7 +33,7 @@ body {
 
 .page-title {
 	padding: 90px 0 30px;
-	font-family: "AmaticSC-Bold";
+	font-family: $handwritingbold;
 	font-size: 45px;
 	letter-spacing: 3px;
 	@include animation('show-elemet 1.5s ease');
@@ -54,7 +54,7 @@ body {
 	}
 	&__title {
 		margin-bottom: 50px;
-		font-family: "Muli-Light";
+		font-family: $handwritingnormal;
 		font-size: 35px;
 		font-weight: 300;
 		@include animation('show-elemet 1.5s ease');
@@ -64,7 +64,7 @@ body {
 	}
 	&__copy {
 		padding: 0 20px 40px;
-		font-family: "Quicksand-Light";
+		font-family: $sanserif;
 		font-size: 20px;
 		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
@@ -82,7 +82,7 @@ body {
 	margin-bottom: 40px;
 	padding-bottom:60px;
 	&__copy {
-	  font-family: "Quicksand-Light";
+	  font-family: $sanserif;
 	  font-size: 20px;
 	  max-width: 720px;
 	  text-align: center;
@@ -96,7 +96,7 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	@include prefix(transform, translate(-50% , -50%), webkit ms);
+	@include prefix(transform, translate(-50%,-50%));
 }
 
 .logo {
@@ -142,7 +142,7 @@ body {
 		@include media-max-width(tablet) {
 			position: absolute;
 			top: 50%;
-			transform: translateY(-50%);
+			@include prefix(transform, translateY(-50%));
 			width: 100%;
 			background-color: white;
 		}
@@ -157,33 +157,36 @@ body {
 		text-align: center;
 		margin: 50px auto;
 		@include media-min-width(tablet) {
-			float: left;
-			width: 33%;
-			margin: 30px auto;
-			&:last-child {
-				margin-right: 0;
-			}
+			display: inline-block;
+    	margin: 20px 60px;
 		}
 	}
 	&__link {
  		@include animation('show-elemet 2.5s ease');
- 		font-family: "Quicksand";
+ 		display: inline-block;
+ 		font-family: $sanserif;
  		color: $gray;
 		font-size: 35px;
  		letter-spacing: 1px;
- 		&:hover {
- 			color: $black;
- 		}
+    text-decoration: none;
  		@include media-min-width(tablet) {
  			font-size: 22px;
  			color: $white;
- 			margin-bottom: 30px;
- 			&:hover {
- 				color: $white;
-	 			border-bottom: 2px solid  $white;
-	 			margin-bottom: 26px;
-	 			padding-bottom: 2px;
-	 		}
+ 			&::after {
+		    content: '';
+		    display: block;
+		    width: 0;
+		    margin-top: 7px;
+		    height: 1px;
+		    background: $white;
+		    transition: width .3s;
+			}
+			&:hover {
+				&::after {
+		    	width: 100%;
+		    	transition: width .3s;
+		  	}
+			}
  		}
  	}
 }
@@ -194,7 +197,7 @@ body {
 		font-style: bold;
 		@include media-min-width(tablet) {
 			color: $white;
-	 		border-bottom: 2px solid  $white;
+	 		border-bottom: 1px solid  $white;
 		}
 	}
 }
@@ -216,11 +219,11 @@ body {
 		top: 40%;
 		padding: 0;
 		width: 100%;
-		font-family: "AmaticSC-Bold";
-		// font-family: "Acme-Regular";
+		font-family: $handwritingnormal;
 		font-size: 55px;
 		@include media-min-width(mobile) {
 			font-size: 103px;
+			font-family: $handwritingbold;
 		}
 	}
 }
@@ -244,7 +247,7 @@ div.dk-select-multi {
 	margin-top: 30px;
   margin-bottom: 20px;
 	font-size: 18px;
-	font-family: "Quicksand-Light";
+	font-family: $sanserif;
 	@include media-min-width(mobile) {
 		margin-top: 20px;
 		width: 250px;

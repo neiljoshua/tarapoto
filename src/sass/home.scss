@@ -10,9 +10,9 @@
 		@include animation('fadeIn 10.8s ease');
 	}
 	.logo {
-		left: 10px;
+		left: 5px;
 		@include media-min-width(desktop) {
-			left: 95%;
+			left: 20px;
 		}
 	}
 	.page-title {

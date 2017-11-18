@@ -1,9 +1,5 @@
 <svg class="monkey center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
-<!-- <style type="text/css">
-  .st0{fill:#FFFFFF;}
-  .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style> -->
 <g>
   <path d="M231.4,582.7c0,2.6,1.8,3.9,3.3,5.2c1.9,1.6,3.1,3.5,3.1,6c0.1,3-1.7,4.2-4.3,2.7c-2.9-1.7-5.7-3.6-8.5-5.4
 	c-2.4-1.5-4.8-2.6-7.7-2.9c-3.2-0.3-6.1-1.8-8.5-3.7c-2.3-1.9-4.7-2.6-7.6-2.3c-2.3,0.3-4.6-0.2-6.9-0.9c-4.5-1.5-6.3-4.9-4.9-9.5

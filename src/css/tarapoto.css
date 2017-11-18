@@ -299,12 +299,12 @@ button {
 }
 /* line 12, ../sass/home.scss */
 .home .logo {
-  left: 10px;
+  left: 5px;
 }
 @media (min-width: 981px) {
   /* line 12, ../sass/home.scss */
   .home .logo {
-    left: 95%;
+    left: 20px;
   }
 }
 @media (min-width: 981px) {
@@ -439,7 +439,7 @@ button {
   border: 1px solid #fff;
   color: #fff;
   padding: 15px 0;
-  font-family: "Quicksand";
+  font-family: "Quicksand-Light";
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -685,7 +685,7 @@ body.location {
 /* line 55, ../sass/tarapoto.scss */
 .item__title {
   margin-bottom: 50px;
-  font-family: "Muli-Light";
+  font-family: "AmaticSC-Regular";
   font-size: 35px;
   font-weight: 300;
   -webkit-animation: show-elemet 1.5s ease;
@@ -744,8 +744,6 @@ body.location {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -835,62 +833,62 @@ body.location {
 @media (min-width: 769px) {
   /* line 155, ../sass/tarapoto.scss */
   .menu__item {
-    float: left;
-    width: 33%;
-    margin: 30px auto;
-  }
-  /* line 163, ../sass/tarapoto.scss */
-  .menu__item:last-child {
-    margin-right: 0;
+    display: inline-block;
+    margin: 20px 60px;
   }
 }
-/* line 168, ../sass/tarapoto.scss */
+/* line 164, ../sass/tarapoto.scss */
 .menu__link {
   -webkit-animation: show-elemet 2.5s ease;
   -moz-animation: show-elemet 2.5s ease;
   -ms-animation: show-elemet 2.5s ease;
   -o-animation: show-elemet 2.5s ease;
   animation: show-elemet 2.5s ease;
-  font-family: "Quicksand";
+  display: inline-block;
+  font-family: "Quicksand-Light";
   color: #595959;
   font-size: 35px;
   letter-spacing: 1px;
-}
-/* line 174, ../sass/tarapoto.scss */
-.menu__link:hover {
-  color: #000;
+  text-decoration: none;
 }
 @media (min-width: 769px) {
-  /* line 168, ../sass/tarapoto.scss */
+  /* line 164, ../sass/tarapoto.scss */
   .menu__link {
     font-size: 22px;
     color: #fff;
-    margin-bottom: 30px;
   }
-  /* line 181, ../sass/tarapoto.scss */
-  .menu__link:hover {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    margin-bottom: 26px;
-    padding-bottom: 2px;
+  /* line 175, ../sass/tarapoto.scss */
+  .menu__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-top: 7px;
+    height: 1px;
+    background: #fff;
+    transition: width .3s;
+  }
+  /* line 185, ../sass/tarapoto.scss */
+  .menu__link:hover::after {
+    width: 100%;
+    transition: width .3s;
   }
 }
 
-/* line 192, ../sass/tarapoto.scss */
+/* line 195, ../sass/tarapoto.scss */
 #currentpage .menu__link {
   color: #74AFAD;
   font-style: bold;
 }
 @media (min-width: 769px) {
-  /* line 192, ../sass/tarapoto.scss */
+  /* line 195, ../sass/tarapoto.scss */
   #currentpage .menu__link {
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
   }
 }
 
 @media (min-width: 769px) {
-  /* line 205, ../sass/tarapoto.scss */
+  /* line 208, ../sass/tarapoto.scss */
   .home .menu,
   .history .menu,
   .location .menu {
@@ -899,35 +897,36 @@ body.location {
   }
 }
 
-/* line 214, ../sass/tarapoto.scss */
+/* line 217, ../sass/tarapoto.scss */
 .home .page-title {
   position: absolute;
   top: 40%;
   padding: 0;
   width: 100%;
-  font-family: "AmaticSC-Bold";
+  font-family: "AmaticSC-Regular";
   font-size: 55px;
 }
 @media (min-width: 601px) {
-  /* line 214, ../sass/tarapoto.scss */
+  /* line 217, ../sass/tarapoto.scss */
   .home .page-title {
     font-size: 103px;
+    font-family: "AmaticSC-Bold";
   }
 }
 
 @media (min-width: 769px) {
-  /* line 230, ../sass/tarapoto.scss */
+  /* line 233, ../sass/tarapoto.scss */
   .location .menu {
     background-color: #74AFAD;
   }
 }
 
-/* line 236, ../sass/tarapoto.scss */
+/* line 239, ../sass/tarapoto.scss */
 .dk-select *:first-child {
   margin-right: 0;
 }
 
-/* line 240, ../sass/tarapoto.scss */
+/* line 243, ../sass/tarapoto.scss */
 div.dk-select,
 div.dk-select-multi {
   width: 90%;
@@ -938,7 +937,7 @@ div.dk-select-multi {
   font-family: "Quicksand-Light";
 }
 @media (min-width: 601px) {
-  /* line 240, ../sass/tarapoto.scss */
+  /* line 243, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     margin-top: 20px;
@@ -946,7 +945,7 @@ div.dk-select-multi {
   }
 }
 @media (min-width: 769px) {
-  /* line 240, ../sass/tarapoto.scss */
+  /* line 243, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     width: 320px;
