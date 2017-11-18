@@ -535,6 +535,8 @@ button:hover {
 }
 /* line 66, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -744,6 +746,8 @@ body.location {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -811,6 +815,8 @@ body.location {
   .menu__list {
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
     background-color: white;
