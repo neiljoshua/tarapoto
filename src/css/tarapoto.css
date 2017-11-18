@@ -169,7 +169,7 @@ button {
   0% {
     opacity: 0;
   }
-  40% {
+  70% {
     opacity: 0;
   }
   100% {
@@ -180,7 +180,7 @@ button {
   0% {
     opacity: 0;
   }
-  40% {
+  70% {
     opacity: 0;
   }
   100% {
@@ -191,7 +191,7 @@ button {
   0% {
     opacity: 0;
   }
-  40% {
+  70% {
     opacity: 0;
   }
   100% {
@@ -202,7 +202,7 @@ button {
   0% {
     opacity: 0;
   }
-  40% {
+  70% {
     opacity: 0;
   }
   100% {
@@ -213,7 +213,7 @@ button {
   0% {
     opacity: 0;
   }
-  40% {
+  70% {
     opacity: 0;
   }
   100% {
@@ -280,40 +280,40 @@ button {
   overflow: hidden;
 }
 /* line 3, ../sass/home.scss */
-.home .page-title,
-.home .logo,
-.home .menu {
-  -webkit-animation: fadeIn 14s ease;
-  -moz-animation: fadeIn 14s ease;
-  -ms-animation: fadeIn 14s ease;
-  -o-animation: fadeIn 14s ease;
-  animation: fadeIn 14s ease;
+.home .page-title {
+  -webkit-animation: fadeIn 10s ease;
+  -moz-animation: fadeIn 10s ease;
+  -ms-animation: fadeIn 10s ease;
+  -o-animation: fadeIn 10s ease;
+  animation: fadeIn 10s ease;
 }
-/* line 8, ../sass/home.scss */
+/* line 7, ../sass/home.scss */
+.home .logo,
+.home .menu,
+.home .c-hamburger {
+  -webkit-animation: fadeIn 10.8s ease;
+  -moz-animation: fadeIn 10.8s ease;
+  -ms-animation: fadeIn 10.8s ease;
+  -o-animation: fadeIn 10.8s ease;
+  animation: fadeIn 10.8s ease;
+}
+/* line 12, ../sass/home.scss */
 .home .logo {
   left: 10px;
 }
 @media (min-width: 981px) {
-  /* line 8, ../sass/home.scss */
+  /* line 12, ../sass/home.scss */
   .home .logo {
     left: 95%;
   }
 }
 @media (min-width: 981px) {
-  /* line 14, ../sass/home.scss */
+  /* line 18, ../sass/home.scss */
   .home .page-title {
     font-size: 110px;
   }
 }
-/* line 20, ../sass/home.scss */
-.home .c-hamburger {
-  -webkit-animation: fadeIn 14s ease;
-  -moz-animation: fadeIn 14s ease;
-  -ms-animation: fadeIn 14s ease;
-  -o-animation: fadeIn 14s ease;
-  animation: fadeIn 14s ease;
-}
-/* line 23, ../sass/home.scss */
+/* line 25, ../sass/home.scss */
 .home .home-hero {
   position: absolute;
   min-height: 100%;
@@ -542,11 +542,11 @@ button:hover {
 .monkey {
   width: 320px;
   opacity: 0;
-  -webkit-animation: fadeOut 6.5s ease;
-  -moz-animation: fadeOut 6.5s ease;
-  -ms-animation: fadeOut 6.5s ease;
-  -o-animation: fadeOut 6.5s ease;
-  animation: fadeOut 6.5s ease;
+  -webkit-animation: fadeOut 7s ease;
+  -moz-animation: fadeOut 7s ease;
+  -ms-animation: fadeOut 7s ease;
+  -o-animation: fadeOut 7s ease;
+  animation: fadeOut 7s ease;
 }
 /* line 4, ../sass/monkey.scss */
 .monkey path {
@@ -744,7 +744,9 @@ body.location {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* line 102, ../sass/tarapoto.scss */

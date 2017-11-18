@@ -9,7 +9,7 @@
     @include stroke-dashoffset('6957');
     @include animation('draw 6s 1 forwards linear');
   }
-  @include animation('fadeOut 6.5s ease');
+  @include animation('fadeOut 7s ease');
   @include media-min-width(desktop) {
   	width: 500px;
   }

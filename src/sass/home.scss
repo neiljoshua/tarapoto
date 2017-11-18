@@ -1,9 +1,13 @@
 .home {
 	overflow: hidden;
-	.page-title,
+	.page-title
+	 {
+		@include animation('fadeIn 10s ease');
+	}
 	.logo,
-	.menu {
-		@include animation('fadeIn 14s ease');
+	.menu,
+	.c-hamburger {
+		@include animation('fadeIn 10.8s ease');
 	}
 	.logo {
 		left: 10px;
@@ -17,9 +21,7 @@
 			font-size: 110px;
 		}
 	}
-	.c-hamburger {
-		@include animation('fadeIn 14s ease');
-	}
+
 	.home-hero {
 		position: absolute;
 		min-height: 100%;
