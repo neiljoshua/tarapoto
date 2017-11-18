@@ -54,7 +54,7 @@ select {
 	margin-top: 15px;
 	margin-top: 30px;
 	width: 	90%;
-	font-family: "Quicksand-Light";
+	font-family: $sanserif;
 	@include media-min-width(mobile) {
 		width: 250px;
 	}

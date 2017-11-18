@@ -64,6 +64,6 @@
   opacity:0.9;
   transition: opacity 0.3s 0.3s;
   span {
-    transform: rotate(90deg);
+    @include prefix(transform, rotate(90deg),webkit ms);
   }
 }
