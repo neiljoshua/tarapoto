@@ -3,7 +3,9 @@
 @import 'fonts';
 @import "mixin";
 @import 'animation';
+@import 'location';
 @import 'home';
+@import 'inquiries';
 @import 'form';
 @import "hamburger";
 @import "monkey";
@@ -24,11 +26,6 @@ body {
 	background-color: $green;
 	color: $white;
 	text-align: center;
-	&.location {
-		background: url('/src/images/tmap.jpg') center center no-repeat;
-		background-size: cover;
-		overflow: hidden;
-	}
 }
 
 .page-title {

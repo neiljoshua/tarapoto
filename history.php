@@ -6,7 +6,7 @@
 	<a href="/">
 		<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
 	</a>
-	<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
+	<a href="#" class="hamburger hamburger--rot"><span>toggle menu</span></a>
 	<!-- <img class="logo" src="/images/logo.png"> -->
 	<h1 class="page-title">TARAPOTO RESORT</h1>
 	<section class=" item">

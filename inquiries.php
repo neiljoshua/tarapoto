@@ -7,7 +7,7 @@
 		<a href="/">
 			<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
 		</a>
-		<a href="#" class="c-hamburger c-hamburger--rot"><span>toggle menu</span></a>
+		<a href="#" class="hamburger hamburger--rot"><span>toggle menu</span></a>
 		<h1 class="page-title">TARAPOTO RESORT</h1>
 		<section class="item">
 			<p class="item__copy">We are ready to help you. If you have a request or comment, or if you would like additional information about Tarapoto Resorts, the following is how to reach us and individual departments related to your need..
@@ -19,6 +19,11 @@
 
 		<section>
 			<form id="inquiry">
+				<div class="success">
+					<h3>Thank you for your interest in Tarapoto Resorts.
+					We wil get back to you as soon as we can.</h3>
+					<img class="success__image" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
+				</div>
 				<fieldset>
 					<input type="text" name="first-name" placeholder="First Name">
 					<input type="text" name="last-name" placeholder="Last Name">
@@ -296,10 +301,10 @@
 						<option value="4">4</option>
 					</select>
 				</fieldset>
-				<button>Submit</button>
+				<button class="submit">Submit</button>
 			</form>
 			<div class="legal">
-				<p class="legal__copy">Enjoy the stupendous calm and peace of this tree-shaded lakeside location cradled by mountains where time stands still. Choose ease, harmony and wellbeing over the hectic pace of today's lifestyle! .
+				<p class="legal__copy">Enjoy the stupendous calm and peace of this tree-shaded lakeside location cradled by mountains where time stands still. Choose ease, harmony and wellbeing over the hectic pace of today's lifestyle!
 				</p>
 			</div>
 		</section>
