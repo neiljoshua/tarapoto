@@ -9,12 +9,7 @@
 	.c-hamburger {
 		@include animation('fadeIn 10.8s ease');
 	}
-	.logo {
-		left: 5px;
-		@include media-min-width(desktop) {
-			left: 20px;
-		}
-	}
+
 	.page-title {
 
 		@include media-min-width(desktop) {

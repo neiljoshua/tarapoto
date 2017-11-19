@@ -1,0 +1,33 @@
+.inquiries {
+	#inquiry {
+		position: relative;
+		h3{
+			margin-top: 30%;
+			padding-left: 20px;
+			padding-right: 20px;
+    	font-family: $handwritingnormal;
+    	font-size: 25px;
+    	letter-spacing: 3px;
+    	@include media-min-width(mobile) {
+    		margin-top: 60px;
+    	}
+		}
+		.success {
+			display: none;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			z-index: 10000;
+    	background-color: $gray;
+    	border: 5px $white Solid;
+    	@include media-min-width(mobile) {
+    		position: absolute;
+    	}
+			&__image {
+				width: 200px;
+			}
+		}
+	}
+}
