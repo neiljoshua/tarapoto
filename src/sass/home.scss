@@ -6,12 +6,11 @@
 	}
 	.logo,
 	.menu,
-	.c-hamburger {
+	.hamburger {
 		@include animation('fadeIn 10.8s ease');
 	}
 
 	.page-title {
-
 		@include media-min-width(desktop) {
 			font-size: 110px;
 		}
