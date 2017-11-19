@@ -4,11 +4,11 @@
 @import "mixin";
 @import 'animation';
 @import 'location';
-@import 'home';
 @import 'inquiries';
 @import 'form';
 @import "hamburger";
 @import "monkey";
+@import 'home';
 
 @include keyframes(show-elemet) {
   0%{opacity: 0;}
@@ -26,6 +26,11 @@ body {
 	background-color: $green;
 	color: $white;
 	text-align: center;
+	&:not(.home){
+		.hamburger {
+			@include animation('show-elemet 1.6s ease');
+		}
+	}
 }
 
 .page-title {
@@ -109,9 +114,8 @@ body {
 	}
 }
 
-.hamburger {
-	@include animation('show-elemet 1.6s ease');
-}
+
+
 .menu {
 	@include media-max-width(tablet) {
 		visibility: hidden;
