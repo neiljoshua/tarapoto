@@ -834,7 +834,7 @@ body {
 }
 
 /* line 112, ../sass/tarapoto.scss */
-.c-hamburger {
+.hamburger {
   -webkit-animation: show-elemet 1.6s ease;
   -moz-animation: show-elemet 1.6s ease;
   -ms-animation: show-elemet 1.6s ease;
