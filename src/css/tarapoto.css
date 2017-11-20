@@ -322,6 +322,7 @@ body.location {
   font-family: "AmaticSC-Regular";
   font-size: 25px;
   letter-spacing: 3px;
+  line-height: 1.5;
 }
 @media (min-width: 601px) {
   /* line 4, ../sass/inquiries.scss */
@@ -329,7 +330,7 @@ body.location {
     margin-top: 60px;
   }
 }
-/* line 15, ../sass/inquiries.scss */
+/* line 16, ../sass/inquiries.scss */
 .inquiries #inquiry .success {
   display: none;
   position: fixed;
@@ -342,12 +343,12 @@ body.location {
   border: 5px #fff Solid;
 }
 @media (min-width: 601px) {
-  /* line 15, ../sass/inquiries.scss */
+  /* line 16, ../sass/inquiries.scss */
   .inquiries #inquiry .success {
     position: absolute;
   }
 }
-/* line 28, ../sass/inquiries.scss */
+/* line 29, ../sass/inquiries.scss */
 .inquiries #inquiry .success__image {
   width: 200px;
 }

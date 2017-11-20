@@ -8,6 +8,7 @@
     	font-family: $handwritingnormal;
     	font-size: 25px;
     	letter-spacing: 3px;
+    	line-height: 1.5;
     	@include media-min-width(mobile) {
     		margin-top: 60px;
     	}
