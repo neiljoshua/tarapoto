@@ -1,17 +1,19 @@
 @import 'reset';
 @import 'variables';
 @import 'fonts';
-@import "mixin";
+@import 'mixin';
 @import 'animation';
 @import 'location';
 @import 'inquiries';
 @import 'form';
-@import "hamburger";
-@import "monkey";
+@import 'hamburger';
+@import 'monkey';
 @import 'home';
+@import 'history';
 
 @include keyframes(show-elemet) {
   0%{opacity: 0;}
+  80%{opacity: 0;}
   100%{ opacity: 1;}
 }
 
@@ -38,7 +40,6 @@ body {
 	font-family: $handwritingbold;
 	font-size: 45px;
 	letter-spacing: 3px;
-	@include animation('show-elemet 1.5s ease');
 	@include media-min-width(mobile) {
 		font-size: 60px;
 		padding: 90px 0 60px;
@@ -59,7 +60,6 @@ body {
 		font-family: $handwritingnormal;
 		font-size: 35px;
 		font-weight: 300;
-		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
 			font-size: 45px;
 		}
@@ -68,7 +68,6 @@ body {
 		padding: 0 20px 40px;
 		font-family: $sanserif;
 		font-size: 20px;
-		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
 			max-width: 720px;
 			margin: 10px auto;
@@ -163,7 +162,7 @@ body {
 		}
 	}
 	&__link {
- 		@include animation('show-elemet 2.5s ease');
+ 		@include animation('show-elemet 1.6s ease');
  		display: inline-block;
  		font-family: $sanserif;
  		color: $gray;
@@ -204,7 +203,6 @@ body {
 }
 
 .home,
-.history,
 .location {
 	.menu {
 		@include media-min-width(tablet) {

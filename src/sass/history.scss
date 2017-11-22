@@ -1,0 +1,104 @@
+.history {
+
+	.item {
+		width: 100%;
+		max-width: 100%;
+		margin: 80px auto;
+		&__image {
+			display: block;
+			background: url('/src/images/pool.jpg') center center no-repeat;
+			// background-size: cover;
+			@include calc(min-height,80vw/(1200/694));
+		}
+		&__copy {
+			font-family: $sanserif;
+			margin: 60px auto;
+		}
+	}
+
+	.about {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin: 60px 0 0;
+		font-size: 0;
+		.row {
+			display: inline-block;
+			width: 100%;
+			vertical-align: middle;
+			overflow: hidden;
+			background-color: $white;
+			@include media-min-width(mobile) {
+				&:nth-child(odd){
+					.row__image {
+						float:left;
+					}
+					.row__copy {
+						float:right;
+					}
+				}
+				&:nth-child(even){
+					.row__image {
+						float:right;
+						&__image {
+							float:right;
+						}
+					}
+					.row__copy {
+						float:left;
+					}
+				}
+			}
+			&__image,
+			&__copy {
+				display: inline-block;
+				width: 100%;
+				font-family: $sanserif;
+				color: $black;
+				@include media-min-width(mobile) {
+					width: 50%;
+				}
+			}
+			&__image {
+				@include calc(min-height,150vw/(1200/694));
+				@include media-min-width(tablet) {
+					@include calc(min-height,90vw/(1200/694));
+				}
+			}
+			&__copy {
+				text-align: center;
+				@include calc(min-height,90vw/(1200/694));
+				h2 {
+					font-family: $serif;
+					font-size: 45px;
+					margin-top: 50px;
+					@include media-min-width(mobile) {
+						font-size: 60px;
+					}
+					@include media-min-width(tablet) {
+						margin-top: 25%;
+					}
+				}
+				p {
+					font-size: 16px;
+					margin: 40px 30px;
+					letter-spacing: 2px;
+					line-height: 1.5;
+				}
+			}
+			&__image_about {
+				background: url('/src/images/about.jpeg') center center no-repeat;
+			}
+			&__image_enchanting {
+				background: url('/src/images/enchanting.jpg') center center no-repeat;
+			}
+			&__image_design {
+				background: url('/src/images/design.jpg') center center no-repeat;
+			}
+			&__image_amenities {
+				background: url('/src/images/amenities.jpg') center center no-repeat;
+			}
+		}
+	}
+
+}
