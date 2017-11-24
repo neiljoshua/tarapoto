@@ -1,22 +1,25 @@
 
-	body {
-		&.location{
-			background: url('/src/images/map.jpg') center center no-repeat;
-			background-size: cover;
-			background-position: 65%;
-			@include media-min-width(mobile) {
-				background-position: center;
-			}
+body {
+	&.location{
+		background: url('/src/images/map.jpg') center center no-repeat;
+		background-size: cover;
+		background-position: 65%;
+		overflow: hidden;
+		@include media-min-width(mobile) {
+			background-position: center;
 		}
 	}
-	.location {
-		.hamburger {
-			span {
-				background: black;
-				&::before, &::after{
-					background-color: $black;
-				}
+}
+
+.location {
+
+	.hamburger {
+		span {
+			background: black;
+			&::before, &::after{
+				background-color: $black;
 			}
+		}
 	}
 
 	.hamburger--rot.is-active {
@@ -28,5 +31,6 @@
 	    @include prefix(transform, rotate(90deg),webkit ms);
 	  }
 	}
+
 }
 

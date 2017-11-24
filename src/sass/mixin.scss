@@ -10,9 +10,6 @@
   }
 }
 
-
-
-
 // media queries
 @mixin media($type) {
   @if $type == tablet {
@@ -22,7 +19,6 @@
     @media (max-width: 600px)  { @content; }
   }
 }
-
 
 @mixin stroke($str) {
 	-webkit-stroke: #{$str};
