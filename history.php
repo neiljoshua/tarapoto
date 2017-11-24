@@ -46,7 +46,7 @@
 			<div class="row__copy">
 				<div class="copy-center">
 					<h2>Enchanting</h2>
-					<p>Situated in the amazon, the mix of traditional Amazonean and contemporary architecture boasts a distinctively sophisticated, contemporary style, able to create a unique atmosphere and offer guests a warm welcome and a fully rounded experience of the area.
+					<p>Situated in the amazon, the mix of traditional Amazonean and contemporary architecture boasts a distinctively sophisticated, contemporary style, able to create a unique atmosphere.
 					</p>
 				</div>
 			</div>

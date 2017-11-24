@@ -20,8 +20,13 @@ $( document ).ready( function(){
 		$( '#inquiry' ).each(function(){
 		    this.reset();
 		});
-		$('.success').show().delay(4000).fadeOut();
+		$('.success').show().delay(3800).fadeOut();
 	});
+
+	$('.success a').on('click', function(e){
+		e.preventDefault();
+		$('.success').hide();
+	})
 
 	var toggleFooter = function() {
 		var st = $(this).scrollTop();

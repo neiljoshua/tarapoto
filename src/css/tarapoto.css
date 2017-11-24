@@ -351,13 +351,27 @@ body.location {
   background-color: #595959;
   border: 5px #fff Solid;
 }
+/* line 26, ../sass/inquiries.scss */
+.inquiries #inquiry .success a {
+  position: absolute;
+  padding: 5px 15px;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  border-radius: 23px;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-family: "AmaticSC-Regular";
+  letter-spacing: 3px;
+}
 @media (min-width: 601px) {
   /* line 16, ../sass/inquiries.scss */
   .inquiries #inquiry .success {
     position: absolute;
   }
 }
-/* line 29, ../sass/inquiries.scss */
+/* line 42, ../sass/inquiries.scss */
 .inquiries #inquiry .success__image {
   width: 200px;
 }
@@ -779,25 +793,33 @@ button:hover {
 /* line 84, ../sass/history.scss */
 .history .row__copy {
   position: relative;
+  padding: 50px 0;
+  height: 100%;
 }
-/* line 86, ../sass/history.scss */
+@media (min-width: 601px) {
+  /* line 84, ../sass/history.scss */
+  .history .row__copy {
+    padding: 0;
+  }
+}
+/* line 91, ../sass/history.scss */
 .history .row__copy h2 {
   font-family: "Rokkitt-ExtraLight";
   font-size: 45px;
 }
 @media (min-width: 601px) {
-  /* line 86, ../sass/history.scss */
+  /* line 91, ../sass/history.scss */
   .history .row__copy h2 {
     font-size: 55px;
   }
 }
 @media (min-width: 769px) {
-  /* line 86, ../sass/history.scss */
+  /* line 91, ../sass/history.scss */
   .history .row__copy h2 {
     font-size: 65px;
   }
 }
-/* line 96, ../sass/history.scss */
+/* line 101, ../sass/history.scss */
 .history .row__copy p {
   font-family: "Rokkitt-ExtraLight";
   font-size: 18px;
@@ -805,7 +827,7 @@ button:hover {
   letter-spacing: 2px;
   line-height: 1.5;
 }
-/* line 105, ../sass/history.scss */
+/* line 110, ../sass/history.scss */
 .history .row .copy-center {
   position: absolute;
   top: 50%;
@@ -814,19 +836,19 @@ button:hover {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 111, ../sass/history.scss */
+/* line 116, ../sass/history.scss */
 .history .row__image_about {
   background: url("/src/images/about.jpeg") center center no-repeat;
 }
-/* line 114, ../sass/history.scss */
+/* line 119, ../sass/history.scss */
 .history .row__image_enchanting {
   background: url("/src/images/enchanting.jpg") center center no-repeat;
 }
-/* line 117, ../sass/history.scss */
+/* line 122, ../sass/history.scss */
 .history .row__image_design {
   background: url("/src/images/design.jpg") center center no-repeat;
 }
-/* line 120, ../sass/history.scss */
+/* line 125, ../sass/history.scss */
 .history .row__image_amenities {
   background: url("/src/images/amenities.jpg") center center no-repeat;
 }

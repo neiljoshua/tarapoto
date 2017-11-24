@@ -23,6 +23,19 @@
 			z-index: 10000;
     	background-color: $gray;
     	border: 5px $white Solid;
+    	a {
+		    position: absolute;
+		    padding: 5px 15px;
+		    right: 20px;
+		    bottom: 20px;
+		    font-size: 20px;
+		    border-radius: 23px;
+		    color: $white;
+		    border: 1px solid $white;
+		    cursor: pointer;
+		    font-family: $handwritingnormal;
+		    letter-spacing: 3px;
+    	}
     	@include media-min-width(mobile) {
     		position: absolute;
     	}

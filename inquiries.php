@@ -3,7 +3,6 @@
 	include('src/includes/header.php');
 ?>
 	<body class="inquiries">
-		<!-- <a href="/" class="close">X</a> -->
 		<a href="/">
 			<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
 		</a>
@@ -20,6 +19,7 @@
 		<section>
 			<form id="inquiry">
 				<div class="success">
+					<a href="/">Close</a>
 					<h3>Thank you for your interest in Tarapoto Resorts.
 					We wil get back to you as soon as we can.</h3>
 					<img class="success__image" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
