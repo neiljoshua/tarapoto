@@ -1,17 +1,19 @@
 @import 'reset';
 @import 'variables';
 @import 'fonts';
-@import "mixin";
+@import 'mixin';
 @import 'animation';
 @import 'location';
 @import 'inquiries';
 @import 'form';
-@import "hamburger";
-@import "monkey";
+@import 'hamburger';
+@import 'monkey';
 @import 'home';
+@import 'history';
 
 @include keyframes(show-elemet) {
   0%{opacity: 0;}
+  80%{opacity: 0;}
   100%{ opacity: 1;}
 }
 
@@ -38,7 +40,6 @@ body {
 	font-family: $handwritingbold;
 	font-size: 45px;
 	letter-spacing: 3px;
-	@include animation('show-elemet 1.5s ease');
 	@include media-min-width(mobile) {
 		font-size: 60px;
 		padding: 90px 0 60px;
@@ -59,7 +60,6 @@ body {
 		font-family: $handwritingnormal;
 		font-size: 35px;
 		font-weight: 300;
-		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
 			font-size: 45px;
 		}
@@ -68,7 +68,6 @@ body {
 		padding: 0 20px 40px;
 		font-family: $sanserif;
 		font-size: 20px;
-		@include animation('show-elemet 1.5s ease');
 		@include media-min-width(tablet) {
 			max-width: 720px;
 			margin: 10px auto;
@@ -114,43 +113,44 @@ body {
 	}
 }
 
-
-
 .menu {
-	@include media-max-width(tablet) {
-		visibility: hidden;
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 0;
-		bottom:0;
-		right: 0;
-		overflow: hidden;
-		transition: all .5s ease-in;
-		background: white;
-		&.active {
-			visibility: visible;
-			height: 100%;
-			transition: height .5s ease-in;
-		}
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 0;
+	bottom:0;
+	right: 0;
+	overflow: hidden;
+	transition: all .5s ease-in;
+	background: $white;
+	&.active {
+		visibility: visible;
+		height: 100%;
+		@include prefix(transition, height 0.5s ease-in, webkit ms o);
 	}
 	@include media-min-width(tablet) {
+		visibility: visible;
+		position: relative;
 		width: 100%;
-		margin-top: 20px;
+		background-color: $green;
+		top: inherit;
+		left: inherit;
+		height: inherit;
 		bottom: 0;
 	}
 	&__list {
-		@include media-max-width(tablet) {
-			position: absolute;
-			top: 50%;
-			@include prefix(transform, translateY(-50%),webkit ms);
-			width: 100%;
-			background-color: white;
-		}
+		display: block;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		@include prefix(transform, translateY(-50%), webkit ms o);
 		@include media-min-width(tablet) {
+			position: relative;
+			top: inherit;
 			width: 780px;
-			display: block;
 			margin: 0 auto;
+			@include prefix(transform, none, webkit ms o);
 		}
 	}
 	&__item {
@@ -163,7 +163,7 @@ body {
 		}
 	}
 	&__link {
- 		@include animation('show-elemet 2.5s ease');
+ 		@include animation('show-elemet 1.6s ease');
  		display: inline-block;
  		font-family: $sanserif;
  		color: $gray;
@@ -190,6 +190,12 @@ body {
 			}
  		}
  	}
+ 	&.menu__fixed {
+ 		position: fixed;
+ 		position: 0;
+ 		@include prefix(transition, all 0.6s ease-in, webkit ms o);
+ 	}
+
 }
 
 #currentpage {
@@ -204,34 +210,11 @@ body {
 }
 
 .home,
-.history,
 .location {
 	.menu {
 		@include media-min-width(tablet) {
 			position: absolute;
 			bottom: 0;
-		}
-	}
-}
-
-.home {
-	.page-title {
-		position: absolute;
-		top: 40%;
-		padding: 0;
-		width: 100%;
-		font-family: $handwritingnormal;
-		font-size: 55px;
-		@include media-min-width(mobile) {
-			font-size: 103px;
-			font-family: $handwritingbold;
-		}
-	}
-}
-
-.location {
-	@include media-min-width(tablet) {
-		.menu {
 			background-color: $green;
 		}
 	}

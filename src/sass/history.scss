@@ -1,0 +1,125 @@
+.history {
+	background-color: $green;
+	color: white;
+	%image {
+		@include calc(min-height,150vw/(1200/694));
+		@include media-min-width(tablet) {
+			@include calc(min-height,90vw/(1200/694));
+		}
+	}
+
+	.item {
+		width: 100%;
+		max-width: 100%;
+		margin: 40px auto;
+		&__image {
+			display: block;
+			background: url('/src/images/pool.jpg') center center no-repeat;
+			@extend %image;
+		}
+		&__copy {
+			font-family: $sanserif;
+			margin: 60px auto;
+		}
+	}
+
+	.about {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin: 60px 0 0;
+		font-size: 0;
+		overflow: hidden;
+		background-color: $silver;
+		@include media-min-width(tablet) {
+			background-color: $white;
+		}
+	}
+
+	.row {
+		display: block;
+		width: 100%;
+		clear: both;
+		@include media-min-width(mobile) {
+			&:nth-child(odd){
+				.row__image {
+					float:left;
+				}
+				.row__copy {
+					float:right;
+				}
+			}
+			&:nth-child(even){
+				.row__image {
+					float:right;
+					&__image {
+						float:right;
+					}
+				}
+				.row__copy {
+					float:left;
+				}
+			}
+		}
+		&__image,
+		&__copy {
+			display: block;
+			width: 100%;
+			font-family: $sanserif;
+			color: $black;
+			@extend %image;
+			@include media-min-width(mobile) {
+				width: 50%;
+			}
+			@include media-min-width(tablet) {
+				opacity: 0;
+				margin-top: 40px;
+				&.is_Visible {
+					opacity: 1;
+					margin-top: 0;
+					@include prefix(transition, all 0.6s ease 0.1s, webkit ms o);
+				}
+			}
+		}
+		&__copy {
+			position: relative;
+			h2 {
+				font-family: $serif;
+				font-size: 45px;
+				@include media-min-width(mobile) {
+					font-size: 55px;
+				}
+				@include media-min-width(tablet) {
+					font-size: 65px;
+				}
+			}
+			p {
+				font-family: $serif;
+				font-size: 18px;
+				margin: 30px;
+				letter-spacing: 2px;
+				line-height: 1.5;
+			}
+		}
+
+		.copy-center {
+			position: absolute;
+			top: 50%;
+			@include prefix(transform, translateY(-50%), webkit ms o);
+		}
+
+		&__image_about {
+			background: url('/src/images/about.jpeg') center center no-repeat;
+		}
+		&__image_enchanting {
+			background: url('/src/images/enchanting.jpg') center center no-repeat;
+		}
+		&__image_design {
+			background: url('/src/images/design.jpg') center center no-repeat;
+		}
+		&__image_amenities {
+			background: url('/src/images/amenities.jpg') center center no-repeat;
+		}
+	}
+
+}

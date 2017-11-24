@@ -1,3 +1,14 @@
+@mixin even(){
+  &:nth-child(even) {
+    @content
+  }
+}
+
+@mixin odd(){
+  &:nth-child(odd) {
+    @content
+  }
+}
 
 // media queries
 @mixin media($type) {
@@ -8,7 +19,6 @@
     @media (max-width: 600px)  { @content; }
   }
 }
-
 
 @mixin stroke($str) {
 	-webkit-stroke: #{$str};
