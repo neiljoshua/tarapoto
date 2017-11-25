@@ -358,7 +358,9 @@ body.location {
   right: 20px;
   bottom: 20px;
   font-size: 20px;
-  border-radius: 23px;
+  -webkit-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
   color: #fff;
   border: 1px solid #fff;
   cursor: pointer;
@@ -689,98 +691,95 @@ button:hover {
 }
 /* line 4, ../sass/history.scss */
 .history .item__image, .history .row__image, .history .row__copy {
-  min-height: -webkit-calc(86.75vw);
-  min-height: -moz-calc(86.75vw);
-  min-height: calc(86.75vw);
+  min-height: -webkit-calc(94.63636vw);
+  min-height: -moz-calc(94.63636vw);
+  min-height: calc(94.63636vw);
 }
 @media (min-width: 769px) {
   /* line 4, ../sass/history.scss */
   .history .item__image, .history .row__image, .history .row__copy {
-    min-height: -webkit-calc(52.05vw);
-    min-height: -moz-calc(52.05vw);
-    min-height: calc(52.05vw);
+    min-height: -webkit-calc(56.78182vw);
+    min-height: -moz-calc(56.78182vw);
+    min-height: calc(56.78182vw);
   }
 }
 /* line 11, ../sass/history.scss */
 .history .item {
   width: 100%;
   max-width: 100%;
-  margin: 40px auto;
 }
-/* line 15, ../sass/history.scss */
+/* line 14, ../sass/history.scss */
 .history .item__image {
   display: block;
   background: url("/src/images/pool.jpg") center center no-repeat;
 }
-/* line 20, ../sass/history.scss */
+/* line 19, ../sass/history.scss */
 .history .item__copy {
   font-family: "Quicksand-Light";
-  margin: 60px auto;
+  padding: 60px 30px;
 }
-/* line 26, ../sass/history.scss */
+/* line 25, ../sass/history.scss */
 .history .about {
   display: block;
   width: 100%;
   max-width: 100%;
-  margin: 60px 0 0;
   font-size: 0;
   overflow: hidden;
   background-color: #efefef;
 }
 @media (min-width: 769px) {
-  /* line 26, ../sass/history.scss */
+  /* line 25, ../sass/history.scss */
   .history .about {
     background-color: #fff;
   }
 }
-/* line 39, ../sass/history.scss */
+/* line 37, ../sass/history.scss */
 .history .row {
   display: block;
   width: 100%;
   clear: both;
 }
 @media (min-width: 601px) {
-  /* line 45, ../sass/history.scss */
+  /* line 43, ../sass/history.scss */
   .history .row:nth-child(odd) .row__image {
     float: left;
   }
-  /* line 48, ../sass/history.scss */
+  /* line 46, ../sass/history.scss */
   .history .row:nth-child(odd) .row__copy {
     float: right;
   }
-  /* line 53, ../sass/history.scss */
+  /* line 51, ../sass/history.scss */
   .history .row:nth-child(even) .row__image {
     float: right;
   }
-  /* line 55, ../sass/history.scss */
+  /* line 53, ../sass/history.scss */
   .history .row:nth-child(even) .row__image__image {
     float: right;
   }
-  /* line 59, ../sass/history.scss */
+  /* line 57, ../sass/history.scss */
   .history .row:nth-child(even) .row__copy {
     float: left;
   }
 }
-/* line 64, ../sass/history.scss */
+/* line 62, ../sass/history.scss */
 .history .row__image, .history .row__copy {
   display: block;
   width: 100%;
-  font-family: "Quicksand-Light";
   color: #000;
 }
 @media (min-width: 601px) {
-  /* line 64, ../sass/history.scss */
+  /* line 62, ../sass/history.scss */
   .history .row__image, .history .row__copy {
     width: 50%;
   }
 }
 @media (min-width: 769px) {
-  /* line 64, ../sass/history.scss */
+  /* line 62, ../sass/history.scss */
   .history .row__image, .history .row__copy {
     opacity: 0;
     margin-top: 40px;
   }
-  /* line 77, ../sass/history.scss */
+  /* line 74, ../sass/history.scss */
   .history .row__image.is_Visible, .history .row__copy.is_Visible {
     opacity: 1;
     margin-top: 0;
@@ -790,67 +789,84 @@ button:hover {
     transition: all 0.6s ease 0.1s;
   }
 }
-/* line 84, ../sass/history.scss */
+/* line 81, ../sass/history.scss */
 .history .row__copy {
   position: relative;
-  padding: 50px 0;
   height: 100%;
+  padding: 30px 0;
 }
-@media (min-width: 601px) {
-  /* line 84, ../sass/history.scss */
-  .history .row__copy {
-    padding: 0;
-  }
-}
-/* line 91, ../sass/history.scss */
+/* line 85, ../sass/history.scss */
 .history .row__copy h2 {
   font-family: "Rokkitt-ExtraLight";
   font-size: 45px;
 }
 @media (min-width: 601px) {
-  /* line 91, ../sass/history.scss */
+  /* line 85, ../sass/history.scss */
   .history .row__copy h2 {
     font-size: 55px;
   }
 }
 @media (min-width: 769px) {
-  /* line 91, ../sass/history.scss */
+  /* line 85, ../sass/history.scss */
   .history .row__copy h2 {
-    font-size: 65px;
+    font-size: 60px;
   }
 }
-/* line 101, ../sass/history.scss */
+/* line 95, ../sass/history.scss */
 .history .row__copy p {
-  font-family: "Rokkitt-ExtraLight";
-  font-size: 18px;
+  font-family: "Quicksand-Light";
+  font-size: 16px;
   margin: 30px;
   letter-spacing: 2px;
   line-height: 1.5;
 }
-/* line 110, ../sass/history.scss */
+@media (min-width: 601px) {
+  /* line 95, ../sass/history.scss */
+  .history .row__copy p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 95, ../sass/history.scss */
+  .history .row__copy p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 601px) {
+  /* line 81, ../sass/history.scss */
+  .history .row__copy {
+    padding: 0;
+  }
+}
+/* line 114, ../sass/history.scss */
 .history .row .copy-center {
   position: absolute;
   top: 50%;
+  padding: 0 30px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 116, ../sass/history.scss */
+/* line 121, ../sass/history.scss */
 .history .row__image_about {
   background: url("/src/images/about.jpeg") center center no-repeat;
 }
-/* line 119, ../sass/history.scss */
+/* line 124, ../sass/history.scss */
 .history .row__image_enchanting {
   background: url("/src/images/enchanting.jpg") center center no-repeat;
 }
-/* line 122, ../sass/history.scss */
+/* line 127, ../sass/history.scss */
 .history .row__image_design {
   background: url("/src/images/design.jpg") center center no-repeat;
 }
-/* line 125, ../sass/history.scss */
+/* line 130, ../sass/history.scss */
 .history .row__image_amenities {
   background: url("/src/images/amenities.jpg") center center no-repeat;
+  -webkit-filter: sepia(45%);
+  -ms-filter: sepia(45%);
+  -o-filter: sepia(45%);
+  filter: sepia(45%);
 }
 
 @-webkit-keyframes show-elemet {
@@ -954,52 +970,50 @@ body:not(.home) .hamburger {
 
 /* line 52, ../sass/tarapoto.scss */
 .item {
-  margin: 20px auto;
   overflow: hidden;
 }
 @media (min-width: 601px) {
   /* line 52, ../sass/tarapoto.scss */
   .item {
-    margin: 40px auto;
+    padding: 40px auto;
   }
 }
-/* line 58, ../sass/tarapoto.scss */
+/* line 57, ../sass/tarapoto.scss */
 .item__title {
-  margin-bottom: 50px;
   font-family: "AmaticSC-Regular";
   font-size: 35px;
   font-weight: 300;
 }
 @media (min-width: 769px) {
-  /* line 58, ../sass/tarapoto.scss */
+  /* line 57, ../sass/tarapoto.scss */
   .item__title {
     font-size: 45px;
   }
 }
-/* line 67, ../sass/tarapoto.scss */
+/* line 65, ../sass/tarapoto.scss */
 .item__copy {
-  padding: 0 20px 40px;
   font-family: "Quicksand-Light";
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 2px;
+  margin: 0 auto;
 }
 @media (min-width: 769px) {
-  /* line 67, ../sass/tarapoto.scss */
+  /* line 65, ../sass/tarapoto.scss */
   .item__copy {
     max-width: 720px;
-    margin: 10px auto;
+    padding: 50px 30px;
   }
 }
 
-/* line 81, ../sass/tarapoto.scss */
+/* line 79, ../sass/tarapoto.scss */
 .legal {
   overflow: hidden;
   margin-bottom: 40px;
   padding-bottom: 60px;
 }
-/* line 85, ../sass/tarapoto.scss */
+/* line 83, ../sass/tarapoto.scss */
 .legal__copy {
   font-family: "Quicksand-Light";
   font-size: 20px;
@@ -1010,7 +1024,7 @@ body:not(.home) .hamburger {
   letter-spacing: 2px;
 }
 
-/* line 96, ../sass/tarapoto.scss */
+/* line 94, ../sass/tarapoto.scss */
 .center {
   position: absolute;
   top: 50%;
@@ -1020,7 +1034,7 @@ body:not(.home) .hamburger {
   transform: translate(-50%, -50%);
 }
 
-/* line 103, ../sass/tarapoto.scss */
+/* line 101, ../sass/tarapoto.scss */
 .logo {
   position: fixed;
   display: block;
@@ -1034,14 +1048,14 @@ body:not(.home) .hamburger {
   animation: show-elemet 1.6s ease;
 }
 @media (min-width: 601px) {
-  /* line 103, ../sass/tarapoto.scss */
+  /* line 101, ../sass/tarapoto.scss */
   .logo {
     width: 50px;
     left: 0px;
   }
 }
 
-/* line 116, ../sass/tarapoto.scss */
+/* line 114, ../sass/tarapoto.scss */
 .menu {
   visibility: hidden;
   position: fixed;
@@ -1054,7 +1068,7 @@ body:not(.home) .hamburger {
   transition: all .5s ease-in;
   background: #fff;
 }
-/* line 127, ../sass/tarapoto.scss */
+/* line 125, ../sass/tarapoto.scss */
 .menu.active {
   visibility: visible;
   height: 100%;
@@ -1064,7 +1078,7 @@ body:not(.home) .hamburger {
   transition: height 0.5s ease-in;
 }
 @media (min-width: 769px) {
-  /* line 116, ../sass/tarapoto.scss */
+  /* line 114, ../sass/tarapoto.scss */
   .menu {
     visibility: visible;
     position: relative;
@@ -1076,7 +1090,7 @@ body:not(.home) .hamburger {
     bottom: 0;
   }
 }
-/* line 142, ../sass/tarapoto.scss */
+/* line 140, ../sass/tarapoto.scss */
 .menu__list {
   display: block;
   position: absolute;
@@ -1088,7 +1102,7 @@ body:not(.home) .hamburger {
   transform: translateY(-50%);
 }
 @media (min-width: 769px) {
-  /* line 142, ../sass/tarapoto.scss */
+  /* line 140, ../sass/tarapoto.scss */
   .menu__list {
     position: relative;
     top: inherit;
@@ -1100,20 +1114,20 @@ body:not(.home) .hamburger {
     transform: none;
   }
 }
-/* line 156, ../sass/tarapoto.scss */
+/* line 154, ../sass/tarapoto.scss */
 .menu__item {
   display: block;
   text-align: center;
   margin: 50px auto;
 }
 @media (min-width: 769px) {
-  /* line 156, ../sass/tarapoto.scss */
+  /* line 154, ../sass/tarapoto.scss */
   .menu__item {
     display: inline-block;
     margin: 20px 60px;
   }
 }
-/* line 165, ../sass/tarapoto.scss */
+/* line 163, ../sass/tarapoto.scss */
 .menu__link {
   -webkit-animation: show-elemet 1.6s ease;
   -moz-animation: show-elemet 1.6s ease;
@@ -1128,12 +1142,12 @@ body:not(.home) .hamburger {
   text-decoration: none;
 }
 @media (min-width: 769px) {
-  /* line 165, ../sass/tarapoto.scss */
+  /* line 163, ../sass/tarapoto.scss */
   .menu__link {
     font-size: 22px;
     color: #fff;
   }
-  /* line 176, ../sass/tarapoto.scss */
+  /* line 174, ../sass/tarapoto.scss */
   .menu__link::after {
     content: '';
     display: block;
@@ -1143,13 +1157,13 @@ body:not(.home) .hamburger {
     background: #fff;
     transition: width .3s;
   }
-  /* line 186, ../sass/tarapoto.scss */
+  /* line 184, ../sass/tarapoto.scss */
   .menu__link:hover::after {
     width: 100%;
     transition: width .3s;
   }
 }
-/* line 193, ../sass/tarapoto.scss */
+/* line 191, ../sass/tarapoto.scss */
 .menu.menu__fixed {
   position: fixed;
   position: 0;
@@ -1159,13 +1173,13 @@ body:not(.home) .hamburger {
   transition: all 0.6s ease-in;
 }
 
-/* line 202, ../sass/tarapoto.scss */
+/* line 200, ../sass/tarapoto.scss */
 #currentpage .menu__link {
   color: #74AFAD;
   font-style: bold;
 }
 @media (min-width: 769px) {
-  /* line 202, ../sass/tarapoto.scss */
+  /* line 200, ../sass/tarapoto.scss */
   #currentpage .menu__link {
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -1173,7 +1187,7 @@ body:not(.home) .hamburger {
 }
 
 @media (min-width: 769px) {
-  /* line 214, ../sass/tarapoto.scss */
+  /* line 212, ../sass/tarapoto.scss */
   .home .menu,
   .location .menu {
     position: absolute;
@@ -1182,12 +1196,12 @@ body:not(.home) .hamburger {
   }
 }
 
-/* line 223, ../sass/tarapoto.scss */
+/* line 221, ../sass/tarapoto.scss */
 .dk-select *:first-child {
   margin-right: 0;
 }
 
-/* line 227, ../sass/tarapoto.scss */
+/* line 225, ../sass/tarapoto.scss */
 div.dk-select,
 div.dk-select-multi {
   width: 90%;
@@ -1198,7 +1212,7 @@ div.dk-select-multi {
   font-family: "Quicksand-Light";
 }
 @media (min-width: 601px) {
-  /* line 227, ../sass/tarapoto.scss */
+  /* line 225, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     margin-top: 20px;
@@ -1206,7 +1220,7 @@ div.dk-select-multi {
   }
 }
 @media (min-width: 769px) {
-  /* line 227, ../sass/tarapoto.scss */
+  /* line 225, ../sass/tarapoto.scss */
   div.dk-select,
   div.dk-select-multi {
     width: 320px;

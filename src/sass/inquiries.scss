@@ -29,7 +29,7 @@
 		    right: 20px;
 		    bottom: 20px;
 		    font-size: 20px;
-		    border-radius: 23px;
+		    @include prefix(border-radius, 2px, webkit ms);
 		    color: $white;
 		    border: 1px solid $white;
 		    cursor: pointer;

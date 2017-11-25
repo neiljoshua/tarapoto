@@ -50,13 +50,11 @@ body {
 }
 
 .item {
-	margin: 20px auto;
 	overflow: hidden;
 	@include media-min-width(mobile) {
-		margin: 40px auto;
+		padding: 40px auto;
 	}
 	&__title {
-		margin-bottom: 50px;
 		font-family: $handwritingnormal;
 		font-size: 35px;
 		font-weight: 300;
@@ -65,16 +63,16 @@ body {
 		}
 	}
 	&__copy {
-		padding: 0 20px 40px;
 		font-family: $sanserif;
 		font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin: 0 auto;
 		@include media-min-width(tablet) {
 			max-width: 720px;
-			margin: 10px auto;
+			padding: 50px 30px;
 		}
-	    text-align: center;
-	    line-height: 1.5;
-	    letter-spacing: 2px;
 	}
 }
 
