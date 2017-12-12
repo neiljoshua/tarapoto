@@ -188,11 +188,11 @@ body {
 			}
  		}
  	}
- 	&.menu__fixed {
- 		position: fixed;
- 		position: 0;
- 		@include prefix(transition, all 0.6s ease-in, webkit ms o);
- 	}
+ 	// &.menu__fixed {
+ 	// 	position: fixed;
+ 	// 	position: 0;
+ 	// 	@include prefix(transition, all 0.6s ease-in, webkit ms o);
+ 	// }
 
 }
 

@@ -1163,15 +1163,6 @@ body:not(.home) .hamburger {
     transition: width .3s;
   }
 }
-/* line 191, ../sass/tarapoto.scss */
-.menu.menu__fixed {
-  position: fixed;
-  position: 0;
-  -webkit-transition: all 0.6s ease-in;
-  -ms-transition: all 0.6s ease-in;
-  -o-transition: all 0.6s ease-in;
-  transition: all 0.6s ease-in;
-}
 
 /* line 200, ../sass/tarapoto.scss */
 #currentpage .menu__link {
