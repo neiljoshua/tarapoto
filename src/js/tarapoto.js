@@ -28,16 +28,6 @@ $( document ).ready( function(){
 		$('.success').hide();
 	})
 
-	var toggleFooter = function() {
-		var st = $(this).scrollTop();
-	   if (st > lastScrollTop){
-	       $('.menu').removeClass('menu__fixed');
-	   } else {
-	      $('.menu').addClass('menu__fixed');
-	   }
-   lastScrollTop = st;
-	}
-
 	var isElementInView = function(el,prop) {
 		$(el).each( function(i){
         var top_of_object = $(this).offset().top;
@@ -53,7 +43,6 @@ $( document ).ready( function(){
 		var $historyCopies = $('.row__copy');
 		isElementInView($historyImages,'is_Visible');
 		isElementInView($historyCopies,'is_Visible');
-		toggleFooter();
 	});
 
 } ); //End of Document Ready.
