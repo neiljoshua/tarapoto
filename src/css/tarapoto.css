@@ -783,62 +783,26 @@ button:hover {
   .history .row__image.is_Visible, .history .row__copy.is_Visible {
     opacity: 1;
     margin-top: 0;
-    -webkit-transition: all 0.6s ease 0.1s;
-    -ms-transition: all 0.6s ease 0.1s;
-    -o-transition: all 0.6s ease 0.1s;
-    transition: all 0.6s ease 0.1s;
+    -webkit-transition: all 0.4s ease 0.1s;
+    -ms-transition: all 0.4s ease 0.1s;
+    -o-transition: all 0.4s ease 0.1s;
+    transition: all 0.4s ease 0.1s;
+  }
+  /* line 78, ../sass/history.scss */
+  .history .row__image.is_Visible .copy-center, .history .row__copy.is_Visible .copy-center {
+    margin-top: 0;
+    -webkit-transition: all 0.6s ease 0.2s;
+    -ms-transition: all 0.6s ease 0.2s;
+    -o-transition: all 0.6s ease 0.2s;
+    transition: all 0.6s ease 0.2s;
   }
 }
-/* line 81, ../sass/history.scss */
+/* line 85, ../sass/history.scss */
 .history .row__copy {
   position: relative;
   height: 100%;
-  padding: 30px 0;
 }
-/* line 85, ../sass/history.scss */
-.history .row__copy h2 {
-  font-family: "Rokkitt-ExtraLight";
-  font-size: 45px;
-}
-@media (min-width: 601px) {
-  /* line 85, ../sass/history.scss */
-  .history .row__copy h2 {
-    font-size: 55px;
-  }
-}
-@media (min-width: 769px) {
-  /* line 85, ../sass/history.scss */
-  .history .row__copy h2 {
-    font-size: 60px;
-  }
-}
-/* line 95, ../sass/history.scss */
-.history .row__copy p {
-  font-family: "Quicksand-Light";
-  font-size: 16px;
-  margin: 30px;
-  letter-spacing: 2px;
-  line-height: 1.5;
-}
-@media (min-width: 601px) {
-  /* line 95, ../sass/history.scss */
-  .history .row__copy p {
-    font-size: 18px;
-  }
-}
-@media (min-width: 769px) {
-  /* line 95, ../sass/history.scss */
-  .history .row__copy p {
-    font-size: 20px;
-  }
-}
-@media (min-width: 601px) {
-  /* line 81, ../sass/history.scss */
-  .history .row__copy {
-    padding: 0;
-  }
-}
-/* line 114, ../sass/history.scss */
+/* line 91, ../sass/history.scss */
 .history .row .copy-center {
   position: absolute;
   top: 50%;
@@ -848,19 +812,68 @@ button:hover {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 121, ../sass/history.scss */
+@media (min-width: 601px) {
+  /* line 91, ../sass/history.scss */
+  .history .row .copy-center {
+    padding: 0;
+  }
+}
+@media (min-width: 769px) {
+  /* line 91, ../sass/history.scss */
+  .history .row .copy-center {
+    margin-top: 180px;
+  }
+}
+/* line 102, ../sass/history.scss */
+.history .row .copy-center h2 {
+  font-family: "Rokkitt-ExtraLight";
+  font-size: 45px;
+}
+@media (min-width: 601px) {
+  /* line 102, ../sass/history.scss */
+  .history .row .copy-center h2 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 102, ../sass/history.scss */
+  .history .row .copy-center h2 {
+    font-size: 60px;
+  }
+}
+/* line 112, ../sass/history.scss */
+.history .row .copy-center p {
+  font-family: "Quicksand-Light";
+  font-size: 16px;
+  margin: 30px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+@media (min-width: 601px) {
+  /* line 112, ../sass/history.scss */
+  .history .row .copy-center p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 112, ../sass/history.scss */
+  .history .row .copy-center p {
+    font-size: 20px;
+  }
+}
+/* line 128, ../sass/history.scss */
 .history .row__image_about {
   background: url("/src/images/about.jpeg") center center no-repeat;
 }
-/* line 124, ../sass/history.scss */
+/* line 131, ../sass/history.scss */
 .history .row__image_enchanting {
   background: url("/src/images/enchanting.jpg") center center no-repeat;
 }
-/* line 127, ../sass/history.scss */
+/* line 134, ../sass/history.scss */
 .history .row__image_design {
   background: url("/src/images/design.jpg") center center no-repeat;
 }
-/* line 130, ../sass/history.scss */
+/* line 137, ../sass/history.scss */
 .history .row__image_amenities {
   background: url("/src/images/amenities.jpg") center center no-repeat;
   -webkit-filter: sepia(45%);
