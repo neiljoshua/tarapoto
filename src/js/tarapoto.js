@@ -1,5 +1,7 @@
 $( document ).ready( function(){
 	var lastScrollTop = 0;
+	var iScrollPos = 0;
+	var $window = $(window);
 
 	$('.default').dropkick({
         theme: 'dk-tarapoto',
@@ -28,6 +30,19 @@ $( document ).ready( function(){
 		$('.success').hide();
 	})
 
+	var toggleFixedClass = function($window) {
+
+		var iCurScrollPos = $(this).scrollTop();
+    if ( (iCurScrollPos > iScrollPos)   ) {
+    	console.log('scroll down');
+        $('.menu').removeClass('menu__fixed');
+    } else {
+    	console.log('scroll up');
+       $('.menu').addClass('menu__fixed');
+    }
+    iScrollPos = iCurScrollPos;
+	}
+
 	var isElementInView = function(el,prop) {
 		$(el).each( function(i){
         var top_of_object = $(this).offset().top;
@@ -43,6 +58,14 @@ $( document ).ready( function(){
 		var $historyCopies = $('.row__copy');
 		isElementInView($historyImages,'is_Visible');
 		isElementInView($historyCopies,'is_Visible');
+		if ( !$('body').hasClass('home') ) {
+			if ($window.width() > 980) {
+				toggleFixedClass($window);
+			}
+			if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       $('.menu').addClass('menu__fixed');
+   		}
+		}
 	});
 
 } ); //End of Document Ready.

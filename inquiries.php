@@ -7,7 +7,9 @@
 			<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
 		</a>
 		<a href="#" class="hamburger hamburger--rot"><span>toggle menu</span></a>
-		<h1 class="page-title">TARAPOTO RESORT</h1>
+		<section class="hero-inquiry">
+			<h1 class="page-title center">TARAPOTO RESORT</h1>
+		</section>
 		<section class="item">
 			<p class="item__copy">We are ready to help you. If you have a request or comment, or if you would like additional information about Tarapoto Resorts, the following is how to reach us and individual departments related to your need..
 			</p>
@@ -16,7 +18,7 @@
 
 		</section>
 
-		<section>
+		<section class="item">
 			<form id="inquiry">
 				<div class="success">
 					<a href="/">Close</a>
@@ -25,12 +27,12 @@
 					<img class="success__image" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
 				</div>
 				<fieldset>
-					<input type="text" name="first-name" placeholder="First Name">
-					<input type="text" name="last-name" placeholder="Last Name">
+					<input type="text" name="first-name" placeholder="First Name" required="true">
+					<input type="text" name="last-name" placeholder="Last Name" required="true">
 				</fieldset>
 				<fieldset>
-					<input type="text" name="email" placeholder="Email">
-					<input type="text" name="phone" placeholder="Phone">
+					<input type="text" name="email" placeholder="Email" required="true">
+					<input type="text" name="phone" placeholder="Phone" required="true">
 				</fieldset>
 				<fieldset>
 					<input type="text" name="address" placeholder="Address">
