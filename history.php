@@ -16,13 +16,13 @@
 		</p>
 
 	</section>
-	<section class="item silver-section">
+	<section class="item full-width">
 
-		<div class="item__image">
+		<div class="full-width__image">
 
 		</div>
 
-		<p class="item__copy ">Tarapoto Resort strives towards building up a lifelong relationship with its guests. Building upon this ideology, the Resort has laid down four parameters which form the building blocks for such a kind of a strong relationship.
+		<p class="item__copy full-width__copy ">Tarapoto Resort strives towards building up a lifelong relationship with its guests. Building upon this ideology, the Resort has laid down four parameters which form the building blocks for such a kind of a strong relationship.
 		To be the first priority for the tourists visiting Tarapoto, where they will be appreciable towards the Customer Satisfaction approach of the resort.</p>
 
 	</section>

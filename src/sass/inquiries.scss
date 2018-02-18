@@ -1,4 +1,20 @@
 .inquiries {
+	@include media-min-width(tablet) {
+		padding-bottom: 70px;
+	}
+	.hero-inquiry {
+		position: relative;
+		max-width: 100%;
+		background: url('/src/images/pool.jpg') center center no-repeat;
+		@include prefix(filter, sepia(80%),webkit ms o );
+		@include calc(min-height,120vw/(1100/694));
+		@include media-min-width(mobile) {
+			@include calc(min-height,80vw/(1100/694));
+		}
+		@include media-min-width(tablet) {
+			@include calc(min-height,65vw/(1100/694));
+		}
+	}
 	#inquiry {
 		position: relative;
 		h3{
@@ -43,5 +59,15 @@
 				width: 200px;
 			}
 		}
+	}
+	.menu {
+		@include media-min-width(tablet) {
+			opacity: 0;
+			@include prefix(transition, opacity 0.4s ease-in, webkit ms o);
+			&.menu__fixed {
+		 		opacity: 1;
+		 		@include prefix(transition, opacity 0.4s ease-in, webkit ms o);
+		 	}
+	  }
 	}
 }
