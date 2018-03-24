@@ -7,7 +7,6 @@
 		<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
 	</a>
 	<a href="#" class="hamburger hamburger--rot"><span>toggle menu</span></a>
-	<!-- <img class="logo" src="/images/logo.png"> -->
 	<h1 class="page-title">TARAPOTO RESORT</h1>
 	<section class=" item">
 		<h2 class="item__title">Our Vision</h2>
@@ -16,7 +15,7 @@
 		</p>
 
 	</section>
-	<section class="item full-width">
+	<section class="full-width">
 
 		<div class="full-width__image">
 
@@ -27,11 +26,11 @@
 
 	</section>
 
-	<section class="about">
-
+	<section class="gallery">
 
 		<div class="row">
-			<div class="row__image row__image_about">
+			<div class="row__image">
+				<img src="/src/images/about.jpg">
 			</div>
 			<div class="row__copy">
 				<div class="copy-center">
@@ -41,34 +40,37 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="row__image row__image_enchanting">
+			<div class="row__image">
+				<img src="/src/images/enchanting.jpg">
 			</div>
 			<div class="row__copy">
 				<div class="copy-center">
 					<h2>Enchanting</h2>
-					<p>Situated in the amazon, the mix of traditional Amazonean and contemporary architecture boasts a distinctively sophisticated, contemporary style, able to create a unique atmosphere.
+					<p>Situated in the amazon, the mix of traditional Amazonean and contemporary architecture boasts a distinctively sophisticated, able to create a unique atmosphere.
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="row__image row__image_design">
+			<div class="row__image">
+				<img src="/src/images/design.jpg">
 			</div>
 			<div class= "row__copy">
 				<div class="copy-center">
 					<h2>Design</h2>
-					<p>The warm elegance of the interiors and the exquisite attention to detail come together to shape the inviting ambience of a private home, where special attention is paid to every guest.
+					<p>The warm elegance of the interiors and the exquisite attention to detail come together to shape the inviting ambience of a private home.
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class= "row__image row__image_amenities">
+			<div class= "row__image">
+				<img src="/src/images/amenities.jpg">
 			</div>
 			<div class= "row__copy">
 				<div class="copy-center">
 					<h2>Amenities</h2>
-					<p>The courtyard, with the beautiful amazon views, terrace and green corners, is the heart of Tarapoto : a cosy, inviting atmosphere where you can sit back and relax any time of day.
+					<p>The courtyard, with the beautiful amazon views, terrace and green corners, is the heart of Tarapoto.
 					</p>
 				</div>
 			</div>
