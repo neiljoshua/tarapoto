@@ -4,7 +4,7 @@ grunt.initConfig({
     dist: {
       options: {
         sassDir: 'src/sass/',
-        specify: 'src/sass/tarapoto.scss',
+        specify: 'src/sass/styles.scss',
         cssDir: 'src/css'
       }
     }

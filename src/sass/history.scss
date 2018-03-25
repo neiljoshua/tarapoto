@@ -8,7 +8,11 @@
 			display: block;
 			background: url('/src/images/pool.jpg') center center no-repeat;
 			@include prefix(background-size, cover, webkit ms );
-			@include calc(min-height,90vw/(1200/694));
+			&:after{
+				content: "";
+				display: block;
+				padding-bottom: 50%;
+			}
 		}
 		&__copy {
 			max-width: 720px;
@@ -28,37 +32,36 @@
 	.row {
 		display: block;
 		width: 100%;
-		clear: both;
 		overflow: hidden;
 		position: relative;
 		@include media-min-width(tablet) {
 			&:nth-child(odd){
-				.row__image {
+				.row-image {
 					float:left;
 				}
-				.row__copy {
+				.row-copy {
 					float:right;
 					right: 0;
 				}
 			}
 			&:nth-child(even){
-				.row__image {
+				.row-image {
 					float:right;
 				}
-				.row__copy {
+				.row-copy {
 					float:left;
 					left: 0;
 				}
 			}
 		}
-		&__image,
-		&__copy {
+		&-image,
+		&-copy {
 			display: block;
 			color: $black;
 			@include media-min-width(tablet) {
 				margin-top: 80px;
 				width: 50%;
-				&.is_Visible {
+				&.is-Visible {
 					opacity: 1;
 					margin-top: 0;
 					@include prefix(transition, all 0.7s ease, webkit ms o);
@@ -69,14 +72,14 @@
 				}
 			}
 		}
-		&__image {
+		&-image {
 			img {
 				display: block;
 				width: 100%;
 				height: auto;
 			}
 		}
-		&__copy {
+		&-copy {
 			padding: 80px 20px;
 			@include media-min-width(tablet) {
 				position: absolute;

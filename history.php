@@ -29,10 +29,10 @@
 	<section class="gallery">
 
 		<div class="row">
-			<div class="row__image">
+			<div class="row-image">
 				<img src="/src/images/about.jpg">
 			</div>
-			<div class="row__copy">
+			<div class="row-copy">
 				<div class="copy-center">
 					<h2>Experience</h2>
 					<p>All the tourists visiting Tarapoto will experince the best customer service.  Customer Satisfaction is top priority in Tarapoto.</p>
@@ -40,10 +40,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="row__image">
+			<div class="row-image">
 				<img src="/src/images/enchanting.jpg">
 			</div>
-			<div class="row__copy">
+			<div class="row-copy">
 				<div class="copy-center">
 					<h2>Enchanting</h2>
 					<p>Situated in the amazon, the mix of traditional Amazonean and contemporary architecture boasts a distinctively sophisticated, able to create a unique atmosphere.
@@ -52,10 +52,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="row__image">
+			<div class="row-image">
 				<img src="/src/images/design.jpg">
 			</div>
-			<div class= "row__copy">
+			<div class= "row-copy">
 				<div class="copy-center">
 					<h2>Design</h2>
 					<p>The warm elegance of the interiors and the exquisite attention to detail come together to shape the inviting ambience of a private home.
@@ -64,10 +64,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class= "row__image">
+			<div class= "row-image">
 				<img src="/src/images/amenities.jpg">
 			</div>
-			<div class= "row__copy">
+			<div class= "row-copy">
 				<div class="copy-center">
 					<h2>Amenities</h2>
 					<p>The courtyard, with the beautiful amazon views, terrace and green corners, is the heart of Tarapoto.

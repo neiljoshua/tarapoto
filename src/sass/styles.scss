@@ -1,15 +1,15 @@
-@import 'reset';
-@import 'variables';
-@import 'fonts';
-@import 'mixin';
-@import 'animation';
-@import 'location';
-@import 'inquiries';
+@import 'globals/reset';
+@import 'globals/mixin';
+@import 'globals/animation';
+@import 'globals/variables';
+@import 'globals/fonts';
+@import 'globals/hamburger';
 @import 'form';
-@import 'hamburger';
-@import 'monkey';
-@import 'home';
 @import 'history';
+@import 'home';
+@import 'inquiries';
+@import 'location';
+@import 'monkey';
 
 @include keyframes(show-elemet) {
   0%{opacity: 0;}
