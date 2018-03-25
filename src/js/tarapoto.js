@@ -34,10 +34,8 @@ $( document ).ready( function(){
 
 		var iCurScrollPos = $(this).scrollTop();
     if ( (iCurScrollPos > iScrollPos)   ) {
-    	console.log('scroll down');
-        $('.menu').removeClass('menu__fixed');
+       $('.menu').removeClass('menu__fixed');
     } else {
-    	console.log('scroll up');
        $('.menu').addClass('menu__fixed');
     }
     iScrollPos = iCurScrollPos;
@@ -54,10 +52,10 @@ $( document ).ready( function(){
 	}
 
 	$(window).scroll( function(){
-		var $historyImages = $('.row__image');
-		var $historyCopies = $('.row__copy');
-		isElementInView($historyImages,'is_Visible');
-		isElementInView($historyCopies,'is_Visible');
+		var $historyImages = $('.row-image');
+		var $historyCopies = $('.row-copy');
+		isElementInView($historyImages,'is-Visible');
+		isElementInView($historyCopies,'is-Visible');
 		if ( !$('body').hasClass('home') ) {
 			if ($window.width() > 980) {
 				toggleFixedClass($window);
