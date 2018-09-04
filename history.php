@@ -15,13 +15,13 @@
 		</p>
 
 	</section>
-	<section class="full-width">
+	<section class="hero--history">
 
-		<div class="full-width__image">
-
+		<div class="hero--container">
+			<img src="/src/images/pool.jpg" alt="History Tarapoto">
 		</div>
 
-		<p class="item__copy full-width__copy ">Tarapoto Resort strives towards building up a lifelong relationship with its guests. Building upon this ideology, the Resort has laid down four parameters which form the building blocks for such a kind of a strong relationship.
+		<p class="item__copy">Tarapoto Resort strives towards building up a lifelong relationship with its guests. Building upon this ideology, the Resort has laid down four parameters which form the building blocks for such a kind of a strong relationship.
 		To be the first priority for the tourists visiting Tarapoto, where they will be appreciable towards the Customer Satisfaction approach of the resort.</p>
 
 	</section>
@@ -30,7 +30,7 @@
 
 		<div class="row">
 			<div class="row-image">
-				<img src="/src/images/about.jpg">
+				<img src="/src/images/about.jpg" alt="Experience">
 			</div>
 			<div class="row-copy">
 				<div class="copy-center">
@@ -41,7 +41,7 @@
 		</div>
 		<div class="row">
 			<div class="row-image">
-				<img src="/src/images/enchanting.jpg">
+				<img src="/src/images/enchanting.jpg" alt="Enchanting ">
 			</div>
 			<div class="row-copy">
 				<div class="copy-center">
@@ -53,7 +53,7 @@
 		</div>
 		<div class="row">
 			<div class="row-image">
-				<img src="/src/images/design.jpg">
+				<img src="/src/images/design.jpg" alt="Design">
 			</div>
 			<div class= "row-copy">
 				<div class="copy-center">
@@ -65,7 +65,7 @@
 		</div>
 		<div class="row">
 			<div class= "row-image">
-				<img src="/src/images/amenities.jpg">
+				<img src="/src/images/amenities.jpg" alt="Amenities">
 			</div>
 			<div class= "row-copy">
 				<div class="copy-center">

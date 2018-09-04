@@ -8,6 +8,7 @@
 		</a>
 		<a href="#" class="hamburger hamburger--rot"><span>toggle menu</span></a>
 		<section class="hero-inquiry">
+			<img src="src/images/pool.jpg" alt="Tarapoto Hero Image">
 			<h1 class="page-title center">TARAPOTO RESORT</h1>
 		</section>
 		<section class="item">
