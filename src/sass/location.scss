@@ -1,16 +1,12 @@
-body {
-	&.location{
-		background: url('/src/images/map.jpg') center center no-repeat;
-		background-size: cover;
-		background-position: 65%;
-		overflow: hidden;
-		@include media-min-width(mobile) {
-			background-position: center;
-		}
-	}
-}
-
 .location {
+
+	background: url('/src/images/map.jpg') center center no-repeat;
+	background-size: cover;
+	background-position: 65%;
+	overflow: hidden;
+	@include media-min-width(mobile) {
+		background-position: center;
+	}
 
 	.hamburger {
 		span {
@@ -19,16 +15,15 @@ body {
 				background-color: $black;
 			}
 		}
-	}
-
-	.hamburger--rot.is-active {
-	  background: $black;
-	  background-color: $white;
-	  opacity:0.9;
-	  transition: opacity 0.3s 0.3s;
-	  span {
-	    @include prefix(transform, rotate(90deg),webkit ms);
-	  }
+		&.is-active {
+		  background: $black;
+		  background-color: $white;
+		  opacity:0.9;
+		  transition: opacity 0.3s 0.3s;
+		  span {
+		    @include prefix(transform, rotate(90deg),webkit ms);
+		  }
+		}
 	}
 
 	.menu {

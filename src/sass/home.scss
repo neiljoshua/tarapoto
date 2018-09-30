@@ -1,13 +1,9 @@
 .home {
 	overflow: hidden;
-	.page-title
-	 {
-		@include animation('fadeIn 10s ease');
-	}
 	.logo,
-	.menu,
-	.hamburger {
-		@include animation('fadeIn 10.8s ease');
+	.page-title,
+	.menu {
+		@include animation('fadeIn 11s ease');
 	}
 
 	.page-title {

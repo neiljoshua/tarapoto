@@ -19,7 +19,7 @@
 			bottom: 0;
 			width: 100%;
 			height: 100%;
-			@include prefix(filter, sepia(90%),webkit ms o );
+			@include prefix(filter, sepia(40%),webkit ms o );
 		}
 		.page-title {
 			z-index: 100;

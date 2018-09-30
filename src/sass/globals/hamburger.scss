@@ -1,11 +1,12 @@
 .hamburger {
 	position: fixed;
 	display: block;
-  right: 0;
+	top: 12px;
+  right: 20px;
 	margin: 0;
 	padding: 0;
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	overflow: hidden;
 	z-index: 10;
 	font-size: 0;
@@ -15,8 +16,16 @@
 	border-radius: 0;
 	border: none;
 	cursor: pointer;
-	transition: background 0.6s;
-	@include animation('show-elemet 2.5s ease');
+	background-color: $transparentgreen;
+	@include prefix(border-radius, 50px, webkit ms);
+	@include prefix(transition,  background 0.6s ease-in-out, webkit ms);
+	z-index: 150;
+	@include media-min-width(mobile) {
+		top: 15px;
+		width: 60px;
+		height: 60px;
+		@include prefix(border-radius, 60px, webkit ms);
+	}
 	@include media-min-width(tablet) {
 		display: none;
 	}
@@ -26,11 +35,14 @@
 	span {
 	  display: block;
 	  position: absolute;
-	  top: 35px;
-	  left: 20px;
-	  right: 20px;
+	  top: 25px;
+	  left: 12px;
+	  right: 12px;
 	  height: 2px;
 	  background: $white;
+	  @include media-min-width(mobile) {
+	  	top: 30px;
+	  }
 	  &::before, &::after{
 	    position: absolute;
 	    display: block;
@@ -41,29 +53,37 @@
 	    content: "";
 	  }
 	  &::before {
-	    top: -12px;
+	    top: -10px;
+	    @include media-min-width(mobile) {
+	  		top: -12px;
+	  	}
 	  }
 	  &::after{
-	    bottom: -12px;
+	    bottom: -10px;
+	     @include media-min-width(mobile) {
+	  		bottom: -12px;
+	  	}
 	  }
 	}
 }
 
 .hamburger--rot {
-  background: none;
   opacity: 1;
-  transition: all 0.6s 0.3s;
+  @include prefix(transition, all 0.6s ease-in-out 0.3s, webkit ms);
   span {
-    transition: transform 0.6s;
+  	@include prefix(transition, opacity 0.6s ease-in-out, webkit ms);
   }
-}
-/* active state, i.e. menu open */
-.hamburger--rot.is-active {
-  background: $black;
-  background-color: $black;
-  opacity:0.9;
-  transition: opacity 0.3s 0.3s;
-  span {
-    @include prefix(transform, rotate(90deg),webkit ms);
+  @include media-max-width(tablet) {
+  	&.is-active {
+		  background: $green;
+		  background-color: $green;
+		  opacity:0.8;
+		  @include prefix(transition, opacity 0.3s ease-in-out 0.3s , webkit ms);
+		  span {
+		    @include prefix(transform, rotate(90deg),webkit ms);
+		  }
+		}
   }
+
 }
+

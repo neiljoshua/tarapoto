@@ -13,9 +13,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "dropkickjs": "^2.1.10",
-    "grunt": "^1.0.1",
+    "dropkickjs": "^2.2.4",
+    "grunt": "^1.0.3",
+    "grunt-compress-images": "^1.0.4",
     "grunt-contrib-compass": "^1.1.1",
-    "grunt-contrib-sass": "^1.0.0"
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^7.0.0"
   }
 }
