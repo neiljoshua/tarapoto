@@ -2,11 +2,7 @@
 <?php
 	include('src/includes/header.php');
 ?>
-	<body class="inquiries">
-		<a href="/">
-			<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
-		</a>
-		<a href="#" class="hamburger hamburger--rot"><span>toggle menu</span></a>
+	<main>
 		<section class="hero-inquiry">
 			<img src="src/images/pool.jpg" alt="Tarapoto Hero Image">
 			<h1 class="page-title center">TARAPOTO RESORT</h1>
@@ -16,7 +12,6 @@
 			</p>
 
 			<p class="item__copy">We are looking forward to hearing any questions or taking care of your requests.</p>
-
 		</section>
 
 		<section class="item">
@@ -311,9 +306,10 @@
 				</p>
 			</div>
 		</section>
-<?php
-	include('src/includes/menu.php');
-?>
-<?php
-	include('src/includes/footer.php');
-?>
+	</main>
+	<?php
+		include('src/includes/footer.php');
+	?>
+
+
+

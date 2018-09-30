@@ -1,21 +1,20 @@
-<?php $thisPage="index-page"; ?>
+<?php $thisPage="home"; ?>
 <?php
 	include('src/includes/header.php');
 ?>
-<body class="home">
-<a href="/">
-	<img class="logo" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
-</a>
-<a href="#" class="hamburger hamburger--rot"> <span>toggle menu</span> </a>
+	<main>
+		<h1 class="page-title center">Tarapoto Resort</h1>
+		<?php
+			include('src/includes/monkey.php');
+		?>
+	</main>
+	<?php
+		include('src/includes/footer.php');
+	?>
 
-<h1 class="page-title">Tarapoto Resort</h1>
-<?php
-	include('src/includes/monkey.php');
-?>
 
-<?php
-	include('src/includes/menu.php');
-?>
-<?php
-	include('src/includes/footer.php');
-?>
+
+
+
+
+
