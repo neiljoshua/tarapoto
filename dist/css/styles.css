@@ -284,12 +284,13 @@ button {
 }
 /* line 7, ../../src/sass/globals/header.scss */
 .logo__image {
-  width: 50px;
-  height: 50px;
-  margin: 12px 20px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  margin: 12px 10px;
+  padding: 2px;
+  -webkit-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
   background-color: rgba(116, 175, 173, 0.7);
 }
 @media (min-width: 601px) {
@@ -315,9 +316,9 @@ button {
   }
 }
 
-/* line 29, ../../src/sass/globals/header.scss */
+/* line 30, ../../src/sass/globals/header.scss */
 .menu {
-  visibility: hidden;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -326,22 +327,22 @@ button {
   right: 0;
   overflow: hidden;
   background-color: #fff;
-  -webkit-transition: height 0.5s ease-in;
-  -ms-transition: height 0.5s ease-in;
-  transition: height 0.5s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
   z-index: 100;
 }
-/* line 41, ../../src/sass/globals/header.scss */
+/* line 42, ../../src/sass/globals/header.scss */
 .menu.active {
-  visibility: visible;
+  opacity: 1;
   height: 100%;
-  -webkit-transition: height 0.5s ease-in;
-  -ms-transition: height 0.5s ease-in;
-  -o-transition: height 0.5s ease-in;
-  transition: height 0.5s ease-in;
+  -webkit-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 @media (min-width: 769px) {
-  /* line 29, ../../src/sass/globals/header.scss */
+  /* line 30, ../../src/sass/globals/header.scss */
   .menu {
     visibility: visible;
     display: inline-block;
@@ -353,7 +354,7 @@ button {
     background-color: #74AFAD;
   }
 }
-/* line 56, ../../src/sass/globals/header.scss */
+/* line 57, ../../src/sass/globals/header.scss */
 .menu__list {
   display: block;
   position: absolute;
@@ -365,7 +366,7 @@ button {
   transform: translateY(-50%);
 }
 @media (min-width: 769px) {
-  /* line 56, ../../src/sass/globals/header.scss */
+  /* line 57, ../../src/sass/globals/header.scss */
   .menu__list {
     position: relative;
     top: initial;
@@ -377,20 +378,20 @@ button {
     transform: none;
   }
 }
-/* line 70, ../../src/sass/globals/header.scss */
+/* line 71, ../../src/sass/globals/header.scss */
 .menu__item {
   display: block;
   text-align: center;
   margin: 50px auto;
 }
 @media (min-width: 769px) {
-  /* line 70, ../../src/sass/globals/header.scss */
+  /* line 71, ../../src/sass/globals/header.scss */
   .menu__item {
     display: inline-block;
     margin: 20px 60px;
   }
 }
-/* line 79, ../../src/sass/globals/header.scss */
+/* line 80, ../../src/sass/globals/header.scss */
 .menu__link {
   display: inline-block;
   font-family: "Quicksand-Light";
@@ -400,7 +401,7 @@ button {
   text-decoration: none;
 }
 @media (min-width: 769px) {
-  /* line 79, ../../src/sass/globals/header.scss */
+  /* line 80, ../../src/sass/globals/header.scss */
   .menu__link {
     -webkit-animation: show-elemet .6s ease-out;
     -moz-animation: show-elemet .6s ease-out;
@@ -410,7 +411,7 @@ button {
     font-size: 26px;
     color: #fff;
   }
-  /* line 90, ../../src/sass/globals/header.scss */
+  /* line 91, ../../src/sass/globals/header.scss */
   .menu__link::after {
     content: '';
     display: block;
@@ -420,20 +421,20 @@ button {
     background: #fff;
     transition: width .3s;
   }
-  /* line 100, ../../src/sass/globals/header.scss */
+  /* line 101, ../../src/sass/globals/header.scss */
   .menu__link:hover::after {
     width: 100%;
     transition: width .3s;
   }
 }
 
-/* line 112, ../../src/sass/globals/header.scss */
+/* line 113, ../../src/sass/globals/header.scss */
 #currentpage .menu__link {
   color: #74AFAD;
   font-style: bold;
 }
 @media (min-width: 769px) {
-  /* line 112, ../../src/sass/globals/header.scss */
+  /* line 113, ../../src/sass/globals/header.scss */
   #currentpage .menu__link {
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -669,11 +670,11 @@ div.dk-select-multi {
   position: fixed;
   display: block;
   top: 12px;
-  right: 20px;
+  right: 10px;
   margin: 0;
   padding: 0;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
   z-index: 10;
   font-size: 0;
@@ -717,9 +718,9 @@ div.dk-select-multi {
 .hamburger span {
   display: block;
   position: absolute;
-  top: 25px;
-  left: 12px;
-  right: 12px;
+  top: 20px;
+  left: 9px;
+  right: 9px;
   height: 2px;
   background: #fff;
 }
@@ -741,7 +742,7 @@ div.dk-select-multi {
 }
 /* line 55, ../../src/sass/globals/hamburger.scss */
 .hamburger span::before {
-  top: -10px;
+  top: -8px;
 }
 @media (min-width: 601px) {
   /* line 55, ../../src/sass/globals/hamburger.scss */
@@ -751,7 +752,7 @@ div.dk-select-multi {
 }
 /* line 61, ../../src/sass/globals/hamburger.scss */
 .hamburger span::after {
-  bottom: -10px;
+  bottom: -8px;
 }
 @media (min-width: 601px) {
   /* line 61, ../../src/sass/globals/hamburger.scss */
@@ -779,9 +780,9 @@ div.dk-select-multi {
     background: #74AFAD;
     background-color: #74AFAD;
     opacity: 0.8;
-    -webkit-transition: opacity 0.3s ease-in-out 0.3s;
-    -ms-transition: opacity 0.3s ease-in-out 0.3s;
-    transition: opacity 0.3s ease-in-out 0.3s;
+    -webkit-transition: opacity 0.6s ease-in-out 0.3s;
+    -ms-transition: opacity 0.6s ease-in-out 0.3s;
+    transition: opacity 0.6s ease-in-out 0.3s;
   }
   /* line 82, ../../src/sass/globals/hamburger.scss */
   .hamburger--rot.is-active span {
@@ -1395,28 +1396,7 @@ button:hover {
     background-position: center;
   }
 }
-/* line 12, ../../src/sass/location.scss */
-.location .hamburger span {
-  background: black;
-}
-/* line 14, ../../src/sass/location.scss */
-.location .hamburger span::before, .location .hamburger span::after {
-  background-color: #000;
-}
-/* line 18, ../../src/sass/location.scss */
-.location .hamburger.is-active {
-  background: #000;
-  background-color: #fff;
-  opacity: 0.9;
-  transition: opacity 0.3s 0.3s;
-}
-/* line 23, ../../src/sass/location.scss */
-.location .hamburger.is-active span {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-/* line 29, ../../src/sass/location.scss */
+/* line 11, ../../src/sass/location.scss */
 .location .menu {
   opacity: 1;
 }

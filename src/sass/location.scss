@@ -8,24 +8,6 @@
 		background-position: center;
 	}
 
-	.hamburger {
-		span {
-			background: black;
-			&::before, &::after{
-				background-color: $black;
-			}
-		}
-		&.is-active {
-		  background: $black;
-		  background-color: $white;
-		  opacity:0.9;
-		  transition: opacity 0.3s 0.3s;
-		  span {
-		    @include prefix(transform, rotate(90deg),webkit ms);
-		  }
-		}
-	}
-
 	.menu {
 		opacity: 1;
 	}
