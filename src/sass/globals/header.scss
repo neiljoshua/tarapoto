@@ -1,121 +1,121 @@
 .logo {
-	position: fixed;
-	display:block;
-	top: 0;
-	left: 0px;
-	z-index: 150;
-	&__image {
-		width: 35px;
-		height: 35px;
-		margin: 12px 10px;
-		padding: 2px;
-		@include prefix(border-radius, 40px , webkit ms);
-		background-color: $transparentgreen;
-		@include media-min-width(mobile) {
-			width: 60px;
-			height: 60px;
-			margin: 15px 20px;
-			@include prefix(border-radius, 60px , webkit ms);
-		}
-		@include media-min-width(tablet) {
-			width: 70px;
-			height: 70px;
-			margin: 10px 30px;
-			@include prefix(border-radius, 70px , webkit ms);
-		}
-	}
+  position: fixed;
+  display:block;
+  top: 0;
+  left: 0px;
+  z-index: 150;
+  &__image {
+    width: 35px;
+    height: 35px;
+    margin: 12px 10px;
+    padding: 2px;
+    @include prefix(border-radius, 40px , webkit ms);
+    background-color: $transparentgreen;
+    @include media-min-width(mobile) {
+      width: 60px;
+      height: 60px;
+      margin: 15px 20px;
+      @include prefix(border-radius, 60px , webkit ms);
+    }
+    @include media-min-width(tablet) {
+      width: 70px;
+      height: 70px;
+      margin: 10px 30px;
+      @include prefix(border-radius, 70px , webkit ms);
+    }
+  }
 
 }
 
 .menu {
-	opacity: 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 0;
-	bottom:0;
-	right: 0;
-	overflow: hidden;
-	background-color: $white;
-	@include prefix(transition, all .6s ease-in, webkit ms);
-	z-index: 100;
-	&.active {
-		opacity: 1;
-		height: 100%;
-		@include prefix(transition, all .6s ease-out, webkit ms o);
-	}
-	@include media-min-width(tablet) {
-		visibility: visible;
-		display: inline-block;
-		top: inherit;
-		width: 100%;
-		height: 70px;
-		bottom: 0;
-		left: 0;
-		background-color: $green;
-	}
-	&__list {
-		display: block;
-		position: absolute;
-		top: 50%;
-		width: 100%;
-		@include prefix(transform, translateY(-50%), webkit ms o);
-		@include media-min-width(tablet) {
-			position: relative;
-			top: initial;
-			width: 780px;
-			margin: 0 auto;
-			@include prefix(transform, none, webkit ms o);
-		}
-	}
-	&__item {
-		display: block;
-		text-align: center;
-		margin: 50px auto;
-		@include media-min-width(tablet) {
-			display: inline-block;
-			margin: 20px 60px;
-		}
-	}
-	&__link {
-		display: inline-block;
-		font-family: $sanserif;
-		color: $gray;
-		font-size: 35px;
-		letter-spacing: 1px;
-		text-decoration: none;
-		@include media-min-width(tablet) {
-			@include animation('show-elemet .6s ease-out');
-			font-size: 26px;
-			color: $white;
-			&::after {
-				content: '';
-				display: block;
-				width: 0;
-				margin-top: 7px;
-				height: 1px;
-				background: $white;
-				transition: width .3s;
-			}
-			&:hover {
-				&::after {
-					width: 100%;
-					transition: width .3s;
-				}
-			}
-		}
-	}
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  bottom:0;
+  right: 0;
+  overflow: hidden;
+  background-color: $white;
+  @include prefix(transition, all .6s ease-in, webkit ms);
+  z-index: 100;
+  &.active {
+    opacity: 1;
+    height: 100%;
+    @include prefix(transition, all .6s ease-out, webkit ms o);
+  }
+  @include media-min-width(tablet) {
+    visibility: visible;
+    display: inline-block;
+    top: inherit;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    background-color: $green;
+  }
+  &__list {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    @include prefix(transform, translateY(-50%), webkit ms o);
+    @include media-min-width(tablet) {
+      position: relative;
+      top: initial;
+      width: 780px;
+      margin: 0 auto;
+      @include prefix(transform, none, webkit ms o);
+    }
+  }
+  &__item {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    @include media-min-width(tablet) {
+      display: inline-block;
+      margin: 20px 60px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-family: $sanserif;
+    color: $gray;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    @include media-min-width(tablet) {
+      @include animation('show-elemet .6s ease-out');
+      font-size: 26px;
+      color: $white;
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        margin-top: 7px;
+        height: 1px;
+        background: $white;
+        transition: width .3s;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+          transition: width .3s;
+        }
+      }
+    }
+  }
 
 
 }
 
 #currentpage {
-	.menu__link {
-		color: $green;
-		font-style: bold;
-		@include media-min-width(tablet) {
-			color: $white;
-			border-bottom: 1px solid  $white;
-		}
-	}
+  .menu__link {
+    color: $green;
+    font-style: bold;
+    @include media-min-width(tablet) {
+      color: $white;
+      border-bottom: 1px solid  $white;
+    }
+  }
 }

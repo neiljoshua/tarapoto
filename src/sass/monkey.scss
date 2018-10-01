@@ -1,6 +1,6 @@
 .monkey {
-	width: 320px;
-	opacity: 0;
+  width: 320px;
+  opacity: 0;
   path {
     fill-opacity: 0;
     @include stroke('#000');
@@ -11,6 +11,6 @@
   }
   @include animation('fadeOut 7s ease');
   @include media-min-width(desktop) {
-  	width: 500px;
+    width: 500px;
   }
 }
