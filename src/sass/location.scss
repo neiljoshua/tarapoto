@@ -1,16 +1,16 @@
 .location {
 
-	background: url('/src/images/map.jpg') center center no-repeat;
-	background-size: cover;
-	background-position: 65%;
-	overflow: hidden;
-	@include media-min-width(mobile) {
-		background-position: center;
-	}
+  background: url('/src/images/map.jpg') center center no-repeat;
+  background-size: cover;
+  background-position: 65%;
+  overflow: hidden;
+  @include media-min-width(mobile) {
+    background-position: center;
+  }
 
-	.menu {
-		opacity: 1;
-	}
+  .menu {
+    opacity: 1;
+  }
 
 }
 

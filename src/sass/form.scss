@@ -1,31 +1,31 @@
 
 form {
-	margin: 50px auto;
+  margin: 50px auto;
 }
 
 input{
-	border-radius: 0;
-	-webkit-appereance :none;
+  border-radius: 0;
+  -webkit-appereance :none;
 }
 
 input[type="text"], select {
-	font-family: "Quicksand-Light";
-	font-size: 18px;
-	color: $white;
+  font-family: "Quicksand-Light";
+  font-size: 18px;
+  color: $white;
 }
 
 input[type="text"] {
-	width: 90%;
-	max-width: 320px;
-	padding: 5px 0;
-	margin: 20px auto;
-	border-bottom: 1px solid #fff;
-	@include media-min-width(mobile) {
-		width: 250px;
-	}
-	@include media-min-width(tablet) {
-		width: 320px;
-	}
+  width: 90%;
+  max-width: 320px;
+  padding: 5px 0;
+  margin: 20px auto;
+  border-bottom: 1px solid #fff;
+  @include media-min-width(mobile) {
+    width: 250px;
+  }
+  @include media-min-width(tablet) {
+    width: 320px;
+  }
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -44,45 +44,45 @@ input[type="text"] {
 }
 
 select {
-	background-color: $green;
-	border-color: $white;
-	padding: 10px 0;
-	margin-top: 15px;
-	margin-top: 30px;
-	width: 	90%;
-	font-family: $sanserif;
-	@include media-min-width(mobile) {
-		width: 250px;
-	}
-	@include media-min-width(tablet) {
-		width: 320px;
-	}
+  background-color: $green;
+  border-color: $white;
+  padding: 10px 0;
+  margin-top: 15px;
+  margin-top: 30px;
+  width:  90%;
+  font-family: $sanserif;
+  @include media-min-width(mobile) {
+    width: 250px;
+  }
+  @include media-min-width(tablet) {
+    width: 320px;
+  }
 }
 
 fieldset {
-	*:first-child {
-		@include media-min-width(mobile) {
-			margin-right: 20px;
-		}
-		@include media-min-width(tablet) {
-			margin-right: 40px;
-		}
-	}
+  *:first-child {
+    @include media-min-width(mobile) {
+      margin-right: 20px;
+    }
+    @include media-min-width(tablet) {
+      margin-right: 40px;
+    }
+  }
 }
 
 button {
-	margin: 40px auto;
-	width: 200px;
-	border: 1px solid #fff;
-	color: $white;
-	padding: 15px 0;
-	font-family: $sanserif;
-	text-transform: uppercase;
-	font-size: 18px;
-	transition: background-color 0.7s;
-	&:hover {
-		background-color: $white;
-		color: $green;
-		transition: background-color 0.7s;
-	}
+  margin: 40px auto;
+  width: 200px;
+  border: 1px solid #fff;
+  color: $white;
+  padding: 15px 0;
+  font-family: $sanserif;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: background-color 0.7s;
+  &:hover {
+    background-color: $white;
+    color: $green;
+    transition: background-color 0.7s;
+  }
 }

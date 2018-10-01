@@ -1,29 +1,29 @@
 .home {
-	overflow: hidden;
-	.logo,
-	.page-title,
-	.menu {
-		@include animation('fadeIn 11s ease');
-	}
+  overflow: hidden;
+  .logo,
+  .page-title,
+  .menu {
+    @include animation('fadeIn 11s ease');
+  }
 
-	.page-title {
-		position: absolute;
-		top: 40%;
-		padding: 0;
-		width: 100%;
-		font-family: $handwritingnormal;
-		font-size: 55px;
-		@include media-min-width(mobile) {
-			font-size: 103px;
-			font-family: $handwritingbold;
-		}
-		@include media-min-width(desktop) {
-			font-size: 110px;
-		}
-	}
+  .page-title {
+    position: absolute;
+    top: 40%;
+    padding: 0;
+    width: 100%;
+    font-family: $handwritingnormal;
+    font-size: 55px;
+    @include media-min-width(mobile) {
+      font-size: 103px;
+      font-family: $handwritingbold;
+    }
+    @include media-min-width(desktop) {
+      font-size: 110px;
+    }
+  }
 
-	.menu {
-		opacity: 1;
-	}
+  .menu {
+    opacity: 1;
+  }
 
 }
