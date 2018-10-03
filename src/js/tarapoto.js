@@ -1,7 +1,5 @@
 $( document ).ready( function(){
-  var lastScrollTop = 0,
-      iScrollPos = 0,
-      $window = $(window);
+  var iScrollPos = 0;
 
   $('.default').dropkick({
     theme: 'dk-tarapoto',
@@ -11,9 +9,8 @@ $( document ).ready( function(){
     }
   });
 
-  $('.hamburger').on('click', function(e){
+  $('.hamburger').on('click', function(e) {
     e.preventDefault();
-
     var burger = $(this),
         menu = $('.menu');
 
@@ -26,7 +23,7 @@ $( document ).ready( function(){
     }
   });
 
-  $('.submit').on('click', function(e){
+  $('.submit').on('click', function(e) {
     e.preventDefault();
     $( '#inquiry' ).each(function(){
       this.reset();
@@ -37,50 +34,48 @@ $( document ).ready( function(){
   $('.success a').on('click', function(e){
     e.preventDefault();
     $('.success').hide();
-  })
+  });
 
-  $(window).scroll( function(){
-    var $historyImages = $('.row-image'),
-        $historyCopies = $('.row-copy');
+  $(window).scroll( function() {
+    var historyImages = $('.row-image'),
+        historyCopies = $('.row-copy'),
+        wrapper = $(window);
 
-    isElementInView($historyImages,'is-Visible');
-    isElementInView($historyCopies,'is-Visible');
+    isElementInView(historyImages,'is-Visible');
+    isElementInView(historyCopies,'is-Visible');
     if ( !$('body').hasClass('home') ) {
-
-      if ($window.width() > 980) {
-        toggleFixedClass($window);
+      if (wrapper.width() > 980) {
+        toggleFixedClass(wrapper);
       }
       if($(window).scrollTop() + $(window).height() == $(document).height()) {
-       $('.menu').addClass('menu__fixed');
+        $('.menu').addClass('menu__fixed');
       }
-
     }
   });
 
   $(window).resize(removeClassesOnResize);
 
-  function toggleFixedClass($window) {
+  function toggleFixedClass(window) {
 
     var iCurScrollPos = $(this).scrollTop();
 
     if ( (iCurScrollPos > iScrollPos)   ) {
-       $('.menu').removeClass('menu__fixed');
+      $('.menu').removeClass('menu__fixed');
     } else {
-       $('.menu').addClass('menu__fixed');
+      $('.menu').addClass('menu__fixed');
     }
-
     iScrollPos = iCurScrollPos;
   }
 
   function isElementInView(el,prop) {
 
     $(el).each( function(i){
-        var top_of_object = $(this).offset().top,
-            bottom_of_window = $(window).scrollTop() + $(window).height();
+      var top_of_object = $(this).offset().top,
+          bottom_of_window = $(window).scrollTop() + $(window).height();
 
-        if( bottom_of_window > top_of_object ){
-            $(this).addClass(prop);
-        }
+      if( bottom_of_window > top_of_object ){
+        $(this).addClass(prop);
+      }
     });
   }
 
@@ -91,7 +86,6 @@ $( document ).ready( function(){
       $('.hamburger').removeClass('is-active');
       $('.menu').removeClass('active');
     }
-
   }
 
   removeClassesOnResize();
