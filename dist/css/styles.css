@@ -278,45 +278,38 @@ button {
 .logo {
   position: fixed;
   display: block;
-  top: 0;
-  left: 0px;
+  top: 15px;
+  left: 15px;
   z-index: 150;
 }
-/* line 7, ../../src/sass/globals/header.scss */
+@media (min-width: 769px) {
+  /* line 1, ../../src/sass/globals/header.scss */
+  .logo {
+    top: 30px;
+    left: 30px;
+  }
+}
+/* line 11, ../../src/sass/globals/header.scss */
 .logo__image {
-  width: 35px;
-  height: 35px;
-  margin: 12px 10px;
-  padding: 2px;
+  width: 40px;
+  height: 40px;
   -webkit-border-radius: 40px;
   -ms-border-radius: 40px;
   border-radius: 40px;
   background-color: rgba(116, 175, 173, 0.7);
 }
-@media (min-width: 601px) {
-  /* line 7, ../../src/sass/globals/header.scss */
-  .logo__image {
-    width: 60px;
-    height: 60px;
-    margin: 15px 20px;
-    -webkit-border-radius: 60px;
-    -ms-border-radius: 60px;
-    border-radius: 60px;
-  }
-}
 @media (min-width: 769px) {
-  /* line 7, ../../src/sass/globals/header.scss */
+  /* line 11, ../../src/sass/globals/header.scss */
   .logo__image {
     width: 70px;
     height: 70px;
-    margin: 10px 30px;
     -webkit-border-radius: 70px;
     -ms-border-radius: 70px;
     border-radius: 70px;
   }
 }
 
-/* line 30, ../../src/sass/globals/header.scss */
+/* line 25, ../../src/sass/globals/header.scss */
 .menu {
   opacity: 0;
   position: fixed;
@@ -332,7 +325,7 @@ button {
   transition: all 0.6s ease-in;
   z-index: 100;
 }
-/* line 42, ../../src/sass/globals/header.scss */
+/* line 37, ../../src/sass/globals/header.scss */
 .menu.active {
   opacity: 1;
   height: 100%;
@@ -342,7 +335,7 @@ button {
   transition: all 0.6s ease-out;
 }
 @media (min-width: 769px) {
-  /* line 30, ../../src/sass/globals/header.scss */
+  /* line 25, ../../src/sass/globals/header.scss */
   .menu {
     visibility: visible;
     display: inline-block;
@@ -354,7 +347,7 @@ button {
     background-color: #74AFAD;
   }
 }
-/* line 57, ../../src/sass/globals/header.scss */
+/* line 52, ../../src/sass/globals/header.scss */
 .menu__list {
   display: block;
   position: absolute;
@@ -366,7 +359,7 @@ button {
   transform: translateY(-50%);
 }
 @media (min-width: 769px) {
-  /* line 57, ../../src/sass/globals/header.scss */
+  /* line 52, ../../src/sass/globals/header.scss */
   .menu__list {
     position: relative;
     top: initial;
@@ -378,20 +371,20 @@ button {
     transform: none;
   }
 }
-/* line 71, ../../src/sass/globals/header.scss */
+/* line 66, ../../src/sass/globals/header.scss */
 .menu__item {
   display: block;
   text-align: center;
   margin: 50px auto;
 }
 @media (min-width: 769px) {
-  /* line 71, ../../src/sass/globals/header.scss */
+  /* line 66, ../../src/sass/globals/header.scss */
   .menu__item {
     display: inline-block;
     margin: 20px 60px;
   }
 }
-/* line 80, ../../src/sass/globals/header.scss */
+/* line 75, ../../src/sass/globals/header.scss */
 .menu__link {
   display: inline-block;
   font-family: "Quicksand-Light";
@@ -401,7 +394,7 @@ button {
   text-decoration: none;
 }
 @media (min-width: 769px) {
-  /* line 80, ../../src/sass/globals/header.scss */
+  /* line 75, ../../src/sass/globals/header.scss */
   .menu__link {
     -webkit-animation: show-elemet .6s ease-out;
     -moz-animation: show-elemet .6s ease-out;
@@ -411,7 +404,7 @@ button {
     font-size: 26px;
     color: #fff;
   }
-  /* line 91, ../../src/sass/globals/header.scss */
+  /* line 86, ../../src/sass/globals/header.scss */
   .menu__link::after {
     content: '';
     display: block;
@@ -421,20 +414,20 @@ button {
     background: #fff;
     transition: width .3s;
   }
-  /* line 101, ../../src/sass/globals/header.scss */
+  /* line 96, ../../src/sass/globals/header.scss */
   .menu__link:hover::after {
     width: 100%;
     transition: width .3s;
   }
 }
 
-/* line 113, ../../src/sass/globals/header.scss */
+/* line 108, ../../src/sass/globals/header.scss */
 #currentpage .menu__link {
   color: #74AFAD;
   font-style: bold;
 }
 @media (min-width: 769px) {
-  /* line 113, ../../src/sass/globals/header.scss */
+  /* line 108, ../../src/sass/globals/header.scss */
   #currentpage .menu__link {
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -486,60 +479,67 @@ body {
 /* line 31, ../../src/sass/globals/layout.scss */
 .item {
   overflow: hidden;
-  margin: 20px auto;
+  width: -webkit-calc(100% - 80px);
+  width: -moz-calc(100% - 80px);
+  width: calc(100% - 80px);
+  margin: 20px 40px;
 }
 @media (min-width: 601px) {
   /* line 31, ../../src/sass/globals/layout.scss */
   .item {
-    margin: 40px auto;
+    width: -webkit-calc(100% - 120px);
+    width: -moz-calc(100% - 120px);
+    width: calc(100% - 120px);
+    margin: 20px 60px;
   }
 }
 @media (min-width: 769px) {
   /* line 31, ../../src/sass/globals/layout.scss */
   .item {
     width: 720px;
+    margin: 20px auto;
   }
 }
-/* line 40, ../../src/sass/globals/layout.scss */
+/* line 43, ../../src/sass/globals/layout.scss */
 .item__title {
   font-family: "AmaticSC-Regular";
   font-size: 35px;
   font-weight: 300;
 }
 @media (min-width: 769px) {
-  /* line 40, ../../src/sass/globals/layout.scss */
+  /* line 43, ../../src/sass/globals/layout.scss */
   .item__title {
     font-size: 45px;
   }
 }
 @media (min-width: 981px) {
-  /* line 40, ../../src/sass/globals/layout.scss */
+  /* line 43, ../../src/sass/globals/layout.scss */
   .item__title {
     font-size: 55px;
   }
 }
-/* line 51, ../../src/sass/globals/layout.scss */
+/* line 54, ../../src/sass/globals/layout.scss */
 .item__copy {
   font-family: "Quicksand-Light";
   font-size: 19px;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 2px;
-  margin: 40px 20px;
+  margin: 40px auto;
 }
 @media (min-width: 769px) {
-  /* line 51, ../../src/sass/globals/layout.scss */
+  /* line 54, ../../src/sass/globals/layout.scss */
   .item__copy {
     font-size: 23px;
   }
 }
 
-/* line 64, ../../src/sass/globals/layout.scss */
+/* line 67, ../../src/sass/globals/layout.scss */
 .legal {
   overflow: hidden;
   margin-bottom: 40px;
 }
-/* line 67, ../../src/sass/globals/layout.scss */
+/* line 70, ../../src/sass/globals/layout.scss */
 .legal__copy {
   font-family: "Quicksand-Light";
   font-size: 20px;
@@ -550,7 +550,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* line 78, ../../src/sass/globals/layout.scss */
+/* line 81, ../../src/sass/globals/layout.scss */
 .center {
   position: absolute;
   top: 50%;
@@ -561,7 +561,7 @@ body {
 }
 
 @media (min-width: 769px) {
-  /* line 87, ../../src/sass/globals/layout.scss */
+  /* line 90, ../../src/sass/globals/layout.scss */
   .home .menu,
   .location .menu {
     position: absolute;
@@ -570,12 +570,12 @@ body {
   }
 }
 
-/* line 96, ../../src/sass/globals/layout.scss */
+/* line 99, ../../src/sass/globals/layout.scss */
 .dk-select *:first-child {
   margin-right: 0;
 }
 
-/* line 100, ../../src/sass/globals/layout.scss */
+/* line 103, ../../src/sass/globals/layout.scss */
 div.dk-select,
 div.dk-select-multi {
   width: 90%;
@@ -586,7 +586,7 @@ div.dk-select-multi {
   font-family: "Quicksand-Light";
 }
 @media (min-width: 601px) {
-  /* line 100, ../../src/sass/globals/layout.scss */
+  /* line 103, ../../src/sass/globals/layout.scss */
   div.dk-select,
   div.dk-select-multi {
     margin-top: 20px;
@@ -594,7 +594,7 @@ div.dk-select-multi {
   }
 }
 @media (min-width: 769px) {
-  /* line 100, ../../src/sass/globals/layout.scss */
+  /* line 103, ../../src/sass/globals/layout.scss */
   div.dk-select,
   div.dk-select-multi {
     width: 320px;
@@ -669,8 +669,8 @@ div.dk-select-multi {
 .hamburger {
   position: fixed;
   display: block;
-  top: 12px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   margin: 0;
   padding: 0;
   width: 40px;
@@ -693,44 +693,27 @@ div.dk-select-multi {
   transition: background 0.6s ease-in-out;
   z-index: 150;
 }
-@media (min-width: 601px) {
-  /* line 1, ../../src/sass/globals/hamburger.scss */
-  .hamburger {
-    top: 15px;
-    width: 60px;
-    height: 60px;
-    -webkit-border-radius: 60px;
-    -ms-border-radius: 60px;
-    border-radius: 60px;
-  }
-}
 @media (min-width: 769px) {
   /* line 1, ../../src/sass/globals/hamburger.scss */
   .hamburger {
     display: none;
   }
 }
-/* line 32, ../../src/sass/globals/hamburger.scss */
+/* line 26, ../../src/sass/globals/hamburger.scss */
 .hamburger:focus {
   outline: none;
 }
-/* line 35, ../../src/sass/globals/hamburger.scss */
+/* line 29, ../../src/sass/globals/hamburger.scss */
 .hamburger span {
   display: block;
   position: absolute;
   top: 20px;
-  left: 9px;
-  right: 9px;
+  left: 10px;
+  right: 10px;
   height: 2px;
   background: #fff;
 }
-@media (min-width: 601px) {
-  /* line 35, ../../src/sass/globals/hamburger.scss */
-  .hamburger span {
-    top: 30px;
-  }
-}
-/* line 46, ../../src/sass/globals/hamburger.scss */
+/* line 37, ../../src/sass/globals/hamburger.scss */
 .hamburger span::before, .hamburger span::after {
   position: absolute;
   display: block;
@@ -740,51 +723,39 @@ div.dk-select-multi {
   background-color: #fff;
   content: "";
 }
-/* line 55, ../../src/sass/globals/hamburger.scss */
+/* line 46, ../../src/sass/globals/hamburger.scss */
 .hamburger span::before {
   top: -8px;
 }
-@media (min-width: 601px) {
-  /* line 55, ../../src/sass/globals/hamburger.scss */
-  .hamburger span::before {
-    top: -12px;
-  }
-}
-/* line 61, ../../src/sass/globals/hamburger.scss */
+/* line 49, ../../src/sass/globals/hamburger.scss */
 .hamburger span::after {
   bottom: -8px;
 }
-@media (min-width: 601px) {
-  /* line 61, ../../src/sass/globals/hamburger.scss */
-  .hamburger span::after {
-    bottom: -12px;
-  }
-}
 
-/* line 70, ../../src/sass/globals/hamburger.scss */
+/* line 55, ../../src/sass/globals/hamburger.scss */
 .hamburger--rot {
   opacity: 1;
   -webkit-transition: all 0.6s ease-in-out 0.3s;
   -ms-transition: all 0.6s ease-in-out 0.3s;
   transition: all 0.6s ease-in-out 0.3s;
 }
-/* line 73, ../../src/sass/globals/hamburger.scss */
+/* line 58, ../../src/sass/globals/hamburger.scss */
 .hamburger--rot span {
-  -webkit-transition: opacity 0.6s ease-in-out;
-  -ms-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
+  -webkit-transition: rotate 0.8s ease-in-out;
+  -ms-transition: rotate 0.8s ease-in-out;
+  transition: rotate 0.8s ease-in-out;
 }
 @media (max-width: 768px) {
-  /* line 77, ../../src/sass/globals/hamburger.scss */
+  /* line 62, ../../src/sass/globals/hamburger.scss */
   .hamburger--rot.is-active {
     background: #74AFAD;
     background-color: #74AFAD;
     opacity: 0.8;
-    -webkit-transition: opacity 0.6s ease-in-out 0.3s;
-    -ms-transition: opacity 0.6s ease-in-out 0.3s;
-    transition: opacity 0.6s ease-in-out 0.3s;
+    -webkit-transition: rotate 0.8s ease-in-out;
+    -ms-transition: rotate 0.8s ease-in-out;
+    transition: rotate 0.8s ease-in-out;
   }
-  /* line 82, ../../src/sass/globals/hamburger.scss */
+  /* line 67, ../../src/sass/globals/hamburger.scss */
   .hamburger--rot.is-active span {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -1245,7 +1216,6 @@ button:hover {
 /* line 9, ../../src/sass/home.scss */
 .home .page-title {
   position: absolute;
-  top: 40%;
   padding: 0;
   width: 100%;
   font-family: "AmaticSC-Regular";
@@ -1264,7 +1234,7 @@ button:hover {
     font-size: 110px;
   }
 }
-/* line 25, ../../src/sass/home.scss */
+/* line 24, ../../src/sass/home.scss */
 .home .menu {
   opacity: 1;
 }
@@ -1284,11 +1254,19 @@ button:hover {
 .inquiries .hero-inquiry:after {
   content: "";
   display: block;
-  padding-bottom: -webkit-calc(591/1127 * 100%);
-  padding-bottom: -moz-calc(591/1127 * 100%);
-  padding-bottom: calc(591/1127 * 100%);
+  padding-bottom: -webkit-calc(56.25%);
+  padding-bottom: -moz-calc(56.25%);
+  padding-bottom: calc(56.25%);
 }
-/* line 14, ../../src/sass/inquiries.scss */
+@media (min-width: 769px) {
+  /* line 9, ../../src/sass/inquiries.scss */
+  .inquiries .hero-inquiry:after {
+    padding-bottom: -webkit-calc(46.25%);
+    padding-bottom: -moz-calc(46.25%);
+    padding-bottom: calc(46.25%);
+  }
+}
+/* line 17, ../../src/sass/inquiries.scss */
 .inquiries .hero-inquiry img {
   position: absolute;
   top: 0;
@@ -1302,15 +1280,16 @@ button:hover {
   -o-filter: sepia(40%);
   filter: sepia(40%);
 }
-/* line 24, ../../src/sass/inquiries.scss */
+/* line 27, ../../src/sass/inquiries.scss */
 .inquiries .hero-inquiry .page-title {
+  padding: 0;
   z-index: 100;
 }
-/* line 28, ../../src/sass/inquiries.scss */
+/* line 32, ../../src/sass/inquiries.scss */
 .inquiries #inquiry {
   position: relative;
 }
-/* line 30, ../../src/sass/inquiries.scss */
+/* line 34, ../../src/sass/inquiries.scss */
 .inquiries #inquiry h3 {
   margin-top: 30%;
   padding-left: 20px;
@@ -1321,12 +1300,12 @@ button:hover {
   line-height: 1.5;
 }
 @media (min-width: 601px) {
-  /* line 30, ../../src/sass/inquiries.scss */
+  /* line 34, ../../src/sass/inquiries.scss */
   .inquiries #inquiry h3 {
     margin-top: 60px;
   }
 }
-/* line 42, ../../src/sass/inquiries.scss */
+/* line 46, ../../src/sass/inquiries.scss */
 .inquiries #inquiry .success {
   display: none;
   position: fixed;
@@ -1338,7 +1317,7 @@ button:hover {
   background-color: #595959;
   border: 5px #fff Solid;
 }
-/* line 52, ../../src/sass/inquiries.scss */
+/* line 56, ../../src/sass/inquiries.scss */
 .inquiries #inquiry .success a {
   position: absolute;
   padding: 5px 15px;
@@ -1355,17 +1334,17 @@ button:hover {
   letter-spacing: 3px;
 }
 @media (min-width: 601px) {
-  /* line 42, ../../src/sass/inquiries.scss */
+  /* line 46, ../../src/sass/inquiries.scss */
   .inquiries #inquiry .success {
     position: absolute;
   }
 }
-/* line 68, ../../src/sass/inquiries.scss */
+/* line 72, ../../src/sass/inquiries.scss */
 .inquiries #inquiry .success__image {
   width: 200px;
 }
 @media (min-width: 769px) {
-  /* line 73, ../../src/sass/inquiries.scss */
+  /* line 77, ../../src/sass/inquiries.scss */
   .inquiries .menu {
     opacity: 0;
     -webkit-transition: opacity 0.4s ease-in;
@@ -1373,7 +1352,7 @@ button:hover {
     -o-transition: opacity 0.4s ease-in;
     transition: opacity 0.4s ease-in;
   }
-  /* line 77, ../../src/sass/inquiries.scss */
+  /* line 81, ../../src/sass/inquiries.scss */
   .inquiries .menu.menu__fixed {
     opacity: 1;
     -webkit-transition: opacity 0.4s ease-in;

@@ -9,7 +9,10 @@
     &:after{
       content: "";
       display: block;
-      @include calc( padding-bottom, '591/1127 * 100%');
+      @include calc( padding-bottom, '56.25%');
+      @include media-min-width(tablet) {
+        @include calc( padding-bottom, '46.25%');
+      }
     }
     img {
       position: absolute;
@@ -22,6 +25,7 @@
       @include prefix(filter, sepia(40%),webkit ms o );
     }
     .page-title {
+      padding: 0;
       z-index: 100;
     }
   }

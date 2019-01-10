@@ -1,26 +1,21 @@
 .logo {
   position: fixed;
   display:block;
-  top: 0;
-  left: 0px;
+  top: 15px;
+  left: 15px;
   z-index: 150;
+  @include media-min-width(tablet) {
+    top: 30px;
+    left: 30px;
+  }
   &__image {
-    width: 35px;
-    height: 35px;
-    margin: 12px 10px;
-    padding: 2px;
+    width: 40px;
+    height: 40px;
     @include prefix(border-radius, 40px , webkit ms);
     background-color: $transparentgreen;
-    @include media-min-width(mobile) {
-      width: 60px;
-      height: 60px;
-      margin: 15px 20px;
-      @include prefix(border-radius, 60px , webkit ms);
-    }
     @include media-min-width(tablet) {
       width: 70px;
       height: 70px;
-      margin: 10px 30px;
       @include prefix(border-radius, 70px , webkit ms);
     }
   }
