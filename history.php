@@ -72,6 +72,10 @@
         </div>
       </div>
 
+      <?php
+        include('src/includes/menu.php');
+      ?>
+
     </section>
   </nain>
   <?php

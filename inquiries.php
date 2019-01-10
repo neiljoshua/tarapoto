@@ -16,22 +16,17 @@
 
     <section class="item">
       <form id="inquiry">
-        <div class="success">
-          <a href="/">Close</a>
-          <h3>Thank you for your interest in Tarapoto Resorts.
-          We wil get back to you as soon as we can.</h3>
-          <img class="success__image" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
-        </div>
+
         <fieldset>
-          <input type="text" name="first-name" placeholder="First Name" required="true">
-          <input type="text" name="last-name" placeholder="Last Name" required="true">
+          <input type="text" class="required" name="first-name" placeholder="First Name" required>
+          <input type="text" class="required" name="last-name" placeholder="Last Name" required>
         </fieldset>
         <fieldset>
-          <input type="text" name="email" placeholder="Email" required="true">
-          <input type="text" name="phone" placeholder="Phone" required="true">
+          <input type="text" class="required" name="email" placeholder="Email" required>
+          <input type="text" class="required" name="phone" placeholder="Phone" required>
         </fieldset>
         <fieldset>
-          <input type="text" name="address" placeholder="Address">
+          <input type="text" class="required" name="address" placeholder="Address">
           <select name="country" class="default" tabindex="1">
             <option default>Country</option>
                   <option value="Afganistan">Afghanistan</option>
@@ -300,12 +295,21 @@
           </select>
         </fieldset>
         <button class="submit">Submit</button>
+        <div class="success">
+          <a href="/">Close</a>
+          <h3>Thank you for your interest in Tarapoto Resorts.
+          We wil get back to you as soon as we can.</h3>
+          <img class="success__image" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
+        </div>
       </form>
       <div class="legal">
         <p class="legal__copy">Enjoy the stupendous calm and peace of this tree-shaded lakeside location cradled by mountains where time stands still. Choose ease, harmony and wellbeing over the hectic pace of today's lifestyle!
         </p>
       </div>
     </section>
+    <?php
+      include('src/includes/menu.php');
+    ?>
   </main>
   <?php
     include('src/includes/footer.php');

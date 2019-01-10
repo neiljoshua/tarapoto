@@ -30,12 +30,15 @@ body {
 
 .item {
   overflow: hidden;
-  margin: 20px auto;
+  @include calc(width, "100% - 80px");
+  margin: 20px 40px;
   @include media-min-width(mobile) {
-    margin: 40px auto;
+    @include calc(width, "100% - 120px");
+    margin: 20px 60px;
   }
   @include media-min-width(tablet) {
     width: 720px;
+    margin: 20px auto;
   }
   &__title {
     font-family: $handwritingnormal;
@@ -54,7 +57,7 @@ body {
     text-align: center;
     line-height: 1.5;
     letter-spacing: 2px;
-    margin: 40px 20px;
+    margin: 40px auto;
     @include media-min-width(tablet) {
       font-size: 23px;
     }

@@ -1,12 +1,8 @@
 $( document ).ready( function(){
-  var iScrollPos = 0;
 
-  $('.default').dropkick({
+  var selectList = $('.default').dropkick({
     theme: 'dk-tarapoto',
-    mobile: 'true',
-    change: function (value, label) {
-      $(this).dropkick('theme', value);
-    }
+    mobile: 'true'
   });
 
   $('.hamburger').on('click', function(e) {
@@ -25,13 +21,17 @@ $( document ).ready( function(){
 
   $('.submit').on('click', function(e) {
     e.preventDefault();
+
+    $('.default').dropkick({
+      reset: 'true'
+    });
     $( '#inquiry' ).each(function(){
       this.reset();
     });
-    $('.success').show().delay(3800).fadeOut();
+    $('.success').show().delay(1500).fadeOut();
   });
 
-  $('.success a').on('click', function(e){
+  $('.success a').on('click', function(e) {
     e.preventDefault();
     $('.success').hide();
   });
@@ -56,8 +56,8 @@ $( document ).ready( function(){
   $(window).resize(removeClassesOnResize);
 
   function toggleFixedClass(window) {
-
-    var iCurScrollPos = $(this).scrollTop();
+    var iScrollPos = 0,
+        iCurScrollPos = $(this).scrollTop();
 
     if ( (iCurScrollPos > iScrollPos)   ) {
       $('.menu').removeClass('menu__fixed');

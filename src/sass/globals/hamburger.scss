@@ -1,8 +1,8 @@
 .hamburger {
   position: fixed;
   display: block;
-  top: 12px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   margin: 0;
   padding: 0;
   width: 40px;
@@ -20,12 +20,6 @@
   @include prefix(border-radius, 50px, webkit ms);
   @include prefix(transition,  background 0.6s ease-in-out, webkit ms);
   z-index: 150;
-  @include media-min-width(mobile) {
-    top: 15px;
-    width: 60px;
-    height: 60px;
-    @include prefix(border-radius, 60px, webkit ms);
-  }
   @include media-min-width(tablet) {
     display: none;
   }
@@ -36,13 +30,10 @@
     display: block;
     position: absolute;
     top: 20px;
-    left: 9px;
-    right: 9px;
+    left: 10px;
+    right: 10px;
     height: 2px;
     background: $white;
-    @include media-min-width(mobile) {
-      top: 30px;
-    }
     &::before, &::after{
       position: absolute;
       display: block;
@@ -54,15 +45,9 @@
     }
     &::before {
       top: -8px;
-      @include media-min-width(mobile) {
-        top: -12px;
-      }
     }
     &::after{
       bottom: -8px;
-       @include media-min-width(mobile) {
-        bottom: -12px;
-      }
     }
   }
 }
@@ -71,14 +56,14 @@
   opacity: 1;
   @include prefix(transition, all 0.6s ease-in-out 0.3s, webkit ms);
   span {
-    @include prefix(transition, opacity 0.6s ease-in-out, webkit ms);
+    @include prefix(transition, rotate 0.8s ease-in-out, webkit ms);
   }
   @include media-max-width(tablet) {
     &.is-active {
       background: $green;
       background-color: $green;
       opacity:0.8;
-      @include prefix(transition, opacity 0.6s ease-in-out 0.3s , webkit ms);
+      @include prefix(transition, rotate 0.8s ease-in-out, webkit ms);
       span {
         @include prefix(transform, rotate(90deg),webkit ms);
       }
