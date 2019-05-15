@@ -10,13 +10,6 @@ grunt.initConfig({
     }
   },
 
-  concat: {
-    dist: {
-      src: ['src/css/plugins/dropkick.css'],
-      dest: 'dist/css/plugins.css',
-    },
-  },
-
   uglify: {
     my_target: {
       files: {
@@ -42,9 +35,8 @@ grunt.initConfig({
 
 grunt.loadNpmTasks('grunt-contrib-compass');
 grunt.loadNpmTasks('grunt-contrib-watch');
-grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 
-grunt.registerTask('default', [ 'concat', 'uglify', 'watch' ]);
+grunt.registerTask('default', [ 'uglify', 'watch' ]);
 grunt.registerTask('dev', ['compass']);
 }

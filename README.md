@@ -1,4 +1,4 @@
-# tarapoto
+# Tarapoto
 
 ## Setup
 
@@ -9,4 +9,4 @@
 
 ## Environments
 
-* Url: http://www.tarapoto.neiljoshua.com/
+* Url: http://www.tarapoto.neiljoshua.dev/

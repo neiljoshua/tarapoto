@@ -4,6 +4,7 @@
 
 #module control
 node_modules
+node_modules/
 npm_log
 
 #html files
@@ -11,4 +12,4 @@ html
 
 #Git flow
 gitflow-installer.sh
-gitflow/ 
+gitflow/

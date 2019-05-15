@@ -1,4 +1,4 @@
-<svg class="monkey center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="monkey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
 <g>
   <path d="M231.4,582.7c0,2.6,1.8,3.9,3.3,5.2c1.9,1.6,3.1,3.5,3.1,6c0.1,3-1.7,4.2-4.3,2.7c-2.9-1.7-5.7-3.6-8.5-5.4

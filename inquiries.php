@@ -3,14 +3,17 @@
   include('src/includes/header.php');
 ?>
   <main>
-    <section class="hero-inquiry">
-      <img src="src/images/pool.jpg" alt="Tarapoto Hero Image">
-      <h1 class="page-title center">TARAPOTO RESORT</h1>
+    <section class="hero">
+      <div class="hero__image">
+        <img src="src/images/about.jpg" alt="Tarapoto Hero Image">
+      </div>
+      <h1 class="hero__title center">TARAPOTO RESORT</h1>
     </section>
     <section class="item">
+      <p class="item__copy">Enjoy the stupendous calm and peace of this tree-shaded lakeside location cradled by mountains where time stands still. Choose ease, harmony and wellbeing over the hectic pace of today's lifestyle!
+      </p>
       <p class="item__copy">We are ready to help you. If you have a request or comment, or if you would like additional information about Tarapoto Resorts, the following is how to reach us and individual departments related to your need..
       </p>
-
       <p class="item__copy">We are looking forward to hearing any questions or taking care of your requests.</p>
     </section>
 
@@ -302,10 +305,6 @@
           <img class="success__image" src="src/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
         </div>
       </form>
-      <div class="legal">
-        <p class="legal__copy">Enjoy the stupendous calm and peace of this tree-shaded lakeside location cradled by mountains where time stands still. Choose ease, harmony and wellbeing over the hectic pace of today's lifestyle!
-        </p>
-      </div>
     </section>
     <?php
       include('src/includes/menu.php');
