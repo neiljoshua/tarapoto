@@ -1,6 +1,10 @@
 
 form {
-  margin: 50px auto;
+  margin: 20px auto;
+  font-weight: 600;
+  @include media-min-width(tablet) {
+    margin: 0 auto;
+  }
 }
 
 input{
@@ -11,15 +15,14 @@ input{
 input[type="text"], select {
   font-family: "Quicksand-Light";
   font-size: 18px;
-  color: $white;
+  color: $black;
 }
 
 input[type="text"] {
-  width: 90%;
-  max-width: 320px;
-  padding: 5px 0;
+  width: 75%;
   margin: 20px auto;
-  border-bottom: 1px solid #fff;
+  padding: 5px 0;
+  border-bottom: 1px solid $black;
   @include media-min-width(mobile) {
     width: 250px;
   }
@@ -29,32 +32,32 @@ input[type="text"] {
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: $white;
+    color: $black;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #909;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: $white;
+   color: $black;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: $white;
+   color: $black;
 }
 
 select {
-  background-color: $green;
+  background-color: $black;
   border-color: $white;
   padding: 10px 0;
   margin-top: 15px;
   margin-top: 30px;
   width:  90%;
   font-family: $sanserif;
-  @include media-min-width(mobile) {
+  @include media-min-width(tablet) {
     width: 250px;
   }
-  @include media-min-width(tablet) {
+  @include media-min-width(dsktop) {
     width: 320px;
   }
 }
@@ -75,14 +78,16 @@ button {
   width: 200px;
   border: 1px solid #fff;
   color: $white;
+  background-color: $green;
   padding: 15px 0;
   font-family: $sanserif;
   text-transform: uppercase;
   font-size: 18px;
-  transition: background-color 0.7s;
+  transition: box-shadow 0.5s ease-in;
+  border-radius: 7px;
   &:hover {
-    background-color: $white;
-    color: $green;
-    transition: background-color 0.7s;
+    border: 1px solid $black;
+    box-shadow: -2px 2px 2px 2px rgba( $black,0.33);
+    transition: box-shadow 0.5s ease-out;
   }
 }

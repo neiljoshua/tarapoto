@@ -1,0 +1,13 @@
+.monkey {
+  width: 320px;
+  height: 320px;
+  @include animation('pulse 1.5s ease-in-out infinite');
+  path {
+    fill-opacity: 0;
+    @include stroke($white);
+    @include stroke-width('1');
+    @include stroke-dasharray('6957');
+    @include stroke-dashoffset('6957');
+    @include animation('draw 0.1s 1 forwards linear');
+  }
+}

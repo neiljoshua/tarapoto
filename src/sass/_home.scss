@@ -1,20 +1,22 @@
 .home {
-  overflow: hidden;
+  color: $white;
+  background-color: $green;
   .logo,
-  .page-title,
+  &__title,
+  &__video,
   .menu {
-    @include animation('fadeIn 11s ease');
+    @include animation('fadeIn 0.5s ease-in-out');
   }
 
-  .page-title {
+  &__title {
     position: absolute;
     padding: 0;
     width: 100%;
     font-family: $handwritingnormal;
     font-size: 55px;
     @include media-min-width(mobile) {
-      font-size: 103px;
       font-family: $handwritingbold;
+      font-size: 103px;
     }
     @include media-min-width(desktop) {
       font-size: 110px;
@@ -23,6 +25,16 @@
 
   .menu {
     opacity: 1;
+  }
+
+  &__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(60%);
+    object-fit: cover;
   }
 
 }

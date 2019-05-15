@@ -1,14 +1,11 @@
 .hamburger {
-  position: fixed;
+  position: relative;
   display: block;
-  top: 15px;
-  right: 15px;
   margin: 0;
   padding: 0;
   width: 40px;
   height: 40px;
   overflow: hidden;
-  z-index: 10;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -17,8 +14,8 @@
   border: none;
   cursor: pointer;
   background-color: $transparentgreen;
-  @include prefix(border-radius, 50px, webkit ms);
-  @include prefix(transition,  background 0.6s ease-in-out, webkit ms);
+  border-radius: 50px;
+  transition: background 0.6s ease-in-out;
   z-index: 150;
   @include media-min-width(tablet) {
     display: none;
@@ -54,18 +51,18 @@
 
 .hamburger--rot {
   opacity: 1;
-  @include prefix(transition, all 0.6s ease-in-out 0.3s, webkit ms);
+  transition: all 0.6s ease-in-out 0.3s;
   span {
-    @include prefix(transition, rotate 0.8s ease-in-out, webkit ms);
+    transition: rotate 0.8s ease-in-out;
   }
   @include media-max-width(tablet) {
     &.is-active {
       background: $green;
       background-color: $green;
       opacity:0.8;
-      @include prefix(transition, rotate 0.8s ease-in-out, webkit ms);
+      transition: rotate 0.8s ease-in-out;
       span {
-        @include prefix(transform, rotate(90deg),webkit ms);
+        transform: rotate(90deg);
       }
     }
   }

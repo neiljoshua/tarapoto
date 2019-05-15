@@ -1,8 +1,23 @@
+(function($) {
+  'use strict';
+    $(window).on('load', function () {
+      if ($('.preloader-wrapper').length > 0) {
+        $('.preloader-wrapper').delay(2500).fadeOut('slow');
+        $('.wrapper').delay(2700).addClass('loaded');
+      }
+    });
+})(jQuery);
+
 $( document ).ready( function(){
 
   var selectList = $('.default').dropkick({
     theme: 'dk-tarapoto',
     mobile: 'true'
+  });
+
+  $('.row__image').each(function() {
+      var link = $(this).find("img").attr("src");
+      $(this).css("background-image", "url(" + link + ")");
   });
 
   $('.hamburger').on('click', function(e) {
@@ -37,12 +52,12 @@ $( document ).ready( function(){
   });
 
   $(window).scroll( function() {
-    var historyImages = $('.row-image'),
-        historyCopies = $('.row-copy'),
+    var historyImages = $('.row__image'),
+        historyCopies = $('.row__copy'),
         wrapper = $(window);
 
-    isElementInView(historyImages,'is-Visible');
-    isElementInView(historyCopies,'is-Visible');
+    isElementInView(historyImages,'visible');
+    isElementInView(historyCopies,'visible');
     if ( !$('body').hasClass('home') ) {
       if (wrapper.width() > 980) {
         toggleFixedClass(wrapper);
@@ -67,14 +82,15 @@ $( document ).ready( function(){
     iScrollPos = iCurScrollPos;
   }
 
-  function isElementInView(el,prop) {
+  function isElementInView(el,className) {
 
     $(el).each( function(i){
       var top_of_object = $(this).offset().top,
           bottom_of_window = $(window).scrollTop() + $(window).height();
-
       if( bottom_of_window > top_of_object ){
-        $(this).addClass(prop);
+        $(this).addClass(className);
+      } else if (top_of_object > bottom_of_window) {
+        $(this).removeClass(className);
       }
     });
   }
