@@ -4,7 +4,8 @@
   font-family: 'Rokkitt-ExtraLight';
   font-style: normal;
   font-weight: 100;
-  src: url('/src/fonts/Rokkitt/Rokkitt-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Rokkitt/Rokkitt-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 // SanSerif Style
@@ -13,14 +14,16 @@
   font-family: 'Muli-ExtraLight';
   font-style: normal;
   font-weight: 200;
-  src: url('/src/fonts/Muli/Muli-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Muli/Muli-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 /* Muli Light */
 @font-face {
   font-family: 'Muli-Light';
   font-style: normal;
   font-weight: 300;
-  src: url('/src/fonts/Muli/Muli-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Muli/Muli-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 /* Quicksand Light */
@@ -28,7 +31,8 @@
   font-family: 'Quicksand-Light';
   font-style: normal;
   font-weight: 300;
-  src: url('/src/fonts/Quicksand/Quicksand-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Quicksand/Quicksand-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 /* Quicksaand Regular */
@@ -36,7 +40,8 @@
   font-family: 'Quicksand-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('/src/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Quicksand/Quicksand-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 // Handwritting style
@@ -45,7 +50,8 @@
   font-family: 'Acme-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('/src/fonts/Acme/Acme-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Acme/Acme-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 /* AmaticSC-Regular.ttf */
@@ -53,7 +59,8 @@
   font-family: 'AmaticSC-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('/src/fonts/Amatic_SC/AmaticSC-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Amatic_SC/AmaticSC-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 /* AmaticSC-Regular.ttf */
@@ -61,5 +68,6 @@
   font-family: 'AmaticSC-Bold';
   font-style: normal;
   font-weight: 700;
-  src: url('/src/fonts/Amatic_SC/AmaticSC-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Amatic_SC/AmaticSC-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
