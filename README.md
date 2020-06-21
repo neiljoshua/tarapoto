@@ -4,8 +4,12 @@
 
 1. Run `npm install` or `npm update`
 
-## Grunt
-1. Run `grunt`
+## Developemnet
+1. Run `npm run dev`
+
+## Build
+
+1, Run `npm eub build`
 
 ## Environments
 

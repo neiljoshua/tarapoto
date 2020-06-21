@@ -5,7 +5,7 @@
   <nain>
     <section class="hero">
       <div class="hero__image">
-        <img src="/src/images/pool.jpg" alt="History Tarapoto">
+        <img src="/dist/images/pool.jpg" alt="History Tarapoto">
       </div>
       <div class="history-hero">
         <h2 class="history-hero__title">Tarapoto Resort</h2>
@@ -23,7 +23,7 @@
     <section class="gallery">
       <div class="row">
         <div class="row__image">
-          <img src="/src/images/about.jpg" alt="Experience">
+          <img src="/dist/images/about.jpg" alt="Experience">
         </div>
         <div class="row__copy">
           <div class="copy-center">
@@ -34,7 +34,7 @@
       </div>
       <div class="row">
         <div class="row__image">
-          <img src="/src/images/enchanting.jpg" alt="Enchanting ">
+          <img src="/dist/images/enchanting.jpg" alt="Enchanting ">
         </div>
         <div class="row__copy">
           <div class="copy-center">
@@ -46,7 +46,7 @@
       </div>
       <div class="row">
         <div class="row__image">
-          <img src="/src/images/design.jpg" alt="Design">
+          <img src="/dist/images/design.jpg" alt="Design">
         </div>
         <div class= "row__copy">
           <div class="copy-center">
@@ -58,7 +58,7 @@
       </div>
       <div class="row">
         <div class= "row__image">
-          <img src="/src/images/amenities.jpg" alt="Amenities">
+          <img src="/dist/images/amenities.jpg" alt="Amenities">
         </div>
         <div class= "row__copy">
           <div class="copy-center">

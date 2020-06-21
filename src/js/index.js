@@ -1,12 +1,6 @@
-(function($) {
-  'use strict';
-    $(window).on('load', function () {
-      if ($('.preloader-wrapper').length > 0) {
-        $('.preloader-wrapper').delay(2500).fadeOut('slow');
-        $('.wrapper').delay(2700).addClass('loaded');
-      }
-    });
-})(jQuery);
+import '../sass/styles.scss';
+
+var Dropkick = require('dropkickjs');
 
 $( document ).ready( function(){
 
@@ -14,6 +8,10 @@ $( document ).ready( function(){
     theme: 'dk-tarapoto',
     mobile: 'true'
   });
+
+  if ($('.preloader-wrapper').length > 0 && ($('body').hasClass('home'))) {
+    $('.preloader-wrapper').delay(6500).fadeOut('slow');
+  }
 
   $('.row__image').each(function() {
       var link = $(this).find("img").attr("src");
