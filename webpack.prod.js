@@ -1,4 +1,4 @@
-var merge = require('webpack-merge');
+var merge  = require('webpack-merge');
 var path = require('path');
 var common = require('./webpack.common.js');
 var TerserPlugin = require('terser-webpack-plugin');
@@ -11,5 +11,5 @@ module.exports = merge(common, {
     minimize: true,
     minimizer: [new TerserPlugin(),new OptimizeCSSAssetsPlugin({})]
   },
-  devtool: 'source-map'
+  devtool: 'none'
 });

@@ -5,7 +5,7 @@
   <main>
     <section class="hero">
       <div class="hero__image">
-        <img src="dist/images/about.jpg" alt="Tarapoto Hero Image">
+        <img src="<?php echo cdnURL ?>images/about.jpg" alt="Tarapoto Hero Image">
       </div>
       <h1 class="hero__title center">TARAPOTO RESORT</h1>
     </section>
@@ -302,7 +302,7 @@
           <a href="/">Close</a>
           <h3>Thank you for your interest in Tarapoto Resorts.
           We wil get back to you as soon as we can.</h3>
-          <img class="success__image" src="dist/images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
+          <img class="success__image" src="<?php echo cdnURL ?>images/nazca_monkey_stroke.svg" alt="Tarapoto logo">
         </div>
       </form>
     </section>
