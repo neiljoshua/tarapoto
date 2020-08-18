@@ -13,3 +13,8 @@ html
 #Git flow
 gitflow-installer.sh
 gitflow/
+
+
+dist/images/.DS_Store
+
+project-notes
