@@ -3,7 +3,7 @@
   <head>
     <title>Tarapoto Resort</title>
     <?php
-    define('cdnURL', 'https://tarapoto.s3.us-east-2.amazonaws.com/');
+    define('cdnURL', 'https://doktrt2287lri.cloudfront.net/');
     ?>
     <meta charset="utf-8">
     <meta title="Tarapoto Resort">
