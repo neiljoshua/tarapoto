@@ -3,7 +3,7 @@
   <head>
     <title>Tarapoto Resort</title>
     <?php
-    define('cdnURL', '/dist/');
+    define('cdnURL', 'https://cdn.tarapoto.neiljoshua.dev/');
     ?>
     <meta charset="utf-8">
     <meta title="Tarapoto Resort">
